@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginEnd="10dp">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnClose"
+        style="@style/Widget.MaterialComponents.Button.TextButton.Dialog.Flush"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        app:icon="@drawable/back_arrow"
+        app:iconTintMode="multiply"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.swipefwd.utils.RoundedImageView
+        android:id="@+id/imgUser"
+        android:layout_width="63dp"
+        android:layout_height="63dp"
+        android:elevation="5dp"
+        android:scaleType="centerCrop"
+        app:cornerRadius="1000dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnClose"
+        app:roundedCorners="all"
+        tools:srcCompat="@drawable/image_profile" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:lineSpacingExtra="8dp"
+        android:text="@string/freemium"
+        android:textAppearance="@style/AppTheme.BoldFont"
+        android:textColor="@color/colorPagerDesc"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgUser" />
+
+    <TextView
+        android:id="@+id/txtDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(current subscription)"
+        android:textAppearance="@style/AppTheme.RegularFont"
+        android:textColor="@color/colorPagerDesc"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtType" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/pagerPackType"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtDate" />
+
+    <LinearLayout
+        android:id="@+id/layoutData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="26dp"
+        android:orientation="horizontal"
+        android:paddingTop="20dp"
+        android:paddingBottom="8dp"
+        app:layout_constraintTop_toBottomOf="@id/pagerPackType">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="start"
+            android:text="@string/what_you_get"
+            android:textAppearance="@style/AppTheme.BoldFont"
+            android:textColor="@color/colorPagerDesc"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/txFreemium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="end"
+            android:text="@string/freemium"
+            android:textAppearance="@style/AppTheme.BoldFont"
+            android:textColor="@color/colorPagerDesc"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/txtPremier"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="end"
+            android:text="@string/premier"
+            android:textAppearance="@style/AppTheme.BoldFont"
+            android:textColor="@color/colorPagerDesc"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/txtElite"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="end"
+            android:text="@string/elite"
+            android:textAppearance="@style/AppTheme.BoldFont"
+            android:textColor="@color/colorPagerDesc"
+            android:textSize="13sp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvFeatures"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toTopOf="@id/btnCancelSub"
+        app:layout_constraintTop_toBottomOf="@id/layoutData"
+        tools:listitem="@layout/item_subscription_plans" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/btnCancelSub"
+        style="@style/Widget.MaterialComponents.Button.TextButton.Dialog.Flush"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/cancel_subscription"
+        android:textAllCaps="false"
+        android:textAppearance="@style/AppTheme.MediumFont"
+        android:textColor="@color/light_orange"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

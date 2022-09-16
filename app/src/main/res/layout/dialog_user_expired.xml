@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgDialogGradient"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/rectangle" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivExpired"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="23dp"
+                android:paddingStart="40dp"
+                android:paddingEnd="40dp"
+                app:srcCompat="@drawable/invite_expired" />
+
+            <TextView
+                android:id="@+id/txtExpired"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ivExpired"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:paddingStart="40dp"
+                android:paddingEnd="40dp"
+                android:text="@string/user_expired"
+                android:textAppearance="@style/AppTheme.MediumFont"
+                android:textColor="@color/colorPagerDesc"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtExpired"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:lineSpacingExtra="6dp"
+                android:paddingStart="26dp"
+                android:paddingEnd="26dp"
+                android:text="@string/expired_1"
+                android:textAppearance="@style/AppTheme.RegularFont"
+                android:textColor="@color/colorPagerDesc"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:gravity="start"
+                android:lineSpacingExtra="6dp"
+                android:paddingStart="33dp"
+                android:paddingEnd="33dp"
+                android:text="@string/expired_3"
+                android:textAppearance="@style/AppTheme.RegularFont"
+                android:textColor="@color/colorPagerDesc"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/txt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt2"
+                android:layout_marginTop="16dp"
+                android:gravity="start"
+                android:lineSpacingExtra="3dp"
+                android:paddingStart="33dp"
+                android:text="@string/bullet"
+                android:textAppearance="@style/AppTheme.RegularFont"
+                android:textColor="@color/colorPagerDesc"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/txt4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:layout_toEndOf="@id/txt3"
+                android:gravity="start"
+                android:lineSpacingExtra="3dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="33dp"
+                android:text="@string/expired_4"
+                android:textAppearance="@style/AppTheme.RegularFont"
+                android:textColor="@color/colorPagerDesc"
+                android:textSize="13sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnContinue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt4"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="26dp"
+                android:background="@drawable/bottom_blue_corner_gradient_bg"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:text="@string/common_continue"
+                android:textAppearance="@style/AppTheme.MediumFont"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:backgroundTint="@null"
+                app:rippleColor="@color/dark_blue_20" />
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

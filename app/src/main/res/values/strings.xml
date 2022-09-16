@@ -1,0 +1,692 @@
+<resources>
+    <string name="app_name">FWD</string>
+    <!-- FB Id -->
+    <string name="facebook_app_id">512825496815589</string>
+    <string name="facebook_client_token">430548984fd7afaa96c36b1f7672bf7d</string>
+    <string name="fb_login_protocol_scheme">fb512825496815589</string>
+    <!--API KEYS-->
+    <string name="google_maps_key">AIzaSyCJswW0bTmfHHo1o2Y5yx3D9bMHHfpEzsE</string>
+    <!--    <string name="google_maps_key">AIzaSyAAn7pyr&#45;&#45;ZdAv25ntG1al3cu_xvZ-XlI0</string>-->
+
+    <!-- Common-->
+    <string name="no_internet">No Internet. Please check your connection</string>
+    <string name="no_dater">Available to be filled\nby another friend request!</string>
+    <string name="not_now">Not now</string>
+    <string name="lets_do">Let\'s do it!</string>
+    <string name="exit_msg">Please click BACK again to exit</string>
+    <string name="common_skip">Skip</string>
+    <string name="common_continue">Continue</string>
+    <string name="common_ok">OK</string>
+    <string name="common_retry">Retry</string>
+    <string name="common_cancel">Cancel</string>
+    <string name="common_yes">Yes</string>
+    <string name="common_update">Update</string>
+    <string name="common_delete">Delete</string>
+    <string name="no_record_found">No Record Found</string>continue_facebook
+    <string name="no_invites">No pending or expired invite</string>
+    <string name="user_permission_message">This app needs permission to use this feature.</string>
+    <string name="common_done">Done</string>
+    <string name="common_next">Next</string>
+    <string name="common_other">Other</string>
+    <string name="common_resend">Resend</string>
+    <string name="common_submit">Submit</string>
+    <string name="add_friends">Add Friends</string>
+    <string name="common_or">or</string>
+    <string name="user_dater">Dater</string>
+    <string name="user_matchmaker">Connector</string>
+    <string name="common_confirm">Confirm</string>
+    <string name="sequence_profile">%1$s/9</string>
+    <string name="sequence_preference">%1$s/7</string>
+    <string name="adjust_map_pin">Adjust your pin again</string>
+    <string name="city_country">%1$s, %2$s</string>
+    <string name="common_later">Later</string>
+    <string name="keep_going">Keep Going!</string>
+    <string name="learn_more">Learn More</string>
+    <string name="accept_terms">Accept Terms</string>
+    <string name="character_limit">You have exceeded your character limit.</string>
+
+    <!--  Bottom  Navigation Menu-->
+    <string name="home">Home</string>
+    <string name="connect">Connect</string>
+    <string name="tribe">Tribe</string>
+    <string name="wallet">Wallet</string>
+    <string name="message">Message</string>
+    <string name="screen_home">Home Screen</string>
+
+    <!--Registration-->
+    <string name="connector_selection">You cannot be a Connector until one of your friends invites you</string>
+    <string name="pager_title_1">What is FWD?</string>
+    <string name="pager_title_2">Connection Through People You Trust, Not An Algorithm</string>
+    <string name="pager_title_3">More Personalized Information</string>
+    <string name="pager_title_4">Social &amp; Supportive</string>
+    <string name="pager_desc_1">Let’s face it — dating online is lonely and boring.\n\nYou\'re `introduced` to people you\'d  never date and have no idea how they are connected to your life.\n\nWith FWD, you can change that by inviting your trusted humans (Tribe) to help you out.</string>
+    <string name="pager_desc_2">Your Tribe members introduce you to people they know in real life.\n\nThey also send you profile recommendations of people already on FWD.</string>
+    <string name="pager_desc_3">You learn how your prospective match is connected you and your Tribe — and what your Tribe thinks of them.\n\nAnd if you don\'t want to build a Tribe, you don\'t have to. You can go solo and swipe alone.</string>
+    <string name="pager_desc_4">You\'re no longer dating alone online and talking to random people you don\'t know.\n\nChat with your Tribe about their real-life connections, your matches, about life.\n\nAnd, hey, send them a coin for all their help.</string>
+    <string name="user_detail_title">Who are you here for?</string>
+    <string name="user_me">Me</string>
+    <string name="user_my_friends">My Friend(s)</string>
+    <string name="user_me_text">You\'re a <b>Dater!</b>\n\nSwipe for yourself and chat with people you match with.\n\nYou can add friends (Connectors) to make profile recommendations and introduce you to people they know.</string>
+    <string name="user_friends_text">You\'re a <b>Connector!</b>\n\nYou can send profile recommendations to your friends.\n\nYou can also introduce your friends to someone you know.\n\n(Your profile will not appear in the FWD database.)</string>
+    <string name="screen_otp">What\'s Your Number?</string>
+    <string name="screen_otp_desc">We\'ll send you a confirmation code</string>
+    <string name="phone_number">Phone number</string>
+    <string name="invalid_otp">Invalid code. Try again.</string>
+    <string name="enter_code">Enter Code</string>
+    <string name="otp_message">We texted a code to:</string>
+    <string name="resend_otp">Didn\'t receive code? Resend</string>
+    <string name="resend_code">Resend Code</string>
+    <string name="resend_timer">%1$s to resend code</string>
+    <string name="message_time_out">You\'ve entered an incorrect\n code too many times</string>
+    <string name="message_time_out2">\n\nPlease try again in 2 minutes</string>
+    <string name="time_out">Timed Out</string>
+    <string name="unable_to_detect_face">We are unable to detect a face</string>
+    <string name="delete_account_message">Are you sure you want to Delete account?</string>
+
+    <!-- Login -->
+    <string name="trouble_signin">Trouble signing in?</string>
+    <string name="agree_to_terms_and_policy">By creating an account or logging in, you agree \nto FWD\'s Terms of Use and Privacy Policy</string>
+    <string name="facebook">Facebook</string>
+    <string name="continue_facebook">Login with Facebook</string>
+    <string name="continue_with">Continue with</string>
+    <string name="move_map">Move map to change location</string>
+    <string name="lock_location">(Your location will lock once you save it)</string>
+    <string name="save_location">Save location</string>
+    <string name="linkedin_dialog_title">FWD Would Like to Use LinkedIn to Sign In</string>
+    <string name="linkedin_dialog_content">This allows LinkedIn to share\ninformation about you with FWD</string>
+    <string name="fb_dialog_title">FWD Would Like to Use Facebook to Sign In</string>
+    <string name="fb_dialog_content">This allows Facebook to share\ninformation about you with FWD</string>
+    <string name="google_dialog_title">FWD Would Like to Use Google to Sign In</string>
+    <string name="google_dialog_content">This allows Google to share\ninformation about you with FWD</string>
+    <string name="select_country">Select a Country</string>
+    <string name="login_failure">Network Failure</string>
+    <string name="check_email">Invalid email address. Check and try again</string>
+    <string name="failure_message">Sorry, an unexpected error occurred.\nPlease use another method or\ntry again later</string>
+
+    <!--Profile-->
+    <string name="profile_finish">Finished Already?</string>
+    <!--    <string name="profile_finish_content">Sharing information about yourself \nwill get you more matches and allow \nfor better conversations!</string>-->
+    <string name="profile_finish_content">Sharing information about yourself will get you more matches and allow for better conversations!</string>
+    <string name="preference_finish_content">Telling us more information about who you\'re interested in meeting will result in better matches!</string>
+    <string name="hint_location">Where do you live?</string>
+    <string name="travelling">Traveling to where?</string>
+    <string name="travel_hint">(Locked)</string>
+    <string name="travel_location">Travel Location</string>
+    <string name="travel_on_off">Off / On</string>
+    <string name="do_not_allow">Don’t Allow</string>
+    <string name="allow">Allow</string>
+    <string name="access_friends">FWD Needs Access to Your Friends List</string>
+    <string name="access_friends_message">FWD shows you the mutual friends you and your Tribe have with prospective matches\n\nLike? Let us show you through Facebook mutual friends</string>
+    <string name="curious_image">We\'re So Curious</string>
+    <string name="upload_img_message">Upload a picture of yourself so prospective matches can know all of you\n\n(Also, your matches greatly increase. So there\'s that)</string>
+    <string name="travelling_message">Traveling? Change your location to search that city instead of the area you live in</string>
+    <string name="screen_profile">Profile</string>
+    <string name="header_profile_dater">You (and your Connectors, if you add them) receive FWD profiles of people you can meet, which is based on the information you provide in your Profile and Preferences</string>
+    <string name="header_profile_matchmaker">You are not creating a profile to be shown and matched. Only your friends see your name and photo</string>
+    <string name="update_profile">Upload Profile Photo</string>
+    <string name="verified">You are verified</string>
+    <string name="verification_progress_">Verification in Progress</string>
+    <string name="profile_guideline">Upload a picture that meets FWD\'s photo guidelines</string>
+    <string name="choose_photo">Choose a photo where you can clearly see your face. You can change this photo later</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="birth_date">Date of Birth</string>
+    <!--    <string name="dob_hint">MM/DD/YYYY</string>-->
+    <string name="dob_hint">What is your date of birth?</string>
+    <string name="dob_message">You are not allowed to use FWD unless you are at least 18 years old</string>
+    <string name="user_gender">Gender</string>
+    <string name="gender_male">Male</string>
+    <string name="gender_female">Female</string>
+    <string name="gender_none">Non-Binary</string>
+    <string name="required_fields">required fields</string>
+    <string name="not_verified">You are not verified</string>
+    <string name="not_verified_message">Verify your profile now to get the best matches</string>
+    <string name="location">Area I Live In</string>
+    <string name="location_message_1">FWD Does Not Track Your Location</string>
+    <string name="location_message_2">We need your location to show you potential matches, which are based on the area you \nselect and the distance from this area\n\nYour location will remain fixed and cannot be changed unless you access the travel \nlocation feature</string>
+    <string name="got_it">Got It!</string>
+    <string name="got_it_small">Got it!</string>
+    <string name="preferences">Preferences</string>
+    <string name="meet_preference">Who do you want to meet?</string>
+    <string name="men">Men</string>
+    <string name="women">Women</string>
+    <string name="everyone">Everyone</string>
+    <string name="age_range">Age Range</string>
+    <string name="star_symbol">*</string>
+    <string name="distance">Distance</string>
+    <string name="advanced_dating_filters">Advanced Preferences</string>
+    <string name="preference_match_location_text">You and your Connectors (if you add them) get FWD profiles based on your selected Preferences</string>
+    <string name="verified_profiles_only">Verified Profiles Only</string>
+    <string name="education">Education</string>
+    <string name="verified_profiles_tip_desc">A blue checkmark means the user has gone through the FWD verification process and \nthey are who they say they are</string>
+    <string name="astrological_sign">Astrological Sign</string>
+    <string name="height">Height</string>
+    <string name="cm">cm</string>
+    <string name="ft_inch">ft, inch</string>
+    <string name="caste">Caste</string>
+    <string name="children">Children</string>
+    <string name="religion">Religion</string>
+    <string name="covid_vaccine">Covid Vaccine</string>
+    <string name="smoking">Smoking</string>
+    <string name="what_are_you_looking_for">What are you looking for?</string>
+    <string name="astro_hint">(You can make multiple selections)</string>
+    <string name="no_preference">No preference</string>
+    <string name="education_level">Education Level</string>
+    <string name="type_of_fwd_date">"Relationship Interest"</string>
+    <string name="relationship_interest">Relationship Interest</string>
+    <string name="bio_hint">Say a little bit about yourself</string>
+    <string name="occupation">Occupation</string>
+    <string name="language">Language</string>
+    <string name="add_language">Add language</string>
+    <string name="language_hint">What language do you speak?</string>
+    <string name="occupation_hint">What is your job or profession?</string>
+    <string name="education_hint">What is your education?</string>
+    <string name="zodiac_hint">What is your zodiac sign?</string>
+    <string name="caste_hint">What is your caste?</string>
+    <string name="caste_hint_1">What\'s your caste?</string>
+    <string name="add_more_cast">Add castes</string>
+    <string name="children_hint">What are your plans for children?</string>
+    <string name="covid_status">Covid vaccine status*</string>
+    <string name="covid_status_hint">Covid vaccine status</string>
+    <string name="religion_hint">What is your religion?</string>
+    <string name="smoke_hint">Do you smoke?</string>
+    <string name="looking_for_hint">Don\'t know yet</string>
+    <string name="instagram_hint">Link your Instagram</string>
+    <string name="occupation_title">What is your occupation?</string>
+    <string name="astro_title">What is your astrological sign?</string>
+    <string name="astro_title_new">Astrological Sign</string>
+    <string name="looking_title">What type of relationship\ndo you want?</string>
+    <string name="select_your_height">Select Your Height</string>
+    <string name="fill_details_message">Please fill all required fields to continue</string>
+    <string name="title">Title</string>
+    <string name="company_title">Company (or just industry)</string>
+    <string name="school_name">Institution</string>
+    <string name="year">Graduation Year</string>
+    <string name="email">What’s your email?</string>
+    <string name="use_a_different">Use a different</string>
+    <string name="check_email_description">Please check your email and follow the instructions to recover your FWD account</string>
+    <string name="account_recovery">Account Recovery</string>
+    <string name="account_recovery_desc">We have identified a FWD account with the email address you provided \n\nYour telephone number has been updated and you will now be able to login to FWD using this number</string>
+    <!--    <string name="sent_email">We have sent an email to \nuser@gmail.com</string>-->
+    <string name="sent_email">We have sent an email to</string>
+    <string name="check_your_email">Check Your Email</string>
+    <string name="tell_us_email">Tell us your email and we\'ll send you a \nlink to recover your FWD account</string>
+    <string name="google">Google</string>
+    <string name="email_address"><u>email address</u></string>
+    <string name="email_message">Your email allows you to recover your account if you cannot log in with your phone number</string>
+    <string name="recovery_email_hint">Add recovery email</string>
+    <string name="your_email">Your email address</string>
+    <string name="google_login">Continue with Google</string>
+    <string name="show_in_instagram">Show Instagram Photos</string>
+    <string name="select_block_reason">Please select a reason</string>
+    <string name="provide_country">Please select a country for your number</string>
+    <string name="invalid_number">Invalid number. Try again</string>
+    <string name="insta_authentication">Please authenticate with your personal account.</string>
+    <string name="covid_message">*Your selection will not impact who will see you or who you will see</string>
+    <string name="feet_inches">%1$s.%2$s</string>
+    <string name="feet_inches_show">%1$s\'%2$s\</string>
+    <string name="height_range">%1$s - %2$s</string>
+    <string name="between_values">between %1$s - %2$s</string>
+    <string name="between_height_cm">Between %1$s cm and %2$s cm</string>
+    <string name="between_height_inche">Between %1$s and %2$s</string>
+    <string name="up_to_distance">%1$s km away</string>
+    <string name="bio_length">%1$s/150</string>
+    <string name="travel_text">Where are you traveling to?</string>
+    <string name="enjoy_city">Enjoy %1$s!</string>
+    <string name="travel_relocation">Connector Receiving\nTravel Profiles</string>
+    <string name="travel_relocation_message">While you are traveling, your Connectors will\nreceive profiles from %1$s to recommend\nto you\n\nThey can also continue to introduce you to\npeople they know from any location</string>
+    <string name="phone_setting">Phone Settings</string>
+    <string name="share_location">Share with my Connectors</string>
+    <string name="help_us">Help Us Help You</string>
+    <string name="help_message">In order to use FWD, we need to know your location\n\nOtherwise, we  cannot suggest people for you to meet!</string>
+    <string name="enjoy_city_text">We hope you meet some incredible\npeople in %1$s, which will be set as\nyour swiping location for 7 days and\nthen… expire</string>
+    <string name="enjoy_city_text_1">Your Connectors will not receive\nprofiles to recommend to you for\n%1$s unless you decide otherwise\n\nYou can change, and turn off, your\ntravel location in your Profile</string>
+    <!--  Home  -->
+    <string name="home_your_tribe">(Your Tribe)</string>
+    <string name="connect_message">Select who you want to connect %1$s to:</string>
+    <string name="home_matchmaker">Who are you helping today?</string>
+    <string name="dialog_become_dater_msg">Right now, you\'re only Connecting for your friends\n\nWe need you to give us a bit more information in order to create your Dater profile, including what type of person you are looking for</string>
+    <string name="let_s_find_your_human">Let\'s find your human!</string>
+    <string name="connector_disable">No Connector Account</string>
+    <string name="connector_disable_message">You can only be a Connector if one of your friends has invited you, which has not happened yet\n\nWhen you see an orange indicator light on this bar, you have a Connector invite. Slide to see the invite!</string>
+    <string name="go_back">Go Back</string>
+    <string name="home_matchmaker_title">Help your friends meet someone great!</string>
+    <string name="invite_msg_matchmaker">Introduce your FWD single friends to 10 people using the FWD platform and get ₹50 for mobile recharge, booster and subscriptions!</string>
+    <string name="invite_msg_dater">Invite 5 Connector friends to FWD and get ₹50 when they register with a valid invite!</string>
+    <string name="start_swiping">Start Swiping</string>
+    <string name="home_dater_title">No one is helping you find your human.\nLet\'s change that!</string>
+    <string name="change_preference_text1">There\'s no one else\naround you.</string>
+    <string name="change_preference_text2">Adjust your Preferences to see\nmore profiles. Or check\n back in soon.</string>
+    <string name="agreement_text">Hello, and greetings, from FWD!\n\nWe are happy to include you in our community\n\nFWD is not just another app. It is people and their trusted humans working together to meet through connections, trust and common friends\n\nWhile here, we ask that you treat everyone with civility and goodwill. That means treating people without prejudice and with respect\n\nIf we can help in any way, let us know. We are here for you, like a member of your Tribe!</string>
+    <string name="agree">I agree</string>
+    <string name="selected_contact">Select who to connect %1$s to</string>
+    <string name="friends_not_on_fwd">Friends Not on FWD</string>
+    <string name="purchase_fail">Purchase Failed</string>
+    <string name="purchase">Purchase</string>
+    <string name="fb_friends_list">Your Tribe’s FWD Facebook friends with %1$s</string>
+    <string name="fb_friends_mutual_list">Your %2$s with %1$s</string>
+    <string name="fwd_friend_list">Your Tribe members who FWD’d %1$s</string>
+    <string name="fwd_green_list">Your Tribe Members Who Connected You to %1$s</string>
+
+    <!--  Settings -->
+    <string name="disable_dater">Are you sure you want to disable your Dater account?</string>
+    <string name="disable_dater_message">If you disable your account, you will no longer be able to access profiles (existing and future) or message FWD users (Connectors and matches). Your Dater profile and messages will not appear on FWD</string>
+    <string name="disable_connector">Are you sure you want to disable your Connector account?</string>
+    <string name="disable_connector_message">If you disable your account, you will no longer be a Connector for your friends, reviewing profiles for them, and will not be able to message them</string>
+    <string name="onboarding">Onboarding</string>
+    <string name="swiping">Swiping</string>
+    <string name="or">or</string>
+    <string name="me">Me</string>
+    <string name="settings">Settings</string>
+    <string name="unlink_insta">Unlink from\nInstagram account</string>
+    <string name="unlink_insta_msg">Are you sure you want to disconnect\nyour Instagram account?\n\nIt means your Instagram account will no\nlonger be displayed in your profile\non FWD.</string>
+    <string name="unlink_fb">Unlink from\nFacebook account</string>
+    <string name="unlink_linkedin">Unlink from\nLinkedIn account</string>
+    <string name="unlink_google">Unlink from\nGoogle account</string>
+    <string name="unlink_email">Delete email address</string>
+    <string name="unlink_email_msg">Are you sure you want FWD to delete you from its database?\n\nIt means that you will no longer be able to recover your FWD account </string>
+    <string name="unlink_linkedin_msg">Are you sure you want to disconnect\nyour LinkedIn account?\n\nIt means your LinkedIn account will no longer be displayed in your profile on FWD</string>
+    <string name="unlink_google_msg">Are you sure you want to disconnect\nyour Google account?\n\nIt means your Google account will no longer be displayed in your profile on FWD</string>
+    <string name="unlink_fb_msg">Are you sure you want to disconnect\nyour Facebook account?\n\nIt means you will no longer be able to see\nmutual connections you have with\nprospective matches.</string>
+    <string name="delete_dialog_title">Are you sure you want to delete\nyour presence on FWD?</string>
+    <string name="delete_dialog_msg">If you\'re Connecting for your friends\n(in addition to Dating for yourself), <b><u>both</u></b>\naccounts will be deleted and you will\nno longer be able to search for you\nand your friends.</string>
+    <string name="log_out">Log Out</string>
+    <string name="over_limit_dob">Over 18 only</string>
+    <string name="terms_of_use">Terms Of Use</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="account">Account</string>
+    <string name="tutorials">Tutorials</string>
+    <string name="faq">FAQs</string>
+    <string name="contact">Contact</string>
+    <string name="dating_preferences">Preferences</string>
+    <string name="subscriptions">Subscriptions</string>
+    <string name="subscription_plan">Boosters</string>
+    <string name="linked_social_media_accounts">Connected Accounts</string>
+    <string name="email_settings">Email</string>
+    <string name="instagram">Instagram</string>
+    <string name="user_instagram">%1$s\'s Instagram</string>
+    <string name="linkedin">LinkedIn</string>
+    <string name="account_visibility">Disable Account</string>
+    <string name="account_visibility_tip">You can pause and hide your profile from others by switching off Account Visibility. It means that you will no longer appear on FWD but will still have an account.\n\nIf you would like to permanently remove your account, click on Delete Account</string>
+    <string name="notifications">Notifications</string>
+    <string name="notification_desc">Select which things you would like FWD to send you notifications for</string>
+    <string name="add_new_connection">New Connections</string>
+    <string name="new_fwd">New FWDs</string>
+    <string name="new_matches">New Matches</string>
+    <string name="version">Version</string>
+    <string name="new_messages">New Messages</string>
+    <string name="delete_account">Delete Account</string>
+    <string name="permanently_delete_account">Permanently\nDelete Account</string>
+    <string name="tell_us_reason">Please tell us why you are deleting\nyour FWD account</string>
+    <string name="met_someone">Met Someone</string>
+    <string name="need_break">Need a Break</string>
+    <string name="dissatisfied_service">Dissatisfied with Service</string>
+    <string name="billing_issue">Billing issue</string>
+    <string name="delete_sorry_text">We are sorry to see you go but hope\nyou will consider returning to FWD.</string>
+    <string name="best_of_luck">Best of luck and until soon!</string>
+    <string name="are_you_sure">Are you sure?</string>
+    <string name="delete_dialog_msg2">If you delete both a Dater and a Connector\naccount, you will no longer have a presence\non FWD and will have to recreate your profile\nif you ever decide to use our service again.</string>
+    <string name="delete_reason_msg1">Tell Us Why You Are</string>
+    <string name="delete_reason_msg2">Permanently Deleting</string>
+    <string name="delete_reason_msg3">Your Account</string>
+    <string name="start_message">Start Message</string>
+    <string name="person_typing">%1$s is typing</string>
+    <string name="typing">typing…</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="something_to_tell_us">Something to Tell Us?</string>
+    <string name="suspend_text1">Your FWD account has been\nsuspended based on activity that\nviolates our Terms of Use.</string>
+    <string name="suspend_text2">If you believe this suspension is in\nerror, please contact FWD by\nclicking here.</string>
+    <string name="new_version">A new version of the FWD\nis available</string>
+    <string name="unlock_feature">Unlock all features for the best experience</string>
+    <string name="freemium">Freemium</string>
+    <string name="premier">Premier</string>
+    <string name="elite">Elite</string>
+    <string name="what_you_get">What You Get:</string>
+    <string name="cancel_subscription">Cancel Subscription</string>
+    <string name="upgrade_account">Upgrade from %1$s</string>
+    <string name="cancel_sub_title">Are sure you want to cancel your %1$s subscription?</string>
+    <string name="cancel_sub_message_1">You will lose out on %1$s features, including:</string>
+    <string name="cancel_sub_message_2">\u2022 More profiles and FWDs to swipe on</string>
+    <string name="cancel_sub_message_3">\u2022 More people your friends have introduced you to and are guaranteed matches</string>
+    <string name="cancel_sub_message_4">\u2022 More time to talk to expiring matches</string>
+    <string name="cancel_sub_message_5">\u2022 Change your location for traveling</string>
+    <string name="cancel_sub_message_6">\u2022 Rematch with lapsed matches</string>
+    <string name="cancel_sub_message_7">\u2022 Recall your accidental no swipes</string>
+    <string name="cancel_sub_message_8">\u2022 Super Likes that make you stand out</string>
+    <string name="keep_sub">Keep %1$s!</string>
+    <string name="yes_sure">Yes, I’m sure</string>
+    <string name="yes_please">Yes, please!</string>
+    <string name="sub_canceled">Cancel FWD Subscription</string>
+    <string name="no_yes">No / Yes</string>
+    <string name="sub_last_date_message">\u2022 Open the Google Play Store App\n\u2022 Under menu, tap Subscriptions\n\u2022 Find FWD in subscriptions\n\u2022 Tap Cancel</string>
+
+    <!--  Activity  -->
+    <string name="activity">Activity</string>
+    <string name="connector_connection">(Connections: %1$s)</string>
+    <string name="screen_invites">(Invites)</string>
+
+    <!--  Home/Messages -->
+    <string name="chat_message">You and %1$s like each other!</string>
+    <string name="chat_message_1">You have 23 hours to say hello, after which your connection expires</string>
+    <string name="you_ve_been_verified">You\'ve Been Verified!</string>
+    <string name="verified_dialog_text">More quality matches and\nconnections are on your way!</string>
+    <string name="unmatch_this_person">Unmatch This Person</string>
+    <string name="unmatch_dialog_text">When you unmatch, neither\nperson can message the other on\nthe FWD platform and neither\nperson will be able to see the\nother\'s profile.</string>
+    <string name="messages">Messages</string>
+    <string name="matches">Matches</string>
+    <string name="you_havent_matched_with_anyone_yet">You haven\'t matched with anyone yet.</string>
+    <string name="no_matches_text">Start swiping to connect with some great\npeople to chat with.</string>
+    <string name="no_messages"><b> You haven\'t matched with anyone yet</b>\n\nStart swiping to connect with some great people to chat with</string>
+    <string name="unmatch">Unmatch</string>
+    <string name="unmatch_reason_text">Help keep FWD safe and comfortable\nby telling us why you are unmatching</string>
+    <string name="made_uncomfortable">Made me uncomfortable</string>
+    <string name="abusive_threatening">Abusive or threatening</string>
+    <string name="inappropriate_content">Inappropriate content</string>
+    <string name="spam_scam">Spam or scam</string>
+    <string name="common_no">No</string>
+    <string name="stolen_photo">Stolen photo</string>
+    <string name="not_interested">I\’m just not interested</string>
+    <string name="block_report">Block &amp; Report</string>
+    <string name="your_tribe_matched">Your Tribe matched you with</string>
+    <string name="tribe_msg">Friends make swiping more fun and\nproduce better matches.</string>
+    <string name="pager_1">Rematch with expired matches</string>
+    <string name="pager_2">Extend time to chat with matches\nbefore they expire</string>
+    <string name="pager_3">Get up to %1$s profiles and 5 FWDs a day</string>
+    <string name="pager_4">Use %1$s Super Likes a day to show\npeople how much you like them</string>
+    <string name="pager_5">Introductions by your friends to people\nthey know and think you should meet</string>
+    <string name="pager_6">Get 2 Fire Unlocked </string>
+    <string name="pager_6_1">(Unlock %1$s profiles of people your friends have introduced you to and who have also swiped right on you)</string>
+    <string name="pager_7">Recall accidental no swipes</string>
+    <string name="pager_8">Change your location,for a 7 day period, while you are travelling</string>
+    <string name="elite_pager_8">Unlimited to change your location</string>
+    <string name="plan_message">Recurring billing for <u>subscription only.</u> Cancel anytime. \nPayment will be charged to your Google Account.\n\nMore Details about this subscription can be found here:</string>
+    <!--<string name="plan_message_link">www.swipefwd.com/activateboostsubscription</string>-->
+    <string name="plan_message_link">https://www.swipefwd.com/</string>
+    <string name="fwd_by">FWD\'d by %1$s</string>
+    <string name="connected_by">Connected by %1$s</string>
+    <string name="total_count">+ %1$s</string>
+    <string name="connector_title">See Who Introduced You</string>
+    <string name="connector_tip_message">Click here for a personalized message telling you why your Connector introduced you to this person </string>
+    <string name="fwd_title">See Who Recommended\nThis Profile</string>
+    <string name="fwd_message">Click here to see which of your Connectors recommended this profile and why</string>
+    <string name="need_more_time">Need more time?</string>
+    <string name="continue_for_48_hrs">Continue this match for 48 hours</string>
+    <string name="add_time">Add Time</string>
+    <string name="continue_to_extend">Extend Time</string>
+    <string name="extended_this_match">You extended this match!</string>
+    <string name="another_48_hrs">You have another 48 hours to message</string>
+    <string name="get_48_hrs">Get another 48 hours to say hello</string>
+    <string name="subscription">%1$s subscription with all features</string>
+    <string name="text_1">Extend Time Only</string>
+    <string name="diamond_upgraded">You have upgraded to\nFWD Diamond!</string>
+    <string name="diamond_upgraded_message">You now get super likes, to elevate your profile, rewind your no swipes, reconnect with expired matches and more time to chat with expiring matches</string>
+    <string name="great">Great</string>
+    <string name="pick_photo">Photo Library</string>
+    <!--    <string name="pick_camera">Camera</string>-->
+    <string name="pick_camera">Camera</string>
+    <string name="verify_profile">Verify Your Profile</string>
+    <string name="verify_profile_message">FWD takes the accuracy of its profiles seriously\n\nTake a moment to verify your identity by sending us a quick selfie</string>
+    <string name="get_verify">Get Verified</string>
+    <string name="do_it_later">Do It Later</string>
+    <string name="verification_progress">Verification in Progress!</string>
+    <string name="verification_message">Thank you for verifying your identity\n\nWe will notify you as soon as we have finished our review</string>
+    <string name="select_dob">Select Your Date of Birth</string>
+    <string name="upload_photo">Upload More Photos</string>
+    <string name="bio">Bio</string>
+    <string name="remove">Remove</string>
+    <string name="rematch">Rematch</string>
+    <string name="interested_question">Interested?</string>
+    <string name="tribe_connected_title">Tribe Member Connection!</string>
+    <string name="tribe_connected_message">If %1$s likes you too, then you\'ll be matched and be able to message one another</string>
+    <string name="fwd_connector">FWD!</string>
+    <string name="swipe_interested_text">Swiping a profile to the right means you like the person. They won\'t be notified unless they like your profile too.</string>
+    <string name="swipe_interested_text_connector">Swiping a profile to the right means you this person would be a good match with your FWD friend\n\nThe person in the profile will not be notified unless your FWD friend approves your profile suggestion</string>
+    <string name="swipe_not_interested_text">Swiping a profile to the left means you\'re not interested in the person. They will not be notified and won\'t be shown to you again.</string>
+    <string name="swipe_not_interested_text_connector">Swiping a profile to the left means you do not think this person would match with your FWD friend\n\nThe person in the profile will not be notified and you will not be shown it again</string>
+    <string name="yes_fwd">Yes, FWD</string>
+    <string name="yes_i_am">Yes, I am</string>
+    <string name="chat_match">Match!</string>
+    <string name="not_a_match">Not a Match?</string>
+    <string name="not_interested1">Not Interested?</string>
+    <string name="no_i_m_not">No, I’m not</string>
+    <string name="not_match">Not a Match</string>
+    <string name="no_thanks">No, thanks</string>
+    <string name="copy_gesture">Copy This Gesture</string>
+    <string name="do_they_match">Do They Match?</string>
+    <string name="copy_message">Copy the gesture in the photo.\n\nIf your picture matches the one displayed here, your profile will be verified.</string>
+    <!--    <string name="match_message">If your photo looks like the example we showed you, submit it for verification.</string>-->
+    <string name="match_message">If your photo looks like the example we showed you, submit it. You must copy the pose exactly</string>
+    <string name="i_m_ready">I’m Ready</string>
+    <string name="retake_photo">Retake Photo</string>
+    <string name="picture_problem">Photo Problem</string>
+    <string name="picture_problem_1">You photo does not meet FWD Guidelines. Please review them here.\n\nPlease remove and replace your photo. If it is not removed within 24 hours, it will be deleted from your profile</string>
+    <string name="picture_problem_2">Check them out there.</string>
+    <string name="picture_problem_3">To continue using FWD, you will need to change your picture.</string>
+    <string name="change_profile">Replace Photo</string>
+    <string name="connector_limit_message">You are only allowed 10 Connectors\n\nIf you would like to add different Tribe members, delete existing ones on your Home screen (slide them to the right) and then Add Friends</string>
+    <string name="connector_limit">Connector Limit!</string>
+    <string name="connector_invite">Connector Invite</string>
+    <string name="invite">Invite</string>
+    <string name="re_invite">Reinvite</string>
+    <string name="recovery_text">We have identified a FWD account with the email address you provided\nYour telephone number has been updated and you will now be able to login to FWD using this number</string>
+    <string name="re_invited">Reinvited</string>
+    <string name="recommending_for">Recommending for: %1$s</string>
+    <!--  Home/Tribe - MY Single Friends -->
+    <string name="introduce_user">Introduce %1$s to someone?</string>
+    <string name="let_me_think">Let me think on it</string>
+    <string name="connect_user">Connect %1$s!</string>
+    <string name="introduce_message">Is there someone you know that you think %1$s should meet?\n\nIt takes just a few seconds…</string>
+    <string name="tribe_member_connection">Tribe Member Connection!</string>
+    <string name="tribe_connected_msg">You two should know each other.\nYou\'re both awesome people and\nlove abstract art.</string>
+    <string name="single_friend_tip_title">Introduce Your Single Friends!</string>
+    <string name="single_friend_tip_desc">Think two of your humans should meet?\n\nDrag your FWD single friend to this icon and pair them with another FWD single friend or someone from your Contacts</string>
+    <string name="dont_show_message_again">Don\'t show me this message again</string>
+    <string name="dont_show_notice_again">Don\'t show this notice again</string>
+    <string name="delete_from_tribe_title">Are you sure want to delete this\nperson from your Tribe?</string>
+    <string name="delete_from_tribe_desc">You will no longer be able to send this person\nprofiles or connect them to people you know\noff the FWD platform.\n\nYou can re-add them as your single friend if\nyou change your mind.</string>
+    <string name="no_message">No message?</string>
+    <string name="no_message_send_1">Sure you want to FWD %1$s\'s profile without telling %2$s why you think they\'d make a good match?</string>
+    <string name="no_message_desc_send">Sure you want to send %1$s profile to %2$s without saying why they should connect?</string>
+    <string name="im_sure">I\'m sure</string>
+    <string name="tribe_connected">If %1$s and %2$s match with each other on FWD, you\'ll see it in Messages in your conversation with %1$s and %2$s</string>
+    <string name="tribe_connected_1">If %1$s and %2$s match with each other, you\'ll see it in Messages in your conversation with %1$s</string>
+    <string name="send_quick_note">Send a quick note</string>
+    <string name="tip_single_title">Friends help friends out</string>
+    <string name="tip_single_message">Add friends who need help finding someone\ngreat to date, by clicking on this icon.</string>
+    <string name="user_added_connector">New Connector(s)!</string>
+    <string name="user_added_dater">New Friends!</string>
+    <string name="user_expired">Invite Expired</string>
+    <string name="user_added_connector_message">They can recommend FWD profiles to you and introduce you to people that they know\n\nLog in daily to see them\n\nYour friends\' recommendations and introductions will expire 3 days after they are made!</string>
+    <string name="user_added_dater_message">You can recommend FWD profiles and introduce them to people you know\n\nLog in daily to make your recommendations! It takes a few seconds and helps your friends out!</string>
+    <string name="expired_1">Your invitation has expired. You can:</string>
+    <string name="expired_3">\u2022 wait for another invite</string>
+    <string name="bullet">\u2022</string>
+    <string name="expired_4">become a Dater by sliding the toggle button on your Home screen</string>
+    <string name="requests">Requests</string>
+    <string name="invites">Invites</string>
+    <string name="add_to_tribe">Add</string>
+    <string name="active_request">Active Requests (%1$s)</string>
+    <string name="pending_request">Pending Invites (%1$s)</string>
+    <string name="expired_invites">Expired Invites (%1$s)</string>
+    <string name="expired_request">Expired Requests (%1$s)</string>
+    <string name="single_player_limit">Friend Limit</string>
+    <string name="single_player_limit_message">You are allowed only 5 FWD friends\n\nMake 10 Connections and we will open up another slot for a 6th FWD friend!\n\nOr…you can delete your existing FWD friends on your Home screen (hold their profile down and press the X). Then, add a Request</string>
+    <string name="fire_title">Guaranteed Matches From Your Friends!</string>
+    <!--    TRIBE- My Connectors-->
+    <string name="you_did_it">You Did It!</string>
+    <string name="did_it_message">5 of your Connectors are now on FWD because of you, which means you have ₹50 to redeem for mobile recharge, boosters and subscriptions!\n\nYou will be able to add another 5 Connectors, next month,for another ₹50</string>
+    <string name="psst">Pssst…</string>
+    <string name="blocked">Blocked</string>
+    <string name="unmatched">Unmatched</string>
+    <string name="unmatched_message">This means that neither you nor the person you unmatched from can see each others\' profile or message each other on the FWD platform</string>
+    <string name="blocked_header">This means that neither you or the person you blocked can see each others\' profile or message each other on the FWD platform</string>
+    <string name="make_new_connection">Make FWD Connections</string>
+    <string name="psst_connection">Introduce your friends to 5 people you know using the FWD platform and get FWD ₹50 when they match!</string>
+    <string name="psst_message">Invite 10 of your friends to FWD\n\nYou not only get Connectors to introduce you to people they know but.. you unlock the ability to video chat!</string>
+    <string name="connect_both">Hey! I wanted to introduce you to each other because…</string>
+    <string name="connector_message">I think you two would make a great match because…</string>
+    <string name="connect_title">Tell %1$s why you like %2$s</string>
+    <string name="connect_title_1">Tell %1$s and %2$s why they should meet</string>
+    <string name="delete_dater_title">Are you sure you want to delete this person?</string>
+    <string name="delete_dater_message">You will not be able to send them profiles or connect them through the FWD platform\n\nYou can be re-added if they send you another invite</string>
+    <string name="your_tribe">Your Tribe</string>
+    <string name="contacts">Contacts</string>
+    <string name="left_invite">(You Have %1$s Invites Left)</string>
+    <string name="search">Search</string>
+    <string name="friend_on_fwd">Friends on FWD</string>
+    <string name="number_friend_on_fwd">%1$s Friends on FWD</string>
+    <string name="invited_to_fwd">Invite to FWD</string>
+    <string name="delete_match_maker">Are you sure want to delete this person from your Tribe?</string>
+    <string name="delete_match_message_1">They will no longer be able to send you profiles or connect you to people through the FWD platform.</string>
+    <string name="delete_match_message_2">They will not be notified of your decision but will see they are no longer your Connector.You can re-add them later if you change your mind</string>
+    <string name="invite_to_tribe">Invite to Tribe</string>
+    <string name="send_all_invited">Send Message</string>
+    <string name="add_more_to_tribe">Add More Friends</string>
+    <string name="friend_added">Invited</string>
+    <string name="telephone">Telephone</string>
+    <string name="mobile">Mobile</string>
+    <string name="invite_sms">Connect via SMS</string>
+    <string name="invite_list">Invite List</string>
+    <string name="your_message">Your Message to %1$s</string>
+    <string name="fwd_message1">I want to introduce you to %1$s - someone I know who is great and I think you\'d like.</string>
+    <string name="fwd_message2">Download FWD today to see all their details and to get connected today!</string>
+    <string name="user_name">Hey, %1$s!</string>
+    <string name="account_type">Account Type</string>
+    <string name="account_type_message">One of the unique benefits of FWD is that you can have dual accounts: Connector (to help your friends) or Dater (for yourself).\n\nToggle this button switch between accounts. </string>
+    <string name="new_request">Requests</string>
+    <string name="dark_mode">Who You\'re Recommending For</string>
+    <string name="dark_mode_message">Remember to look at this bar to see who you are recommending for. It changes with the profiles you\'re reviewing!</string>
+    <!--Wallet-->
+    <string name="plan_price">₹%1$s</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="mobile_operator">Operator</string>
+    <string name="prepaid">Prepaid</string>
+    <string name="operator_circle">Operator/Circle</string>
+    <string name="operator_hint">Select Operator</string>
+    <string name="circle_hint">Select Circle</string>
+    <string name="postpaid">Postpaid</string>
+    <string name="mobile_circle">Circle</string>
+    <string name="recharge_summary">Recharge Summary</string>
+    <string name="recharge_amount">Recharge Amount</string>
+    <string name="select_amount">Select Recharge Amount</string>
+    <string name="select_custom_amount">Amount</string>
+    <string name="select_plan">Select Bundle Plan</string>
+    <string name="transaction_history">Transaction History</string>
+    <string name="go_to_wallet">Go to My Wallet</string>
+    <string name="tooltip_wallet">You\'ve Got Coins!</string>
+    <string name="tooltip_wallet_desc">We\'ve gifted you 5 FWD coins to use to tell your friends they\'re awesome for a FWD, a connection, for whatever.</string>
+    <string name="buy">Buy</string>
+    <string name="talktime">Talktime</string>
+    <string name="data">Data</string>
+    <string name="plan_desc">Plan Description</string>
+    <string name="validity">Validity</string>
+    <string name="coin_balance">FWD Balance</string>
+    <string name="cash_balance">Cash Balance</string>
+    <string name="mobile_recharge">Mobile Recharge</string>
+    <string name="apply_balance">Apply FWD Balance</string>
+    <string name="total_amount">Total</string>
+    <string name="gift_coins">Gift Coins</string>
+    <string name="buy_fwd_coins">Buy FWD Coins</string>
+    <string name="authentication">Authorizing…</string>
+    <string name="authentication_message">Please do not navigate away from this \npage or your purchase may not occur</string>
+    <string name="coin_purchase">Purchased!</string>
+    <string name="purchase_invite">Invite friends and get 2GB\nwhen they download\nthe FWD App</string>
+    <string name="add_more_info">Add more info</string>
+    <string name="connections">Mutual Friends</string>
+    <string name="about_me">About me</string>
+    <string name="mutual_fwd_facebook_friends_with_you">%1$s mutual %2$s with you</string>
+    <string name="gift_fwd_coins">Gift FWD Coins</string>
+    <string name="to">To</string>
+    <string name="user_for">For</string>
+    <string name="send">Send</string>
+    <string name="name_or_phone">Name, Phone</string>
+    <string name="note">Add a note</string>
+    <string name="super_liked_you">Super Liked you!</string>
+    <string name="you_are_verified">You are verified</string>
+    <string name="love_takes_a_tribe">Meet through sources you trust</string>
+    <string name="privacy_mode">Privacy Mode</string>
+    <string name="three_months_payment">Yes! ₹1500 for 3 months</string>
+    <string name="privacy_mode_text">Wanna be a bit more private? We’ll only show your profile to people you swipe right on\n\n (Of course, if you expressly invite your friends to be your Connector and to introduce you to other people, they can see your profile too)</string>
+    <string-array name="picker_month">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+    <!--Profile screen preferences-->
+    <string name="preference_occupation">%1$s,%2$s</string>
+    <string name="preference_education">%1$s,%2$s,%3$s</string>
+
+    <string name="label_continue">Continue</string>
+
+
+    <!--ML kit-->
+    <string name="pref_key_camera_live_viewport" translatable="false">clv</string>
+    <string name="pref_key_segmentation_raw_size_mask" translatable="false">srsm</string>
+    <string name="pref_key_pose_detector_run_classification" translatable="false">pdrc</string>
+    <string name="pref_key_pose_detector_rescale_z" translatable="false">pdrz</string>
+    <string name="pref_key_pose_detector_visualize_z" translatable="false">pdvz</string>
+    <string name="pref_key_still_image_pose_detector_show_in_frame_likelihood" translatable="false">sipdsifl</string>
+    <string name="pref_key_live_preview_pose_detector_show_in_frame_likelihood" translatable="false">lppdsifl</string>
+    <string name="pref_key_still_image_pose_detection_performance_mode" translatable="false">sipdpm</string>
+    <string name="pref_key_live_preview_pose_detection_performance_mode" translatable="false">lppdpm</string>
+    <string name="pref_key_live_preview_face_detection_min_face_size" translatable="false">lpfdmfs</string>
+    <string name="pref_key_live_preview_face_detection_performance_mode" translatable="false">lpfdpm</string>
+    <string name="pref_key_live_preview_face_detection_face_tracking" translatable="false">lpfdft</string>
+    <string name="pref_key_front_camera_picture_size" translatable="false">fcpts</string>
+    <string name="pref_key_front_camera_preview_size" translatable="false">fcpvs</string>
+    <string name="pref_key_rear_camera_picture_size" translatable="false">rcpts</string>
+    <string name="pref_key_rear_camera_preview_size" translatable="false">rcpvs</string>
+    <string name="pref_key_live_preview_face_detection_classification_mode" translatable="false">lpfdcfm</string>
+    <string name="pref_key_live_preview_face_detection_landmark_mode" translatable="false">lpfdlm</string>
+    <string name="pref_key_live_preview_face_detection_contour_mode" translatable="false">lpfdcm</string>
+    <string name="pref_key_live_preview_object_detector_enable_classification" translatable="false">lpodec</string>
+    <string name="pref_key_camerax_rear_camera_target_resolution" translatable="false">crctas</string>
+    <string name="pref_key_camerax_front_camera_target_resolution" translatable="false">cfctas</string>
+    <string name="pref_key_live_preview_object_detector_enable_multiple_objects" translatable="false">lpodemo</string>
+    <string name="pref_key_still_image_object_detector_enable_multiple_objects" translatable="false">siodemo</string>
+    <string name="pref_key_still_image_object_detector_enable_classification" translatable="false">siodec</string>
+
+    <!--Swiping-->
+    <string name="user_name_age">%1$s, %2$s</string>
+    <string name="run_out_of">%1$s has run out of profile</string>
+    <string name="message_user">Message %1$s</string>
+    <string name="run_out_of_message">Encourage them to widen their search\nparameters\n\nOr check back soon when more\nprofiles are added for them</string>
+
+    <!--Chat Module-->
+    <string name="xmpp_connection_not_initial">XMPPConnection not initial</string>
+    <string name="on_boarding_title_1">What is FWD?</string>
+    <string name="on_boarding_desc_1">Let’s face it — dating online is lonely and boring.  You\'re \"introduced\" to people you\'d  never date and have no idea how they are connected to your life.  With FWD, you can change that by inviting your trusted humans (Tribe) to help you out.</string>
+    <string name="on_boarding_title_2">Connection Through People You Trust, Not Just An Algorithm</string>
+    <string name="on_boarding_desc_2">Your Tribe members introduce you to people they know in real life.  They also send you profile recommendations of people already on FWD.</string>
+    <string name="on_boarding_title_3">More Personalized, Meaningful Information "</string>
+    <string name="on_boarding_desc_3">You learn how your prospective match is connected you and your Tribe — and what your Tribe thinks of them.  And if you don’t want to build a Tribe, you don’t have to. You can go solo and swipe alone.</string>
+    <string name="on_boarding_title_4"><![CDATA["Social, Supportive & Secure "]]></string>
+    <string name="on_boarding_desc_4">You\'re no longer dating alone online and talking to random people you don\'t know.  Chat with your Tribe about their real-life connections, your matches, about life.    And, hey, send them a coin for all their help. </string>
+    <string name="cancel">Cancel</string>
+    <string name="less_dob_message">FWD is for people who are 18 and older. Come back ands see us when you turn 18!</string>
+
+    <string name="invalid_content_1">Your image does not meet the FWD Guidelines and will not be posted to your profile\n\nPlease upload a different photo</string>
+    <string name="invalid_content_upload">Upload Different Photo</string>
+
+    <!--Verification Problem Dialog-->
+    <string name="verification_problem">Verification Problem</string>
+    <string name="verification_text">We were unable to authenticate your profile picture\n\nPlease try to verify your identity again</string>
+    <string name="clientSecret">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</string>
+    <string name="clientId">71705550223-m467h9r0vt96a2m87ai7ub4b1ftqp19p.apps.googleusercontent.com</string>
+
+    <string name="numerical_input">You cannot use numbers</string>
+
+    <string name="send_notifications">FWD Would Like to\nSend You Notifications</string>
+    <string name="send_notifications_body">The best way for FWD to notify you of updates and messages is to send you push notifications</string>
+
+</resources>

@@ -1,0 +1,846 @@
+[
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_tab_manager.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/activity_tab_manager.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_more_profile.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_more_profile.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_select_astro_sign.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/activity_select_astro_sign.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_delete_dater.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_delete_dater.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_preferences.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/activity_preferences.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_activity_horizontal.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/item_activity_horizontal.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_unlink_instagram.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_unlink_instagram.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_settings.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/fragment_settings.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_final_gesture.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_final_gesture.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_copy_gesture_old.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_copy_gesture_old.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_select_common.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/item_select_common.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_sms_sent.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_sms_sent.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_unmatch_user.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_unmatch_user.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_progress.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_progress.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_active_tribes.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/item_active_tribes.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_video_tutorial.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/activity_video_tutorial.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_new_friend_psst.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_new_friend_psst.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_selected_contact_list.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/item_selected_contact_list.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_travel.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/activity_travel.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_requests_list.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/activity_requests_list.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_redeem_coins.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/activity_redeem_coins.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_user_profile.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/activity_user_profile.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_rematch.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/activity_rematch.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_instagram_full_screen.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/activity_instagram_full_screen.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_location.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/activity_location.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_account_deleted.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/activity_account_deleted.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_message_matches.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/fragment_message_matches.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_subscription_plans.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/item_subscription_plans.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_verification_problem.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_verification_problem.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_messages.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/fragment_messages.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_user_added.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_user_added.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_swipe_image.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/fragment_swipe_image.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_onboarding.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/activity_onboarding.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_graduation_year.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_graduation_year.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_connector_disable.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_connector_disable.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_purchase_success.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/activity_purchase_success.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_introduce_user.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_introduce_user.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_connector_friends_fwd_list.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/item_connector_friends_fwd_list.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_invite_list.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/fragment_invite_list.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_travel_relocation.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_travel_relocation.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_profile_finish.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_profile_finish.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_chat_sender.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/item_chat_sender.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_social_login.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_social_login.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_rematch.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_rematch.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_mobile_recharge.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_mobile_recharge.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_intro_pager.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/item_intro_pager.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_no_profiles.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/activity_no_profiles.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_disable_dater.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_disable_dater.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_wallet_transaction.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_wallet_transaction.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/splash_activity.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/splash_activity.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/login_activity.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/login_activity.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_school_list.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/item_school_list.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_delete_reason.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/activity_delete_reason.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_chat_options.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_chat_options.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_messages.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/item_messages.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/layout_custom_tool_tip.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/layout_custom_tool_tip.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_chat_sender_temp.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/item_chat_sender_temp.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_my_single_friends.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/item_my_single_friends.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_only_gradient.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_only_gradient.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_home_members.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/item_home_members.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_subscription_plans.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_subscription_plans.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_diamond_upgraded.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_diamond_upgraded.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_connector_contact.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/activity_connector_contact.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_contact_list.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/item_contact_list.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_messages_tribe.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/item_messages_tribe.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_select_language.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/activity_select_language.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_delete_reason.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/item_delete_reason.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_message_matches.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/item_message_matches.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_onboard_pager.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/item_onboard_pager.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_unmatch_reasons.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_unmatch_reasons.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_swiping_card_new.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/item_swiping_card_new.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_contacts.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/activity_contacts.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_verification_progress.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_verification_progress.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_custom_recharge_amount.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_custom_recharge_amount.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_audio_out.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/item_audio_out.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_recharge_plan_list.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/item_recharge_plan_list.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_single_friend_profile_dark.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/activity_single_friend_profile_dark.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_canceled_subscription.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_canceled_subscription.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_copy_gesture.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_copy_gesture.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_tribe_member_connection.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_tribe_member_connection.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_swipe_not_interested.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_swipe_not_interested.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_bottom_list_friends.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_bottom_list_friends.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/view_wheel_date_picker.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/view_wheel_date_picker.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/layout_text_tool_tip.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/layout_text_tool_tip.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_disable_connector.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_disable_connector.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_delete_account2.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_delete_account2.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_friends_fwd_list.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/item_friends_fwd_list.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_tribe_member_connected.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_tribe_member_connected.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/progressbarview.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/progressbarview.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_new_connection_psst.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_new_connection_psst.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_alternate_login_added.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_alternate_login_added.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_advance_preference.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/activity_advance_preference.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_contact_from_wallets.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/item_contact_from_wallets.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_preference_height_picker.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_preference_height_picker.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_select_religion.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/activity_select_religion.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_activity_connections.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/item_activity_connections.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_account_recovery.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/activity_account_recovery.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_pager_subscriptions.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/item_pager_subscriptions.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_your_tribe.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/item_your_tribe.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_contact.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/activity_contact.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_agreement.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/activity_agreement.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_connection_limit.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_connection_limit.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_fwd_by.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_fwd_by.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_select_children_plan.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/activity_select_children_plan.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/layout_custom_tool_tip_mint.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/layout_custom_tool_tip_mint.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_tutorial.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/activity_tutorial.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_verified_profile.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_verified_profile.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_account_recovery.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_account_recovery.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_tutorial_dater.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/fragment_tutorial_dater.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_delete_account_reasons.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_delete_account_reasons.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_seleted_languages.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/item_seleted_languages.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_unlink_fb.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_unlink_fb.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_match_chat.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/activity_match_chat.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_match_maker_list.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/item_match_maker_list.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_height_picker.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_height_picker.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_email.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/activity_email.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_my_match_maker_list.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/fragment_my_match_maker_list.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_rematch_pager.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/item_rematch_pager.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_user_expired.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_user_expired.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_instagram_images.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/item_instagram_images.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_time_out.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_time_out.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_selected_contact_list.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/activity_selected_contact_list.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_select_cast.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/activity_select_cast.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/layout_multiple_photo.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/layout_multiple_photo.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_select_relationship.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/activity_select_relationship.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_user_subscription.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/activity_user_subscription.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_school.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/activity_school.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_occupation.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/activity_occupation.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_wallet_history.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/item_wallet_history.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_message_tribe.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/fragment_message_tribe.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_change_travel_location.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_change_travel_location.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_buy_coins.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/activity_buy_coins.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_connector.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/fragment_connector.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_tribe_chat.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_tribe_chat.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_extend_time.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_extend_time.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_dater.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/fragment_dater.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_unlink_google.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_unlink_google.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_wallet.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/fragment_wallet.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_check_email.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/activity_check_email.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_loading.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/activity_loading.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_account_suspend.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/activity_account_suspend.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_unmatched.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_unmatched.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_swipe_profile.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/activity_swipe_profile.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_country_code.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_country_code.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_instagram_web.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/activity_instagram_web.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_welcome.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/activity_welcome.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_rematch_plans.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/item_rematch_plans.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_select_preference.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/item_select_preference.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_my_single_friends_list.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/fragment_my_single_friends_list.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_institute_list.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/item_institute_list.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_tutorial_connector.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/fragment_tutorial_connector.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_invalid_content.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_invalid_content.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_single_player_limit.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_single_player_limit.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_swipe_interested.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_swipe_interested.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_dob_picker.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_dob_picker.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_cancel_subscription.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_cancel_subscription.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/custom_friends_badge.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/custom_friends_badge.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_user_info_activity.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/activity_user_info_activity.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_change_preferences.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/activity_change_preferences.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_blocked.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_blocked.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_update_app.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/activity_update_app.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_fb_permission.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_fb_permission.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_delete_account.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_delete_account.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_camera_gallery.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_camera_gallery.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_picture_problem.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_picture_problem.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_matchmaker_activity.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/fragment_matchmaker_activity.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_select_smoke.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/activity_select_smoke.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_block_reason.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/activity_block_reason.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_chat_receiver.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/item_chat_receiver.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_swipe_chat.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/activity_swipe_chat.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_circle_connector.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/item_circle_connector.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_become_dater.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_become_dater.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_user_list_for_gift_coins.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/activity_user_list_for_gift_coins.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_connector_contact_list.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/item_connector_contact_list.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_audio_in.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/item_audio_in.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/delete_account.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/delete_account.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_user_verified.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_user_verified.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_account_delete_selection.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/activity_account_delete_selection.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_linked_in_web.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/activity_linked_in_web.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_selected_photo.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/item_selected_photo.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_delete_matchmaker.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_delete_matchmaker.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_no_connector.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_no_connector.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_activity.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/fragment_activity.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_gift_coins.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/activity_gift_coins.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_invite_redemption.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_invite_redemption.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/layout_custom_tool_tip_height_wrap.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/layout_custom_tool_tip_height_wrap.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_delete_from_tribe.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_delete_from_tribe.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_select_multiple_cast.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/activity_select_multiple_cast.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_web_view.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/activity_web_view.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_mobile_recharge_plan_list.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_mobile_recharge_plan_list.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_final_gesture_old.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_final_gesture_old.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_camera_verification.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/activity_camera_verification.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/phone_number_activity.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/phone_number_activity.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_profile_image.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_profile_image.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_welcome_pager.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/item_welcome_pager.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_profile.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/activity_profile.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_block_reasons.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_block_reasons.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/layout_custom_toast.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/layout_custom_toast.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/otp_activity.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/otp_activity.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_delete_resend_msg.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_delete_resend_msg.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_help_us_location.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_help_us_location.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_swiping_card.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/item_swiping_card.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_recharge_summary.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_recharge_summary.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_contacts_list.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/item_contacts_list.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_unlink_linekdin.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_unlink_linekdin.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_unlink_email.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_unlink_email.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_country_code.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/item_country_code.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_chat.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/activity_chat.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_account.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/activity_account.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_vaccine_status.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/activity_vaccine_status.xml"
+    },
+    {
+        "merged": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_no_message.xml",
+        "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/layout/dialog_no_message.xml"
+    }
+]

@@ -1,0 +1,904 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.swipefwd"
+    android:versionCode="10"
+    android:versionName="1.0.1" >
+
+    <uses-sdk
+        android:minSdkVersion="23"
+        android:targetSdkVersion="32" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" /> <!-- Android 10 and above, you don’t need this permission anymore. -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+
+    <permission android:name="android.permission.FLASHLIGHT" />
+
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <queries>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE" />
+        </intent>
+        <!-- Query Open Document -->
+        <intent>
+            <action android:name="android.intent.action.OPEN_DOCUMENT_TREE" />
+        </intent> <!-- Needs to be explicitly declared on Android R+ -->
+        <package android:name="com.google.android.apps.maps" />
+    </queries>
+    <queries>
+        <provider android:authorities="com.facebook.katana.provider.PlatformProvider" /> <!-- allows app to access Facebook app features -->
+        <provider android:authorities="com.facebook.orca.provider.PlatformProvider" /> <!-- allows sharing to Messenger app -->
+    </queries>
+    <queries>
+        <package android:name="com.facebook.katana" />
+    </queries>
+
+    <!-- For remote config -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:name="com.swipefwd.utils.AppController"
+        android:allowBackup="false"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:extractNativeLibs="false"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true" >
+        <activity
+            android:name="com.swipefwd.ui.auth.otpverify.OtpActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/noAnimTheme" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name="com.swipefwd.ui.activity.ActivityCameraVerification"
+            android:exported="false" />
+        <activity
+            android:name="com.swipefwd.ui.auth.phone.PhoneNumberActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"
+            android:theme="@style/noAnimTheme"
+            android:windowSoftInputMode="adjustResize" >
+            <intent-filter android:label="@string/app_name" >
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.swipefwd.ui.profile.CheckEmailActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.swipefwd.ui.profile.AccountRecoveryActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.swipefwd.ui.tutorial.onboard.OnBoardingActivity"
+            android:exported="true"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.swipefwd.ui.video.VideoTutorial"
+            android:exported="true"
+            android:screenOrientation="nosensor" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name="com.swipefwd.ui.tutorial.TutorialActivity"
+            android:exported="true"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.swipefwd.ui.tutorial.welcome.WelcomeActivity"
+            android:exported="true"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.swipefwd.ui.auth.sociallogin.google.GoogleLogInActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Activity.Transparent" />
+        <activity
+            android:name="com.swipefwd.ui.auth.sociallogin.facebook.FacebookLoginActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Activity.Transparent" />
+        <activity
+            android:name="com.swipefwd.ui.auth.sociallogin.linkedin.LinkedInLoginActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Activity.Transparent" />
+        <activity
+            android:name="com.swipefwd.ui.home.settings.PurchaseSuccessActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.swipefwd.ui.home.settings.tutorials.TutorialActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.swipefwd.ui.swiping.dater_both.InstagramFullScreenActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.swipefwd.ui.swiping.dater_both.SwipeChatActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.swipefwd.ui.home.AgreementActivity"
+            android:screenOrientation="nosensor" /> <!-- <activity -->
+        <!-- android:name=".ui.auth.phone.PhoneNumberActivity" -->
+        <!-- android:screenOrientation="nosensor" -->
+        <!-- android:theme="@style/noAnimTheme" /> -->
+        <activity
+            android:name="com.swipefwd.ui.auth.sociallogin.linkedin.LinkedInWebActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.swipefwd.ui.swiping.dater_both.ChangePreferencesActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.swipefwd.ui.swiping.dater_both.NoProfilesActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.swipefwd.ui.home.LoadingActivity"
+            android:screenOrientation="nosensor" /> <!-- android:theme="@style/AppTheme.FullScreen" -->
+        <activity
+            android:name="com.swipefwd.ui.swiping.dater_both.SwipeProfileActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.swipefwd.ui.swiping.dater_both.SingleFriendProfileDarkActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.swipefwd.ui.home.message.BlockReasonActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.swipefwd.ui.home.message.ChatActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.swipefwd.ui.home.message.MatchChatActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.swipefwd.ui.home.TabManagerActivity"
+            android:theme="@style/noAnimTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.swipefwd.ui.profile.AdvancePreferenceActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.swipefwd.ui.home.settings.UpdateAppActivity"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AppTheme.FullScreen" />
+        <activity
+            android:name="com.swipefwd.ui.home.settings.AccountSuspendActivity"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AppTheme.FullScreen" />
+        <activity
+            android:name="com.swipefwd.ui.home.settings.ContactActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.swipefwd.ui.home.settings.ProfileActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.swipefwd.ui.home.settings.deleteaccount.DeleteReasonActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.swipefwd.ui.home.settings.deleteaccount.AccountDeletedActivity"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AppTheme.FullScreen" />
+        <activity
+            android:name="com.swipefwd.ui.home.settings.AccountActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.swipefwd.ui.profile.LocationActivity"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AppTheme.MapScreen" />
+        <activity
+            android:name="com.swipefwd.ui.auth.login.LoginActivity"
+            android:exported="true"
+            android:screenOrientation="nosensor" >
+
+            <!-- Accepts URIs that begin with "http://www.example.com/gizmos” -->
+            <!-- note that the leading "/" is required for pathPrefix -->
+            <!-- Accepts URIs that begin with "example://gizmos” -->
+            <!-- <data android:scheme="example" -->
+            <!-- android:host="gizmos" /> -->
+
+
+            <!--
+            <intent-filter
+                android:label="@string/app_name"
+                tools:ignore="AppLinkUrlError">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+            -->
+            <!-- commented by nirali -->
+        </activity>
+        <activity
+            android:name="com.swipefwd.ui.splash.SplashActivity"
+            android:exported="true"
+            android:noHistory="true"
+            android:screenOrientation="nosensor" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter android:label="@string/app_name" >
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="swipefwdapp.page.link"
+                    android:pathPrefix="/"
+                    android:scheme="https" />
+            </intent-filter>
+            <intent-filter
+                android:autoVerify="true"
+                android:label="SwipeFWD" >
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="swipefwd.com"
+                    android:pathPattern=".*"
+                    android:scheme="http" />
+                <data
+                    android:host="swipefwd.com"
+                    android:pathPattern=".*"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.swipefwd.ui.auth.register.UserInfoActivity"
+            android:screenOrientation="nosensor"
+            android:theme="@style/noAnimTheme" />
+        <activity
+            android:name="com.swipefwd.ui.updateuserprofile.UserProfileActivity"
+            android:exported="true"
+            android:screenOrientation="nosensor" >
+        </activity>
+        <activity
+            android:name="com.swipefwd.ui.profile.PreferencesActivity"
+            android:exported="true"
+            android:screenOrientation="nosensor" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name="com.swipefwd.ui.home.tribe.ContactsActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.swipefwd.ui.home.tribe.SelectedContactListActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.swipefwd.ui.home.wallet.BuyCoinsActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.swipefwd.ui.home.wallet.GiftCoinsActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.swipefwd.ui.home.wallet.RedeemCoinsActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.swipefwd.ui.home.wallet.UserListForGiftCoinsActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.swipefwd.ui.profile.SelectOccupationActivity"
+            android:screenOrientation="nosensor"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.swipefwd.ui.profile.SelectSchoolActivity"
+            android:screenOrientation="nosensor"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.swipefwd.ui.profile.SelectLanguageActivity"
+            android:screenOrientation="nosensor"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.swipefwd.ui.profile.SelectRelationshipActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.swipefwd.ui.profile.SelectReligionActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.swipefwd.ui.profile.SelectChildrenPlanActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.swipefwd.ui.profile.SelectCastActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.swipefwd.ui.profile.SelectAstroSignActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.swipefwd.ui.profile.SelectSmokeActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.swipefwd.ui.profile.EmailActivity"
+            android:screenOrientation="nosensor"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.swipefwd.ui.profile.InstagramWebActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.swipefwd.ui.profile.SelectMultipleCastActivity"
+            android:screenOrientation="nosensor"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.swipefwd.ui.profile.SelectVaccineStatusActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.swipefwd.ui.home.tribe.RequestsListActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.swipefwd.ui.home.settings.UserSubscriptionActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.swipefwd.ui.home.tribe.ConnectorContactActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.swipefwd.ui.profile.TravelActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.swipefwd.ui.main.WebViewActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.swipefwd.ui.home.settings.deleteaccount.AccountDeleteSelectionActivity"
+            android:screenOrientation="nosensor" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.swipefwd"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <service
+            android:name="com.swipefwd.xmpp.XmppService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name="com.swipefwd.fcm.MyFirebaseMessagingService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.swipefwd.utils.MySMSBroadcastReceiver"
+            android:exported="true"
+            android:permission="com.google.android.gms.auth.api.phone.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.facebook.sdk.ClientToken"
+            android:value="@string/facebook_client_token" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"
+            android:theme="@style/com_facebook_activity_theme" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="cct.com.swipefwd"
+                    android:scheme="fbconnect" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <uses-library
+            android:name="androidx.window.extensions"
+            android:required="false" />
+        <uses-library
+            android:name="androidx.window.sidecar"
+            android:required="false" />
+        <!--
+             Required for ML Kit Pose Detection GPU acceleration. Applications that target Android
+             S+ require explicit declaration of any referenced vendor-provided libraries.
+        -->
+        <uses-native-library
+            android:name="libOpenCL.so"
+            android:required="false" />
+        <uses-native-library
+            android:name="libOpenCL-car.so"
+            android:required="false" />
+        <uses-native-library
+            android:name="libOpenCL-pixel.so"
+            android:required="false" />
+
+        <service
+            android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"
+            android:directBootAware="true"
+            android:exported="false" >
+            <meta-data
+                android:name="com.google.firebase.components:com.google.mlkit.vision.pose.internal.PoseRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.mlkit.vision.face.internal.FaceRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+        </service>
+        <service
+            android:name="com.google.mlkit.acceleration.internal.MlKitRemoteWorkerService"
+            android:exported="false"
+            android:process=":mlkit_acceleration_mini_benchmark" />
+        <service
+            android:name="androidx.work.multiprocess.RemoteWorkManagerService"
+            android:exported="false" />
+
+        <provider
+            android:name="com.squareup.picasso.PicassoProvider"
+            android:authorities="com.swipefwd.com.squareup.picasso"
+            android:exported="false" />
+
+        <activity
+            android:name="com.github.dhaval2404.imagepicker.ImagePickerActivity"
+            android:screenOrientation="unspecified"
+            android:theme="@style/Theme.Transparent.ImagePicker" />
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <provider
+            android:name="com.github.dhaval2404.imagepicker.ImagePickerFileProvider"
+            android:authorities="com.swipefwd.imagepicker.provider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/image_picker_provider_paths" />
+        </provider>
+
+        <activity android:name="com.facebook.CustomTabMainActivity" />
+        <!--
+         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
+         with the application context. This config is merged in with the host app's manifest,
+         but there can only be one provider with the same authority activated at any given
+         point; so if the end user has two or more different apps that use Facebook SDK, only the
+         first one will be able to use the provider. To work around this problem, we use the
+         following placeholder in the authority to identify each host application as if it was
+         a completely different provider.
+        -->
+        <provider
+            android:name="com.facebook.internal.FacebookInitProvider"
+            android:authorities="com.swipefwd.FacebookInitProvider"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.karumi.dexter.DexterActivity"
+            android:theme="@style/Dexter.Internal.Theme.Transparent" />
+        <activity
+            android:name="com.google.android.libraries.places.widget.AutocompleteActivity"
+            android:exported="false"
+            android:label="@string/places_autocomplete_label"
+            android:theme="@style/PlacesAutocompleteOverlay"
+            android:windowSoftInputMode="adjustResize" >
+        </activity> <!-- Needs to be explicitly declared on P+ -->
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!--
+            Service handling Google Sign-In user revocation. For apps that do not integrate with
+            Google Sign-In, this service will never be started.
+        -->
+        <service
+            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+            android:exported="true"
+            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+            android:visibleToInstantApps="true" />
+        <service
+            android:name="com.google.firebase.components.ComponentDiscoveryService"
+            android:directBootAware="true"
+            android:exported="false" >
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.auth.ktx.FirebaseAuthKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.dynamiclinks.internal.FirebaseDynamicLinkRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.messaging.ktx.FirebaseMessagingKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.remoteconfig.ktx.FirebaseRemoteConfigKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.crashlytics.ktx.FirebaseCrashlyticsKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+        </service>
+
+        <activity
+            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="firebase.auth"
+                    android:path="/"
+                    android:scheme="genericidp" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="firebase.auth"
+                    android:path="/"
+                    android:scheme="recaptcha" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.google.firebase.auth.api.gms.service.START" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
+            android:authorities="com.swipefwd.mlkitinitprovider"
+            android:exported="false"
+            android:initOrder="99" />
+
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </receiver>
+        <!--
+             FirebaseMessagingService performs security checks at runtime,
+             but set to not exported to explicitly avoid allowing another app to call it.
+        -->
+        <service
+            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+            android:directBootAware="true"
+            android:exported="false" >
+            <intent-filter android:priority="-500" >
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:authorities="com.swipefwd.firebaseinitprovider"
+            android:directBootAware="true"
+            android:exported="false"
+            android:initOrder="100" />
+
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+            android:enabled="true"
+            android:exported="false" >
+        </receiver>
+
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:authorities="com.swipefwd.androidx-startup"
+            android:exported="false" >
+            <meta-data
+                android:name="androidx.work.WorkManagerInitializer"
+                android:value="androidx.startup" />
+            <meta-data
+                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+                android:value="androidx.startup" />
+            <meta-data
+                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+                android:value="androidx.startup" />
+        </provider>
+
+        <service
+            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+            android:directBootAware="false"
+            android:enabled="@bool/enable_system_alarm_service_default"
+            android:exported="false" />
+        <service
+            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+            android:directBootAware="false"
+            android:enabled="@bool/enable_system_job_service_default"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service
+            android:name="androidx.work.impl.foreground.SystemForegroundService"
+            android:directBootAware="false"
+            android:enabled="@bool/enable_system_foreground_service_default"
+            android:exported="false" />
+
+        <receiver
+            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+            android:directBootAware="false"
+            android:enabled="true"
+            android:exported="false" />
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+            android:directBootAware="false"
+            android:enabled="false"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+            android:directBootAware="false"
+            android:enabled="false"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY" />
+                <action android:name="android.intent.action.BATTERY_LOW" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+            android:directBootAware="false"
+            android:enabled="false"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+            android:directBootAware="false"
+            android:enabled="false"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+            android:directBootAware="false"
+            android:enabled="false"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.TIME_SET" />
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+            android:directBootAware="false"
+            android:enabled="@bool/enable_system_alarm_service_default"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+            android:directBootAware="false"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.DUMP" >
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="androidx.room.MultiInstanceInvalidationService"
+            android:directBootAware="true"
+            android:exported="false" />
+        <service
+            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+            android:exported="false" >
+            <meta-data
+                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+                android:value="cct" />
+        </service>
+        <service
+            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" >
+        </service>
+
+        <receiver
+            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.play.billingclient.version"
+            android:value="5.0.0" />
+
+        <activity
+            android:name="com.android.billingclient.api.ProxyBillingActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+    </application>
+
+</manifest>

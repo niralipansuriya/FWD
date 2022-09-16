@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    app:srcCompat="@drawable/splash"
+    android:layout_height="match_parent">
+    <VideoView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:fitsSystemWindows="true"
+        android:visibility="gone"
+        android:id="@+id/videoView"/>
+
+    <Button
+        android:id="@+id/btnNextBlack"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="25dp"
+        android:text="Next"
+        android:visibility="gone"
+        android:textColor="@color/black" />
+
+    <View
+        android:id="@+id/tutorialNext"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="25dp"
+        android:visibility="gone" />
+</RelativeLayout>

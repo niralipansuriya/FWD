@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgDialogGradient"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/rectangle"/>
+
+    <View
+        android:layout_width="54dp"
+        android:layout_height="5dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/corner_white_bg"
+        app:layout_constraintBottom_toTopOf="@id/cardBottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardBottom"
+        style="@style/TopCornerCardViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardPreventCornerOverlap="false"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/top_mint_corner_gradient_bg"
+                android:gravity="center"
+                android:lineSpacingExtra="8dp"
+                android:padding="30dp"
+                android:text="@string/tribe_member_connection"
+                android:textAppearance="@style/AppTheme.MediumFont"
+                android:textColor="@color/colorPagerDesc"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@id/layoutConfirm" />
+
+            <LinearLayout
+                android:id="@+id/layoutConfirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="40dp"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:lineSpacingExtra="10dp"
+                    tools:text="@string/tribe_connected"
+                    android:textAppearance="@style/AppTheme.RegularFont"
+                    android:textColor="@color/colorPagerDesc"
+                    android:textSize="13sp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnGotIt"
+                    style="@style/materialIconMintButtonTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:enabled="true"
+                    android:text="@string/got_it_small"
+                    android:textColor="@color/colorPagerDesc"
+                    app:layout_constraintEnd_toEndOf="@id/txtVerifyMessage"
+                    app:layout_constraintStart_toStartOf="@id/txtVerifyMessage"
+                    app:layout_constraintTop_toBottomOf="@id/txtVerifyMessage" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnDontShow"
+                    style="@style/Widget.MaterialComponents.Button.TextButton.Dialog.Flush"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:text="@string/dont_show_notice_again"
+                    android:textAppearance="@style/AppTheme.RegularFont"
+                    android:textColor="@color/colorGrey"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/btnGotIt"
+                    app:rippleColor="@color/colorGrey_20" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

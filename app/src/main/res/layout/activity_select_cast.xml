@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtIndex"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:textAppearance="@style/AppTheme.RegularFont"
+        android:textColor="@color/colorGrey"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="@id/ivClose"
+        app:layout_constraintEnd_toStartOf="@id/ivClose"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ivClose"
+        tools:text="5/9" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivClose"
+        android:layout_width="wrap_content"
+        android:layout_height="?actionBarSize"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="10dp"
+        android:padding="10dp"
+        android:src="@drawable/close_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:gravity="center"
+        android:lineSpacingExtra="3dp"
+        android:text="@string/caste_hint_1"
+        android:textAppearance="@style/AppTheme.MediumFont"
+        android:textColor="@color/colorPagerTitle"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivClose" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edtCast"
+        style="@style/EditTextTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16sp"
+        android:ellipsize="end"
+        android:hint="@string/caste_hint_1"
+        android:imeOptions="actionDone"
+        android:inputType="text|textCapSentences|textNoSuggestions"
+        android:maxLength="25"
+        android:singleLine="true"
+        app:layout_constraintTop_toBottomOf="@id/txtTitle" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16sp"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="2dp"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintBottom_toTopOf="@id/txtSkip"
+        app:layout_constraintEnd_toEndOf="@id/edtCast"
+        app:layout_constraintStart_toStartOf="@id/edtCast"
+        app:layout_constraintTop_toBottomOf="@id/edtCast"
+        app:layout_constraintVertical_bias="0">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcvCast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fadeScrollbars="true"
+            android:orientation="vertical"
+            android:scrollbarSize="5dp"
+            android:scrollbars="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:itemCount="1"
+            tools:listitem="@layout/item_institute_list" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/txtSkip"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="10dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/common_skip"
+        android:textAllCaps="false"
+        android:textAppearance="@style/AppTheme.MediumFont"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:backgroundTint="@color/colorGrey"
+        app:cornerRadius="25dp"
+        app:layout_constraintBottom_toBottomOf="@id/txtSubmit"
+        app:layout_constraintEnd_toStartOf="@id/txtSubmit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/txtSubmit" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/txtSubmit"
+        style="@style/materialIconButtonTheme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="40dp"
+        android:text="@string/common_submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/txtSkip" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

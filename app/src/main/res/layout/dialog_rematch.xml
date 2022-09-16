@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:animateLayoutChanges="true">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgDialogGradient"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/rectangle" />
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="54dp"
+        android:layout_height="5dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/corner_white_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/viewUserImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="8dp"
+        app:cardCornerRadius="25dp"
+        app:layout_constraintBottom_toTopOf="@id/txtRemove"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/roundedUserImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/user_girl_full_image" />
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/layoutUserInfo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="5dp"
+        android:background="@color/black_transparent_bg"
+        android:elevation="2dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="@id/viewUserImage"
+        app:layout_constraintEnd_toEndOf="@id/viewUserImage"
+        app:layout_constraintStart_toStartOf="@id/viewUserImage">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Shanaya, 24"
+            android:textAppearance="@style/AppTheme.MediumFont"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvUserProfession"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            tools:text="Physical Therapist"
+            android:textAppearance="@style/AppTheme.RegularFont"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvUserCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/white_locationmark"
+            android:drawablePadding="10dp"
+            tools:text="Mumbai, Maharashtra"
+            android:textAppearance="@style/AppTheme.RegularFont"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Expired match. Reconnect for another 24 hours"
+            android:textAppearance="@style/AppTheme.MediumFont"
+            android:textColor="@color/orange"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/txtRemove"
+        style="@style/materialIconOrangeButtonTheme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:enabled="true"
+        android:text="@string/remove"
+        app:layout_constraintTop_toTopOf="@id/txtRematch"
+        app:layout_constraintBottom_toBottomOf="@id/txtRematch"
+        app:layout_constraintEnd_toStartOf="@id/txtRematch"
+        app:layout_constraintStart_toStartOf="@id/viewUserImage" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/txtRematch"
+        style="@style/materialIconButtonTheme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/rematch"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/viewUserImage"
+        app:layout_constraintStart_toEndOf="@id/txtRemove" />
+</androidx.constraintlayout.widget.ConstraintLayout>

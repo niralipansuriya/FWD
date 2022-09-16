@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="26dp"
+    android:layout_marginEnd="26dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layoutPackType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="14dp"
+        tools:background="@drawable/corner_button_gradient_bg">
+
+        <TextView
+            android:id="@+id/txtPackType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAppearance="@style/AppTheme.BoldFont"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            tools:text="@string/freemium" />
+
+        <TextView
+            android:id="@+id/txDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/unlock_feature"
+            android:textAppearance="@style/AppTheme.RegularFont"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/btnUpgrade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/corner_white_bg"
+            android:paddingStart="25dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="25dp"
+            android:paddingBottom="10dp"
+            android:textAlignment="center"
+            android:textAppearance="@style/AppTheme.MediumFont"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:visibility="visible"
+            tools:text="@string/upgrade_account" />
+    </LinearLayout>
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="20dp"
+        android:paddingBottom="8dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="start"
+            android:text="@string/what_you_get"
+            android:textAppearance="@style/AppTheme.BoldFont"
+            android:textColor="@color/colorPagerDesc"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/txFreemium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="end"
+            android:text="@string/freemium"
+            android:textAppearance="@style/AppTheme.BoldFont"
+            android:textColor="@color/colorPagerDesc"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/txtPremier"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="end"
+            android:text="@string/premier"
+            android:textAppearance="@style/AppTheme.BoldFont"
+            android:textColor="@color/colorPagerDesc"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/txtElite"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="end"
+            android:text="@string/elite"
+            android:textAppearance="@style/AppTheme.BoldFont"
+            android:textColor="@color/colorPagerDesc"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvFeatures"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_subscription_plans" />-->
+
+</LinearLayout>

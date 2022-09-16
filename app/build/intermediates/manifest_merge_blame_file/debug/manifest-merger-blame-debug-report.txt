@@ -1,0 +1,1682 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.swipefwd"
+4    android:versionCode="10"
+5    android:versionName="1.0.1" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="23"
+8-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="32" />
+9-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:6:5-67
+11-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:6:22-64
+12    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+12-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:7:5-80
+12-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:7:22-77
+13    <uses-permission
+13-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:8:5-10:38
+14        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+14-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:9:9-65
+15        android:maxSdkVersion="28" /> <!-- Android 10 and above, you don’t need this permission anymore. -->
+15-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:10:9-35
+16    <uses-permission android:name="android.permission.CAMERA" />
+16-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:11:5-65
+16-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:11:22-62
+17    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+17-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:12:5-71
+17-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:12:22-68
+18    <uses-permission android:name="android.permission.READ_CONTACTS" />
+18-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:13:5-72
+18-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:13:22-69
+19    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+19-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:14:5-79
+19-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:14:22-76
+20    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+20-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:15:5-81
+20-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:15:22-78
+21    <uses-permission android:name="android.permission.SEND_SMS" />
+21-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:16:5-67
+21-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:16:22-64
+22    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+22-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:17:5-70
+22-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:17:22-67
+23    <uses-permission android:name="android.permission.READ_SMS" />
+23-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:18:5-67
+23-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:18:22-64
+24    <uses-permission android:name="com.android.vending.BILLING" />
+24-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:19:5-67
+24-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:19:22-64
+25
+26    <permission android:name="android.permission.FLASHLIGHT" />
+26-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:20:5-63
+26-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:20:17-61
+27
+28    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+28-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:21:5-82
+28-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:21:22-79
+29
+30    <uses-feature
+30-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:23:5-25:35
+31        android:name="android.hardware.camera"
+31-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:24:9-47
+32        android:required="true" />
+32-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:25:9-32
+33
+34    <queries>
+34-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:27:5-31:15
+35        <intent>
+35-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:28:9-30:18
+36            <action android:name="android.media.action.IMAGE_CAPTURE" />
+36-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:29:13-73
+36-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:29:21-70
+37        </intent>
+38        <!-- Query Open Document -->
+39        <intent>
+39-->[com.github.dhaval2404:imagepicker:2.1] /home/android/.gradle/caches/transforms-3/53bba51db6441d602f75c02514c51fac/transformed/jetified-imagepicker-2.1/AndroidManifest.xml:16:9-18:18
+40            <action android:name="android.intent.action.OPEN_DOCUMENT_TREE" />
+40-->[com.github.dhaval2404:imagepicker:2.1] /home/android/.gradle/caches/transforms-3/53bba51db6441d602f75c02514c51fac/transformed/jetified-imagepicker-2.1/AndroidManifest.xml:17:13-79
+40-->[com.github.dhaval2404:imagepicker:2.1] /home/android/.gradle/caches/transforms-3/53bba51db6441d602f75c02514c51fac/transformed/jetified-imagepicker-2.1/AndroidManifest.xml:17:21-76
+41        </intent> <!-- Needs to be explicitly declared on Android R+ -->
+42        <package android:name="com.google.android.apps.maps" />
+42-->[com.google.android.gms:play-services-maps:18.1.0] /home/android/.gradle/caches/transforms-3/9be93463690cb28f72d04ec42147f384/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:33:9-64
+42-->[com.google.android.gms:play-services-maps:18.1.0] /home/android/.gradle/caches/transforms-3/9be93463690cb28f72d04ec42147f384/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:33:18-61
+43    </queries>
+44    <queries>
+44-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:27:5-31:15
+45        <provider android:authorities="com.facebook.katana.provider.PlatformProvider" /> <!-- allows app to access Facebook app features -->
+45-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:33:9-89
+45-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:33:19-86
+46        <provider android:authorities="com.facebook.orca.provider.PlatformProvider" /> <!-- allows sharing to Messenger app -->
+46-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:33:9-89
+46-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:33:19-86
+47    </queries>
+48    <queries>
+48-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:27:5-31:15
+49        <package android:name="com.facebook.katana" />
+49-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:37:9-55
+49-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:37:18-52
+50    </queries>
+51
+52    <!-- For remote config -->
+53    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+53-->[com.google.mlkit:pose-detection-common:18.0.0-beta2] /home/android/.gradle/caches/transforms-3/0cd769c09ca439e4c41f5049f7c6128c/transformed/jetified-pose-detection-common-18.0.0-beta2/AndroidManifest.xml:7:5-79
+53-->[com.google.mlkit:pose-detection-common:18.0.0-beta2] /home/android/.gradle/caches/transforms-3/0cd769c09ca439e4c41f5049f7c6128c/transformed/jetified-pose-detection-common-18.0.0-beta2/AndroidManifest.xml:7:22-76
+54    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+54-->[com.facebook.android:facebook-core:14.1.0] /home/android/.gradle/caches/transforms-3/92a0ff9478fc6bebe6cf28093b125077/transformed/jetified-facebook-core-14.1.0/AndroidManifest.xml:28:5-79
+54-->[com.facebook.android:facebook-core:14.1.0] /home/android/.gradle/caches/transforms-3/92a0ff9478fc6bebe6cf28093b125077/transformed/jetified-facebook-core-14.1.0/AndroidManifest.xml:28:22-76
+55    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+55-->[com.google.android.libraries.places:places:2.6.0] /home/android/.gradle/caches/transforms-3/ac55590c9aaa306e21b4cd9c14381677/transformed/jetified-places-2.6.0/AndroidManifest.xml:10:5-76
+55-->[com.google.android.libraries.places:places:2.6.0] /home/android/.gradle/caches/transforms-3/ac55590c9aaa306e21b4cd9c14381677/transformed/jetified-places-2.6.0/AndroidManifest.xml:10:22-73
+56
+57    <uses-feature
+57-->[com.google.android.gms:play-services-maps:18.1.0] /home/android/.gradle/caches/transforms-3/9be93463690cb28f72d04ec42147f384/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:26:5-28:35
+58        android:glEsVersion="0x00020000"
+58-->[com.google.android.gms:play-services-maps:18.1.0] /home/android/.gradle/caches/transforms-3/9be93463690cb28f72d04ec42147f384/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:27:9-41
+59        android:required="true" />
+59-->[com.google.android.gms:play-services-maps:18.1.0] /home/android/.gradle/caches/transforms-3/9be93463690cb28f72d04ec42147f384/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:28:9-32
+60
+61    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+61-->[com.google.firebase:firebase-messaging:23.0.0] /home/android/.gradle/caches/transforms-3/f143b2b43abf2b6f91d842fd6049160d/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:23:5-68
+61-->[com.google.firebase:firebase-messaging:23.0.0] /home/android/.gradle/caches/transforms-3/f143b2b43abf2b6f91d842fd6049160d/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:23:22-65
+62    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+62-->[com.google.firebase:firebase-messaging:23.0.0] /home/android/.gradle/caches/transforms-3/f143b2b43abf2b6f91d842fd6049160d/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:25:5-82
+62-->[com.google.firebase:firebase-messaging:23.0.0] /home/android/.gradle/caches/transforms-3/f143b2b43abf2b6f91d842fd6049160d/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:25:22-79
+63    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+63-->[com.google.android.gms:play-services-measurement:20.0.0] /home/android/.gradle/caches/transforms-3/4045c16aaa2660932113bec684373186/transformed/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:26:5-110
+63-->[com.google.android.gms:play-services-measurement:20.0.0] /home/android/.gradle/caches/transforms-3/4045c16aaa2660932113bec684373186/transformed/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:26:22-107
+64    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+64-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:27:5-81
+64-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:27:22-78
+65    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+65-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:28:5-77
+65-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:28:22-74
+66
+67    <application
+67-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:40:5-430:19
+68        android:name="com.swipefwd.utils.AppController"
+68-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:41:9-44
+69        android:allowBackup="false"
+69-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:42:9-36
+70        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+70-->[androidx.core:core:1.7.0] /home/android/.gradle/caches/transforms-3/6a6b39547d55e31b27e3afa64ca2b2a4/transformed/core-1.7.0/AndroidManifest.xml:24:18-86
+71        android:debuggable="true"
+72        android:extractNativeLibs="false"
+73        android:hardwareAccelerated="true"
+73-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:43:9-43
+74        android:icon="@mipmap/ic_launcher"
+74-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:44:9-43
+75        android:label="@string/app_name"
+75-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:45:9-41
+76        android:largeHeap="true"
+76-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:46:9-33
+77        android:requestLegacyExternalStorage="true"
+77-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:47:9-52
+78        android:roundIcon="@mipmap/ic_launcher"
+78-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:48:9-48
+79        android:supportsRtl="true"
+79-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:49:9-35
+80        android:testOnly="true"
+81        android:theme="@style/AppTheme"
+81-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:50:9-40
+82        android:usesCleartextTraffic="true" >
+82-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:51:9-44
+83        <activity
+83-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:53:9-63:20
+84            android:name="com.swipefwd.ui.auth.otpverify.OtpActivity"
+84-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:54:13-58
+85            android:exported="false"
+85-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:55:13-37
+86            android:screenOrientation="nosensor"
+86-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:56:13-49
+87            android:theme="@style/noAnimTheme" >
+87-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:57:13-47
+88
+89            <!--
+90            <intent-filter>
+91                <action android:name="android.intent.action.MAIN" />
+92
+93                <category android:name="android.intent.category.LAUNCHER" />
+94            </intent-filter>
+95            -->
+96        </activity>
+97        <activity
+97-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:64:9-66:40
+98            android:name="com.swipefwd.ui.activity.ActivityCameraVerification"
+98-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:65:13-67
+99            android:exported="false" />
+99-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:66:13-37
+100        <activity
+100-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:67:9-82:20
+101            android:name="com.swipefwd.ui.auth.phone.PhoneNumberActivity"
+101-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:68:13-62
+102            android:exported="true"
+102-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:72:13-36
+103            android:label="@string/app_name"
+103-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:69:13-45
+104            android:screenOrientation="nosensor"
+104-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:70:13-49
+105            android:theme="@style/noAnimTheme"
+105-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:71:13-47
+106            android:windowSoftInputMode="adjustResize" >
+106-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:73:13-55
+107            <intent-filter android:label="@string/app_name" >
+107-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:74:13-81:29
+107-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:75:17-49
+108                <action android:name="android.intent.action.VIEW" />
+108-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:77:17-69
+108-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:77:25-66
+109
+110                <category android:name="android.intent.category.DEFAULT" />
+110-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:79:17-76
+110-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:79:27-73
+111                <category android:name="android.intent.category.BROWSABLE" />
+111-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:80:17-78
+111-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:80:27-75
+112            </intent-filter>
+113        </activity>
+114        <activity
+114-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:83:9-85:40
+115            android:name="com.swipefwd.ui.profile.CheckEmailActivity"
+115-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:84:13-58
+116            android:exported="false" />
+116-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:85:13-37
+117        <activity
+117-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:86:9-89:58
+118            android:name="com.swipefwd.ui.profile.AccountRecoveryActivity"
+118-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:87:13-63
+119            android:exported="false"
+119-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:88:13-37
+120            android:windowSoftInputMode="adjustResize" />
+120-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:89:13-55
+121        <activity
+121-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:90:9-93:52
+122            android:name="com.swipefwd.ui.tutorial.onboard.OnBoardingActivity"
+122-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:91:13-67
+123            android:exported="true"
+123-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:92:13-36
+124            android:screenOrientation="nosensor" />
+124-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:93:13-49
+125        <activity
+125-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:94:9-103:20
+126            android:name="com.swipefwd.ui.video.VideoTutorial"
+126-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:95:13-51
+127            android:exported="true"
+127-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:96:13-36
+128            android:screenOrientation="nosensor" >
+128-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:97:13-49
+129
+130            <!--
+131            <intent-filter>
+132                <action android:name="android.intent.action.MAIN" />
+133
+134                <category android:name="android.intent.category.LAUNCHER" />
+135            </intent-filter>
+136            -->
+137        </activity>
+138        <activity
+138-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:104:9-107:52
+139            android:name="com.swipefwd.ui.tutorial.TutorialActivity"
+139-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:105:13-57
+140            android:exported="true"
+140-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:106:13-36
+141            android:screenOrientation="nosensor" />
+141-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:107:13-49
+142        <activity
+142-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:108:9-111:52
+143            android:name="com.swipefwd.ui.tutorial.welcome.WelcomeActivity"
+143-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:109:13-64
+144            android:exported="true"
+144-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:110:13-36
+145            android:screenOrientation="nosensor" />
+145-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:111:13-49
+146        <activity
+146-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:112:9-116:59
+147            android:name="com.swipefwd.ui.auth.sociallogin.google.GoogleLogInActivity"
+147-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:113:13-75
+148            android:exported="false"
+148-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:114:13-37
+149            android:screenOrientation="nosensor"
+149-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:115:13-49
+150            android:theme="@style/Activity.Transparent" />
+150-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:116:13-56
+151        <activity
+151-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:117:9-121:59
+152            android:name="com.swipefwd.ui.auth.sociallogin.facebook.FacebookLoginActivity"
+152-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:118:13-79
+153            android:exported="false"
+153-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:119:13-37
+154            android:screenOrientation="nosensor"
+154-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:120:13-49
+155            android:theme="@style/Activity.Transparent" />
+155-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:121:13-56
+156        <activity
+156-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:122:9-126:59
+157            android:name="com.swipefwd.ui.auth.sociallogin.linkedin.LinkedInLoginActivity"
+157-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:123:13-79
+158            android:exported="false"
+158-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:124:13-37
+159            android:screenOrientation="nosensor"
+159-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:125:13-49
+160            android:theme="@style/Activity.Transparent" />
+160-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:126:13-56
+161        <activity
+161-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:127:9-130:52
+162            android:name="com.swipefwd.ui.home.settings.PurchaseSuccessActivity"
+162-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:128:13-69
+163            android:exported="false"
+163-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:129:13-37
+164            android:screenOrientation="nosensor" />
+164-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:130:13-49
+165        <activity
+165-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:131:9-134:52
+166            android:name="com.swipefwd.ui.home.settings.tutorials.TutorialActivity"
+166-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:132:13-72
+167            android:exported="false"
+167-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:133:13-37
+168            android:screenOrientation="nosensor" />
+168-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:134:13-49
+169        <activity
+169-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:135:9-137:52
+170            android:name="com.swipefwd.ui.swiping.dater_both.InstagramFullScreenActivity"
+170-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:136:13-78
+171            android:screenOrientation="nosensor" />
+171-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:137:13-49
+172        <activity
+172-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:138:9-140:52
+173            android:name="com.swipefwd.ui.swiping.dater_both.SwipeChatActivity"
+173-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:139:13-68
+174            android:screenOrientation="nosensor" />
+174-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:140:13-49
+175        <activity
+175-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:141:9-143:52
+176            android:name="com.swipefwd.ui.home.AgreementActivity"
+176-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:142:13-54
+177            android:screenOrientation="nosensor" /> <!-- <activity -->
+177-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:143:13-49
+178        <!-- android:name=".ui.auth.phone.PhoneNumberActivity" -->
+179        <!-- android:screenOrientation="nosensor" -->
+180        <!-- android:theme="@style/noAnimTheme" /> -->
+181        <activity
+181-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:147:9-149:52
+182            android:name="com.swipefwd.ui.auth.sociallogin.linkedin.LinkedInWebActivity"
+182-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:148:13-77
+183            android:screenOrientation="nosensor" />
+183-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:149:13-49
+184        <activity
+184-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:150:9-152:52
+185            android:name="com.swipefwd.ui.swiping.dater_both.ChangePreferencesActivity"
+185-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:151:13-76
+186            android:screenOrientation="nosensor" />
+186-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:152:13-49
+187        <activity
+187-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:153:9-155:52
+188            android:name="com.swipefwd.ui.swiping.dater_both.NoProfilesActivity"
+188-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:154:13-69
+189            android:screenOrientation="nosensor" />
+189-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:155:13-49
+190        <activity
+190-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:156:9-158:52
+191            android:name="com.swipefwd.ui.home.LoadingActivity"
+191-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:157:13-52
+192            android:screenOrientation="nosensor" /> <!-- android:theme="@style/AppTheme.FullScreen" -->
+192-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:158:13-49
+193        <activity
+193-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:159:9-161:52
+194            android:name="com.swipefwd.ui.swiping.dater_both.SwipeProfileActivity"
+194-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:160:13-71
+195            android:screenOrientation="nosensor" />
+195-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:161:13-49
+196        <activity
+196-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:162:9-164:52
+197            android:name="com.swipefwd.ui.swiping.dater_both.SingleFriendProfileDarkActivity"
+197-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:163:13-82
+198            android:screenOrientation="nosensor" />
+198-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:164:13-49
+199        <activity
+199-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:165:9-167:52
+200            android:name="com.swipefwd.ui.home.message.BlockReasonActivity"
+200-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:166:13-64
+201            android:screenOrientation="nosensor" />
+201-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:167:13-49
+202        <activity
+202-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:168:9-170:52
+203            android:name="com.swipefwd.ui.home.message.ChatActivity"
+203-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:169:13-57
+204            android:screenOrientation="nosensor" />
+204-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:170:13-49
+205        <activity
+205-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:171:9-173:52
+206            android:name="com.swipefwd.ui.home.message.MatchChatActivity"
+206-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:172:13-62
+207            android:screenOrientation="nosensor" />
+207-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:173:13-49
+208        <activity
+208-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:174:9-177:55
+209            android:name="com.swipefwd.ui.home.TabManagerActivity"
+209-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:175:13-55
+210            android:theme="@style/noAnimTheme"
+210-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:176:13-47
+211            android:windowSoftInputMode="adjustPan" />
+211-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:177:13-52
+212        <activity
+212-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:178:9-180:52
+213            android:name="com.swipefwd.ui.profile.AdvancePreferenceActivity"
+213-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:179:13-65
+214            android:screenOrientation="nosensor" />
+214-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:180:13-49
+215        <activity
+215-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:181:9-184:58
+216            android:name="com.swipefwd.ui.home.settings.UpdateAppActivity"
+216-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:182:13-63
+217            android:screenOrientation="nosensor"
+217-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:183:13-49
+218            android:theme="@style/AppTheme.FullScreen" />
+218-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:184:13-55
+219        <activity
+219-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:185:9-188:58
+220            android:name="com.swipefwd.ui.home.settings.AccountSuspendActivity"
+220-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:186:13-68
+221            android:screenOrientation="nosensor"
+221-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:187:13-49
+222            android:theme="@style/AppTheme.FullScreen" />
+222-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:188:13-55
+223        <activity
+223-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:189:9-191:52
+224            android:name="com.swipefwd.ui.home.settings.ContactActivity"
+224-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:190:13-61
+225            android:screenOrientation="nosensor" />
+225-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:191:13-49
+226        <activity
+226-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:192:9-194:52
+227            android:name="com.swipefwd.ui.home.settings.ProfileActivity"
+227-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:193:13-61
+228            android:screenOrientation="nosensor" />
+228-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:194:13-49
+229        <activity
+229-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:195:9-197:52
+230            android:name="com.swipefwd.ui.home.settings.deleteaccount.DeleteReasonActivity"
+230-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:196:13-80
+231            android:screenOrientation="nosensor" />
+231-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:197:13-49
+232        <activity
+232-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:198:9-201:58
+233            android:name="com.swipefwd.ui.home.settings.deleteaccount.AccountDeletedActivity"
+233-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:199:13-82
+234            android:screenOrientation="nosensor"
+234-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:200:13-49
+235            android:theme="@style/AppTheme.FullScreen" />
+235-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:201:13-55
+236        <activity
+236-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:202:9-204:52
+237            android:name="com.swipefwd.ui.home.settings.AccountActivity"
+237-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:203:13-61
+238            android:screenOrientation="nosensor" />
+238-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:204:13-49
+239        <activity
+239-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:205:9-208:57
+240            android:name="com.swipefwd.ui.profile.LocationActivity"
+240-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:206:13-56
+241            android:screenOrientation="nosensor"
+241-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:207:13-49
+242            android:theme="@style/AppTheme.MapScreen" />
+242-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:208:13-54
+243        <activity
+243-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:209:9-228:20
+244            android:name="com.swipefwd.ui.auth.login.LoginActivity"
+244-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:210:13-56
+245            android:exported="true"
+245-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:211:13-36
+246            android:screenOrientation="nosensor" >
+246-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:212:13-49
+247
+248            <!-- Accepts URIs that begin with "http://www.example.com/gizmos” -->
+249            <!-- note that the leading "/" is required for pathPrefix -->
+250            <!-- Accepts URIs that begin with "example://gizmos” -->
+251            <!-- <data android:scheme="example" -->
+252            <!-- android:host="gizmos" /> -->
+253
+254
+255            <!--
+256            <intent-filter
+257                android:label="@string/app_name"
+258                tools:ignore="AppLinkUrlError">
+259                <action android:name="android.intent.action.VIEW" />
+260
+261                <category android:name="android.intent.category.DEFAULT" />
+262                <category android:name="android.intent.category.BROWSABLE" />
+263            </intent-filter>
+264            -->
+265            <!-- commented by nirali -->
+266        </activity>
+267        <activity
+267-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:229:9-267:20
+268            android:name="com.swipefwd.ui.splash.SplashActivity"
+268-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:230:13-53
+269            android:exported="true"
+269-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:232:13-36
+270            android:noHistory="true"
+270-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:231:13-37
+271            android:screenOrientation="nosensor" >
+271-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:233:13-49
+272            <intent-filter>
+272-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:234:13-238:29
+273                <action android:name="android.intent.action.MAIN" />
+273-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:235:17-69
+273-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:235:25-66
+274
+275                <category android:name="android.intent.category.LAUNCHER" />
+275-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:237:17-77
+275-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:237:27-74
+276            </intent-filter>
+277            <intent-filter android:label="@string/app_name" >
+277-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:239:13-249:29
+277-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:239:28-60
+278                <action android:name="android.intent.action.VIEW" />
+278-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:77:17-69
+278-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:77:25-66
+279
+280                <category android:name="android.intent.category.DEFAULT" />
+280-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:79:17-76
+280-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:79:27-73
+281                <category android:name="android.intent.category.BROWSABLE" />
+281-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:80:17-78
+281-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:80:27-75
+282
+283                <data
+283-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:245:17-248:46
+284                    android:host="swipefwdapp.page.link"
+284-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:246:21-57
+285                    android:pathPrefix="/"
+285-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:247:21-43
+286                    android:scheme="https" />
+286-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:248:21-43
+287            </intent-filter>
+288            <intent-filter
+288-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:250:13-266:29
+289                android:autoVerify="true"
+289-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:251:17-42
+290                android:label="SwipeFWD" >
+290-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:252:17-41
+291                <action android:name="android.intent.action.VIEW" />
+291-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:77:17-69
+291-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:77:25-66
+292
+293                <category android:name="android.intent.category.DEFAULT" />
+293-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:79:17-76
+293-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:79:27-73
+294                <category android:name="android.intent.category.BROWSABLE" />
+294-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:80:17-78
+294-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:80:27-75
+295
+296                <data
+296-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:245:17-248:46
+297                    android:host="swipefwd.com"
+297-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:246:21-57
+298                    android:pathPattern=".*"
+298-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:260:21-45
+299                    android:scheme="http" />
+299-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:248:21-43
+300                <data
+300-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:245:17-248:46
+301                    android:host="swipefwd.com"
+301-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:246:21-57
+302                    android:pathPattern=".*"
+302-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:260:21-45
+303                    android:scheme="https" />
+303-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:248:21-43
+304            </intent-filter>
+305        </activity>
+306        <activity
+306-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:268:9-271:50
+307            android:name="com.swipefwd.ui.auth.register.UserInfoActivity"
+307-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:269:13-62
+308            android:screenOrientation="nosensor"
+308-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:270:13-49
+309            android:theme="@style/noAnimTheme" />
+309-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:271:13-47
+310        <activity
+310-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:272:9-277:20
+311            android:name="com.swipefwd.ui.updateuserprofile.UserProfileActivity"
+311-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:273:13-69
+312            android:exported="true"
+312-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:274:13-38
+313            android:screenOrientation="nosensor" >
+313-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:275:13-49
+314        </activity>
+315        <activity
+315-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:278:9-287:20
+316            android:name="com.swipefwd.ui.profile.PreferencesActivity"
+316-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:279:13-59
+317            android:exported="true"
+317-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:281:13-36
+318            android:screenOrientation="nosensor" >
+318-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:280:13-49
+319
+320            <!--
+321            <intent-filter>
+322                <action android:name="android.intent.action.MAIN" />
+323
+324                <category android:name="android.intent.category.LAUNCHER" />
+325            </intent-filter>
+326            -->
+327        </activity>
+328        <activity
+328-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:288:9-290:52
+329            android:name="com.swipefwd.ui.home.tribe.ContactsActivity"
+329-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:289:13-59
+330            android:screenOrientation="nosensor" />
+330-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:290:13-49
+331        <activity
+331-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:291:9-293:52
+332            android:name="com.swipefwd.ui.home.tribe.SelectedContactListActivity"
+332-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:292:13-70
+333            android:screenOrientation="nosensor" />
+333-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:293:13-49
+334        <activity
+334-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:294:9-296:52
+335            android:name="com.swipefwd.ui.home.wallet.BuyCoinsActivity"
+335-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:295:13-60
+336            android:screenOrientation="nosensor" />
+336-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:296:13-49
+337        <activity
+337-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:297:9-299:52
+338            android:name="com.swipefwd.ui.home.wallet.GiftCoinsActivity"
+338-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:298:13-61
+339            android:screenOrientation="nosensor" />
+339-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:299:13-49
+340        <activity
+340-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:300:9-302:52
+341            android:name="com.swipefwd.ui.home.wallet.RedeemCoinsActivity"
+341-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:301:13-63
+342            android:screenOrientation="nosensor" />
+342-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:302:13-49
+343        <activity
+343-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:303:9-305:52
+344            android:name="com.swipefwd.ui.home.wallet.UserListForGiftCoinsActivity"
+344-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:304:13-72
+345            android:screenOrientation="nosensor" />
+345-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:305:13-49
+346        <activity
+346-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:306:9-309:55
+347            android:name="com.swipefwd.ui.profile.SelectOccupationActivity"
+347-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:307:13-64
+348            android:screenOrientation="nosensor"
+348-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:308:13-49
+349            android:windowSoftInputMode="adjustPan" />
+349-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:309:13-52
+350        <activity
+350-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:310:9-313:54
+351            android:name="com.swipefwd.ui.profile.SelectSchoolActivity"
+351-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:311:13-60
+352            android:screenOrientation="nosensor"
+352-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:312:13-49
+353            android:windowSoftInputMode="adjustPan" />
+353-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:313:13-52
+354        <activity
+354-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:314:9-317:55
+355            android:name="com.swipefwd.ui.profile.SelectLanguageActivity"
+355-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:315:13-62
+356            android:screenOrientation="nosensor"
+356-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:316:13-49
+357            android:windowSoftInputMode="adjustPan" />
+357-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:317:13-52
+358        <activity
+358-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:318:9-320:52
+359            android:name="com.swipefwd.ui.profile.SelectRelationshipActivity"
+359-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:319:13-66
+360            android:screenOrientation="nosensor" />
+360-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:320:13-49
+361        <activity
+361-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:321:9-323:52
+362            android:name="com.swipefwd.ui.profile.SelectReligionActivity"
+362-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:322:13-62
+363            android:screenOrientation="nosensor" />
+363-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:323:13-49
+364        <activity
+364-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:324:9-326:52
+365            android:name="com.swipefwd.ui.profile.SelectChildrenPlanActivity"
+365-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:325:13-66
+366            android:screenOrientation="nosensor" />
+366-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:326:13-49
+367        <activity
+367-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:327:9-329:52
+368            android:name="com.swipefwd.ui.profile.SelectCastActivity"
+368-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:328:13-58
+369            android:screenOrientation="nosensor" />
+369-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:329:13-49
+370        <activity
+370-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:330:9-332:52
+371            android:name="com.swipefwd.ui.profile.SelectAstroSignActivity"
+371-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:331:13-63
+372            android:screenOrientation="nosensor" />
+372-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:332:13-49
+373        <activity
+373-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:333:9-335:52
+374            android:name="com.swipefwd.ui.profile.SelectSmokeActivity"
+374-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:334:13-59
+375            android:screenOrientation="nosensor" />
+375-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:335:13-49
+376        <activity
+376-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:336:9-339:58
+377            android:name="com.swipefwd.ui.profile.EmailActivity"
+377-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:337:13-53
+378            android:screenOrientation="nosensor"
+378-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:338:13-49
+379            android:windowSoftInputMode="adjustResize" />
+379-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:339:13-55
+380        <activity
+380-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:340:9-342:52
+381            android:name="com.swipefwd.ui.profile.InstagramWebActivity"
+381-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:341:13-60
+382            android:screenOrientation="nosensor" />
+382-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:342:13-49
+383        <activity
+383-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:343:9-346:55
+384            android:name="com.swipefwd.ui.profile.SelectMultipleCastActivity"
+384-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:344:13-66
+385            android:screenOrientation="nosensor"
+385-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:345:13-49
+386            android:windowSoftInputMode="adjustPan" />
+386-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:346:13-52
+387        <activity
+387-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:347:9-349:52
+388            android:name="com.swipefwd.ui.profile.SelectVaccineStatusActivity"
+388-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:348:13-67
+389            android:screenOrientation="nosensor" />
+389-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:349:13-49
+390        <activity
+390-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:350:9-352:52
+391            android:name="com.swipefwd.ui.home.tribe.RequestsListActivity"
+391-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:351:13-63
+392            android:screenOrientation="nosensor" />
+392-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:352:13-49
+393        <activity
+393-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:353:9-355:52
+394            android:name="com.swipefwd.ui.home.settings.UserSubscriptionActivity"
+394-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:354:13-70
+395            android:screenOrientation="nosensor" />
+395-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:355:13-49
+396        <activity
+396-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:356:9-358:52
+397            android:name="com.swipefwd.ui.home.tribe.ConnectorContactActivity"
+397-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:357:13-67
+398            android:screenOrientation="nosensor" />
+398-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:358:13-49
+399        <activity
+399-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:359:9-361:52
+400            android:name="com.swipefwd.ui.profile.TravelActivity"
+400-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:360:13-54
+401            android:screenOrientation="nosensor" />
+401-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:361:13-49
+402        <activity
+402-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:362:9-364:52
+403            android:name="com.swipefwd.ui.main.WebViewActivity"
+403-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:363:13-52
+404            android:screenOrientation="nosensor" />
+404-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:364:13-49
+405        <activity
+405-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:365:9-367:52
+406            android:name="com.swipefwd.ui.home.settings.deleteaccount.AccountDeleteSelectionActivity"
+406-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:366:13-90
+407            android:screenOrientation="nosensor" />
+407-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:367:13-49
+408
+409        <provider
+410            android:name="androidx.core.content.FileProvider"
+410-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:370:13-62
+411            android:authorities="com.swipefwd"
+411-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:371:13-51
+412            android:exported="false"
+412-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:372:13-37
+413            android:grantUriPermissions="true" >
+413-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:373:13-47
+414            <meta-data
+414-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:374:13-376:58
+415                android:name="android.support.FILE_PROVIDER_PATHS"
+415-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:375:17-67
+416                android:resource="@xml/provider_paths" />
+416-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:376:17-55
+417        </provider>
+418
+419        <service
+419-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:379:9-382:39
+420            android:name="com.swipefwd.xmpp.XmppService"
+420-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:380:13-45
+421            android:enabled="true"
+421-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:381:13-35
+422            android:exported="true" />
+422-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:382:13-36
+423        <service
+423-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:383:9-389:19
+424            android:name="com.swipefwd.fcm.MyFirebaseMessagingService"
+424-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:384:13-59
+425            android:exported="false" >
+425-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:385:13-37
+426            <intent-filter>
+426-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:386:13-388:29
+427                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+427-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:387:17-78
+427-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:387:25-75
+428            </intent-filter>
+429        </service>
+430
+431        <receiver
+431-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:391:9-399:20
+432            android:name="com.swipefwd.utils.MySMSBroadcastReceiver"
+432-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:392:13-57
+433            android:exported="true"
+433-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:393:13-36
+434            android:permission="com.google.android.gms.auth.api.phone.permission.SEND" >
+434-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:394:13-87
+435            <intent-filter>
+435-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:395:13-398:29
+436                <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED" />
+436-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:396:17-94
+436-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:396:25-91
+437            </intent-filter>
+438        </receiver>
+439
+440        <meta-data
+440-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:401:9-403:55
+441            android:name="com.facebook.sdk.ApplicationId"
+441-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:402:13-58
+442            android:value="@string/facebook_app_id" />
+442-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:403:13-52
+443        <meta-data
+443-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:405:9-407:61
+444            android:name="com.facebook.sdk.ClientToken"
+444-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:406:13-56
+445            android:value="@string/facebook_client_token" />
+445-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:407:13-58
+446
+447        <activity
+447-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:409:9-413:52
+448            android:name="com.facebook.FacebookActivity"
+448-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:410:13-57
+449            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+449-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:411:13-96
+450            android:label="@string/app_name"
+450-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:412:13-45
+451            android:screenOrientation="nosensor"
+451-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:413:13-49
+452            android:theme="@style/com_facebook_activity_theme" />
+452-->[com.facebook.android:facebook-common:14.1.0] /home/android/.gradle/caches/transforms-3/648b3741b0b8bb2d82e4fca3a5be9832/transformed/jetified-facebook-common-14.1.0/AndroidManifest.xml:33:13-63
+453        <activity
+453-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:414:9-425:20
+454            android:name="com.facebook.CustomTabActivity"
+454-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:415:13-58
+455            android:exported="true" >
+455-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:416:13-36
+456            <intent-filter>
+456-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:417:13-424:29
+457                <action android:name="android.intent.action.VIEW" />
+457-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:77:17-69
+457-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:77:25-66
+458
+459                <category android:name="android.intent.category.DEFAULT" />
+459-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:79:17-76
+459-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:79:27-73
+460                <category android:name="android.intent.category.BROWSABLE" />
+460-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:80:17-78
+460-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:80:27-75
+461
+462                <data android:scheme="@string/fb_login_protocol_scheme" />
+462-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:245:17-248:46
+462-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:248:21-43
+463            </intent-filter>
+464            <intent-filter>
+464-->[com.facebook.android:facebook-common:14.1.0] /home/android/.gradle/caches/transforms-3/648b3741b0b8bb2d82e4fca3a5be9832/transformed/jetified-facebook-common-14.1.0/AndroidManifest.xml:39:13-48:29
+465                <action android:name="android.intent.action.VIEW" />
+465-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:77:17-69
+465-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:77:25-66
+466
+467                <category android:name="android.intent.category.DEFAULT" />
+467-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:79:17-76
+467-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:79:27-73
+468                <category android:name="android.intent.category.BROWSABLE" />
+468-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:80:17-78
+468-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:80:27-75
+469
+470                <data
+470-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:245:17-248:46
+471                    android:host="cct.com.swipefwd"
+471-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:246:21-57
+472                    android:scheme="fbconnect" />
+472-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:248:21-43
+473            </intent-filter>
+474        </activity>
+475
+476        <meta-data
+476-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:427:9-429:55
+477            android:name="com.google.android.geo.API_KEY"
+477-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:428:13-58
+478            android:value="@string/google_maps_key" />
+478-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:429:13-52
+479
+480        <uses-library
+480-->[androidx.window:window:1.0.0-alpha09] /home/android/.gradle/caches/transforms-3/45e4c7cb5d21fc450d69c62c59e13b13/transformed/jetified-window-1.0.0-alpha09/AndroidManifest.xml:25:9-27:40
+481            android:name="androidx.window.extensions"
+481-->[androidx.window:window:1.0.0-alpha09] /home/android/.gradle/caches/transforms-3/45e4c7cb5d21fc450d69c62c59e13b13/transformed/jetified-window-1.0.0-alpha09/AndroidManifest.xml:26:13-54
+482            android:required="false" />
+482-->[androidx.window:window:1.0.0-alpha09] /home/android/.gradle/caches/transforms-3/45e4c7cb5d21fc450d69c62c59e13b13/transformed/jetified-window-1.0.0-alpha09/AndroidManifest.xml:27:13-37
+483        <uses-library
+483-->[androidx.window:window:1.0.0-alpha09] /home/android/.gradle/caches/transforms-3/45e4c7cb5d21fc450d69c62c59e13b13/transformed/jetified-window-1.0.0-alpha09/AndroidManifest.xml:28:9-30:40
+484            android:name="androidx.window.sidecar"
+484-->[androidx.window:window:1.0.0-alpha09] /home/android/.gradle/caches/transforms-3/45e4c7cb5d21fc450d69c62c59e13b13/transformed/jetified-window-1.0.0-alpha09/AndroidManifest.xml:29:13-51
+485            android:required="false" />
+485-->[androidx.window:window:1.0.0-alpha09] /home/android/.gradle/caches/transforms-3/45e4c7cb5d21fc450d69c62c59e13b13/transformed/jetified-window-1.0.0-alpha09/AndroidManifest.xml:30:13-37
+486        <!--
+487             Required for ML Kit Pose Detection GPU acceleration. Applications that target Android
+488             S+ require explicit declaration of any referenced vendor-provided libraries.
+489        -->
+490        <uses-native-library
+490-->[com.google.mlkit:pose-detection-common:18.0.0-beta2] /home/android/.gradle/caches/transforms-3/0cd769c09ca439e4c41f5049f7c6128c/transformed/jetified-pose-detection-common-18.0.0-beta2/AndroidManifest.xml:16:9-18:40
+491            android:name="libOpenCL.so"
+491-->[com.google.mlkit:pose-detection-common:18.0.0-beta2] /home/android/.gradle/caches/transforms-3/0cd769c09ca439e4c41f5049f7c6128c/transformed/jetified-pose-detection-common-18.0.0-beta2/AndroidManifest.xml:17:13-40
+492            android:required="false" />
+492-->[com.google.mlkit:pose-detection-common:18.0.0-beta2] /home/android/.gradle/caches/transforms-3/0cd769c09ca439e4c41f5049f7c6128c/transformed/jetified-pose-detection-common-18.0.0-beta2/AndroidManifest.xml:18:13-37
+493        <uses-native-library
+493-->[com.google.mlkit:pose-detection-common:18.0.0-beta2] /home/android/.gradle/caches/transforms-3/0cd769c09ca439e4c41f5049f7c6128c/transformed/jetified-pose-detection-common-18.0.0-beta2/AndroidManifest.xml:16:9-18:40
+494            android:name="libOpenCL-car.so"
+494-->[com.google.mlkit:pose-detection-common:18.0.0-beta2] /home/android/.gradle/caches/transforms-3/0cd769c09ca439e4c41f5049f7c6128c/transformed/jetified-pose-detection-common-18.0.0-beta2/AndroidManifest.xml:17:13-40
+495            android:required="false" />
+495-->[com.google.mlkit:pose-detection-common:18.0.0-beta2] /home/android/.gradle/caches/transforms-3/0cd769c09ca439e4c41f5049f7c6128c/transformed/jetified-pose-detection-common-18.0.0-beta2/AndroidManifest.xml:18:13-37
+496        <uses-native-library
+496-->[com.google.mlkit:pose-detection-common:18.0.0-beta2] /home/android/.gradle/caches/transforms-3/0cd769c09ca439e4c41f5049f7c6128c/transformed/jetified-pose-detection-common-18.0.0-beta2/AndroidManifest.xml:16:9-18:40
+497            android:name="libOpenCL-pixel.so"
+497-->[com.google.mlkit:pose-detection-common:18.0.0-beta2] /home/android/.gradle/caches/transforms-3/0cd769c09ca439e4c41f5049f7c6128c/transformed/jetified-pose-detection-common-18.0.0-beta2/AndroidManifest.xml:17:13-40
+498            android:required="false" />
+498-->[com.google.mlkit:pose-detection-common:18.0.0-beta2] /home/android/.gradle/caches/transforms-3/0cd769c09ca439e4c41f5049f7c6128c/transformed/jetified-pose-detection-common-18.0.0-beta2/AndroidManifest.xml:18:13-37
+499
+500        <service
+500-->[com.google.mlkit:pose-detection-common:18.0.0-beta2] /home/android/.gradle/caches/transforms-3/0cd769c09ca439e4c41f5049f7c6128c/transformed/jetified-pose-detection-common-18.0.0-beta2/AndroidManifest.xml:26:9-32:19
+501            android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"
+501-->[com.google.mlkit:pose-detection-common:18.0.0-beta2] /home/android/.gradle/caches/transforms-3/0cd769c09ca439e4c41f5049f7c6128c/transformed/jetified-pose-detection-common-18.0.0-beta2/AndroidManifest.xml:27:13-91
+502            android:directBootAware="true"
+502-->[com.google.mlkit:common:18.1.0] /home/android/.gradle/caches/transforms-3/27a115791e8e5622018f7e4a20d40e7d/transformed/jetified-common-18.1.0/AndroidManifest.xml:17:13-43
+503            android:exported="false" >
+503-->[com.google.mlkit:pose-detection-common:18.0.0-beta2] /home/android/.gradle/caches/transforms-3/0cd769c09ca439e4c41f5049f7c6128c/transformed/jetified-pose-detection-common-18.0.0-beta2/AndroidManifest.xml:28:13-37
+504            <meta-data
+504-->[com.google.mlkit:pose-detection-common:18.0.0-beta2] /home/android/.gradle/caches/transforms-3/0cd769c09ca439e4c41f5049f7c6128c/transformed/jetified-pose-detection-common-18.0.0-beta2/AndroidManifest.xml:29:13-31:85
+505                android:name="com.google.firebase.components:com.google.mlkit.vision.pose.internal.PoseRegistrar"
+505-->[com.google.mlkit:pose-detection-common:18.0.0-beta2] /home/android/.gradle/caches/transforms-3/0cd769c09ca439e4c41f5049f7c6128c/transformed/jetified-pose-detection-common-18.0.0-beta2/AndroidManifest.xml:30:17-114
+506                android:value="com.google.firebase.components.ComponentRegistrar" />
+506-->[com.google.mlkit:pose-detection-common:18.0.0-beta2] /home/android/.gradle/caches/transforms-3/0cd769c09ca439e4c41f5049f7c6128c/transformed/jetified-pose-detection-common-18.0.0-beta2/AndroidManifest.xml:31:17-82
+507            <meta-data
+507-->[com.google.android.gms:play-services-mlkit-face-detection:17.0.1] /home/android/.gradle/caches/transforms-3/b915768f2f539de8a8beaa4a0defa182/transformed/jetified-play-services-mlkit-face-detection-17.0.1/AndroidManifest.xml:12:13-14:85
+508                android:name="com.google.firebase.components:com.google.mlkit.vision.face.internal.FaceRegistrar"
+508-->[com.google.android.gms:play-services-mlkit-face-detection:17.0.1] /home/android/.gradle/caches/transforms-3/b915768f2f539de8a8beaa4a0defa182/transformed/jetified-play-services-mlkit-face-detection-17.0.1/AndroidManifest.xml:13:17-114
+509                android:value="com.google.firebase.components.ComponentRegistrar" />
+509-->[com.google.android.gms:play-services-mlkit-face-detection:17.0.1] /home/android/.gradle/caches/transforms-3/b915768f2f539de8a8beaa4a0defa182/transformed/jetified-play-services-mlkit-face-detection-17.0.1/AndroidManifest.xml:14:17-82
+510            <meta-data
+510-->[com.google.mlkit:vision-common:17.1.0] /home/android/.gradle/caches/transforms-3/4cd5e1ec848ff24ef4a58b304d0f9572/transformed/jetified-vision-common-17.1.0/AndroidManifest.xml:12:13-14:85
+511                android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar"
+511-->[com.google.mlkit:vision-common:17.1.0] /home/android/.gradle/caches/transforms-3/4cd5e1ec848ff24ef4a58b304d0f9572/transformed/jetified-vision-common-17.1.0/AndroidManifest.xml:13:17-124
+512                android:value="com.google.firebase.components.ComponentRegistrar" />
+512-->[com.google.mlkit:vision-common:17.1.0] /home/android/.gradle/caches/transforms-3/4cd5e1ec848ff24ef4a58b304d0f9572/transformed/jetified-vision-common-17.1.0/AndroidManifest.xml:14:17-82
+513            <meta-data
+513-->[com.google.mlkit:common:18.1.0] /home/android/.gradle/caches/transforms-3/27a115791e8e5622018f7e4a20d40e7d/transformed/jetified-common-18.1.0/AndroidManifest.xml:20:13-22:85
+514                android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar"
+514-->[com.google.mlkit:common:18.1.0] /home/android/.gradle/caches/transforms-3/27a115791e8e5622018f7e4a20d40e7d/transformed/jetified-common-18.1.0/AndroidManifest.xml:21:17-120
+515                android:value="com.google.firebase.components.ComponentRegistrar" />
+515-->[com.google.mlkit:common:18.1.0] /home/android/.gradle/caches/transforms-3/27a115791e8e5622018f7e4a20d40e7d/transformed/jetified-common-18.1.0/AndroidManifest.xml:22:17-82
+516        </service>
+517        <service
+517-->[com.google.mlkit:acceleration:16.0.0-beta1] /home/android/.gradle/caches/transforms-3/b3f4e92dce2d815ee60708127d5d9be6/transformed/jetified-acceleration-16.0.0-beta1/AndroidManifest.xml:8:9-11:68
+518            android:name="com.google.mlkit.acceleration.internal.MlKitRemoteWorkerService"
+518-->[com.google.mlkit:acceleration:16.0.0-beta1] /home/android/.gradle/caches/transforms-3/b3f4e92dce2d815ee60708127d5d9be6/transformed/jetified-acceleration-16.0.0-beta1/AndroidManifest.xml:9:13-91
+519            android:exported="false"
+519-->[com.google.mlkit:acceleration:16.0.0-beta1] /home/android/.gradle/caches/transforms-3/b3f4e92dce2d815ee60708127d5d9be6/transformed/jetified-acceleration-16.0.0-beta1/AndroidManifest.xml:10:13-37
+520            android:process=":mlkit_acceleration_mini_benchmark" />
+520-->[com.google.mlkit:acceleration:16.0.0-beta1] /home/android/.gradle/caches/transforms-3/b3f4e92dce2d815ee60708127d5d9be6/transformed/jetified-acceleration-16.0.0-beta1/AndroidManifest.xml:11:13-65
+521        <service
+521-->[androidx.work:work-multiprocess:2.7.0] /home/android/.gradle/caches/transforms-3/25310ac0c308d98918b4110f90701f35/transformed/jetified-work-multiprocess-2.7.0/AndroidManifest.xml:25:9-27:40
+522            android:name="androidx.work.multiprocess.RemoteWorkManagerService"
+522-->[androidx.work:work-multiprocess:2.7.0] /home/android/.gradle/caches/transforms-3/25310ac0c308d98918b4110f90701f35/transformed/jetified-work-multiprocess-2.7.0/AndroidManifest.xml:26:13-79
+523            android:exported="false" />
+523-->[androidx.work:work-multiprocess:2.7.0] /home/android/.gradle/caches/transforms-3/25310ac0c308d98918b4110f90701f35/transformed/jetified-work-multiprocess-2.7.0/AndroidManifest.xml:27:13-37
+524
+525        <provider
+525-->[com.squareup.picasso:picasso:2.71828] /home/android/.gradle/caches/transforms-3/e2d079d74a9c9ddae3583c1220f6349a/transformed/jetified-picasso-2.71828/AndroidManifest.xml:8:9-11:40
+526            android:name="com.squareup.picasso.PicassoProvider"
+526-->[com.squareup.picasso:picasso:2.71828] /home/android/.gradle/caches/transforms-3/e2d079d74a9c9ddae3583c1220f6349a/transformed/jetified-picasso-2.71828/AndroidManifest.xml:9:13-64
+527            android:authorities="com.swipefwd.com.squareup.picasso"
+527-->[com.squareup.picasso:picasso:2.71828] /home/android/.gradle/caches/transforms-3/e2d079d74a9c9ddae3583c1220f6349a/transformed/jetified-picasso-2.71828/AndroidManifest.xml:10:13-72
+528            android:exported="false" />
+528-->[com.squareup.picasso:picasso:2.71828] /home/android/.gradle/caches/transforms-3/e2d079d74a9c9ddae3583c1220f6349a/transformed/jetified-picasso-2.71828/AndroidManifest.xml:11:13-37
+529
+530        <activity
+530-->[com.github.dhaval2404:imagepicker:2.1] /home/android/.gradle/caches/transforms-3/53bba51db6441d602f75c02514c51fac/transformed/jetified-imagepicker-2.1/AndroidManifest.xml:22:9-25:68
+531            android:name="com.github.dhaval2404.imagepicker.ImagePickerActivity"
+531-->[com.github.dhaval2404:imagepicker:2.1] /home/android/.gradle/caches/transforms-3/53bba51db6441d602f75c02514c51fac/transformed/jetified-imagepicker-2.1/AndroidManifest.xml:23:13-81
+532            android:screenOrientation="unspecified"
+532-->[com.github.dhaval2404:imagepicker:2.1] /home/android/.gradle/caches/transforms-3/53bba51db6441d602f75c02514c51fac/transformed/jetified-imagepicker-2.1/AndroidManifest.xml:24:13-52
+533            android:theme="@style/Theme.Transparent.ImagePicker" />
+533-->[com.github.dhaval2404:imagepicker:2.1] /home/android/.gradle/caches/transforms-3/53bba51db6441d602f75c02514c51fac/transformed/jetified-imagepicker-2.1/AndroidManifest.xml:25:13-65
+534        <activity
+534-->[com.github.dhaval2404:imagepicker:2.1] /home/android/.gradle/caches/transforms-3/53bba51db6441d602f75c02514c51fac/transformed/jetified-imagepicker-2.1/AndroidManifest.xml:26:9-29:72
+535            android:name="com.yalantis.ucrop.UCropActivity"
+535-->[com.github.dhaval2404:imagepicker:2.1] /home/android/.gradle/caches/transforms-3/53bba51db6441d602f75c02514c51fac/transformed/jetified-imagepicker-2.1/AndroidManifest.xml:27:13-60
+536            android:screenOrientation="portrait"
+536-->[com.github.dhaval2404:imagepicker:2.1] /home/android/.gradle/caches/transforms-3/53bba51db6441d602f75c02514c51fac/transformed/jetified-imagepicker-2.1/AndroidManifest.xml:28:13-49
+537            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+537-->[com.github.dhaval2404:imagepicker:2.1] /home/android/.gradle/caches/transforms-3/53bba51db6441d602f75c02514c51fac/transformed/jetified-imagepicker-2.1/AndroidManifest.xml:29:13-69
+538
+539        <provider
+539-->[com.github.dhaval2404:imagepicker:2.1] /home/android/.gradle/caches/transforms-3/53bba51db6441d602f75c02514c51fac/transformed/jetified-imagepicker-2.1/AndroidManifest.xml:31:9-39:20
+540            android:name="com.github.dhaval2404.imagepicker.ImagePickerFileProvider"
+540-->[com.github.dhaval2404:imagepicker:2.1] /home/android/.gradle/caches/transforms-3/53bba51db6441d602f75c02514c51fac/transformed/jetified-imagepicker-2.1/AndroidManifest.xml:32:13-85
+541            android:authorities="com.swipefwd.imagepicker.provider"
+541-->[com.github.dhaval2404:imagepicker:2.1] /home/android/.gradle/caches/transforms-3/53bba51db6441d602f75c02514c51fac/transformed/jetified-imagepicker-2.1/AndroidManifest.xml:33:13-72
+542            android:exported="false"
+542-->[com.github.dhaval2404:imagepicker:2.1] /home/android/.gradle/caches/transforms-3/53bba51db6441d602f75c02514c51fac/transformed/jetified-imagepicker-2.1/AndroidManifest.xml:34:13-37
+543            android:grantUriPermissions="true" >
+543-->[com.github.dhaval2404:imagepicker:2.1] /home/android/.gradle/caches/transforms-3/53bba51db6441d602f75c02514c51fac/transformed/jetified-imagepicker-2.1/AndroidManifest.xml:35:13-47
+544            <meta-data
+544-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:374:13-376:58
+545                android:name="android.support.FILE_PROVIDER_PATHS"
+545-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:375:17-67
+546                android:resource="@xml/image_picker_provider_paths" />
+546-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:376:17-55
+547        </provider>
+548
+549        <activity android:name="com.facebook.CustomTabMainActivity" />
+549-->[com.facebook.android:facebook-common:14.1.0] /home/android/.gradle/caches/transforms-3/648b3741b0b8bb2d82e4fca3a5be9832/transformed/jetified-facebook-common-14.1.0/AndroidManifest.xml:34:9-71
+549-->[com.facebook.android:facebook-common:14.1.0] /home/android/.gradle/caches/transforms-3/648b3741b0b8bb2d82e4fca3a5be9832/transformed/jetified-facebook-common-14.1.0/AndroidManifest.xml:34:19-68
+550        <!--
+551         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
+552         with the application context. This config is merged in with the host app's manifest,
+553         but there can only be one provider with the same authority activated at any given
+554         point; so if the end user has two or more different apps that use Facebook SDK, only the
+555         first one will be able to use the provider. To work around this problem, we use the
+556         following placeholder in the authority to identify each host application as if it was
+557         a completely different provider.
+558        -->
+559        <provider
+559-->[com.facebook.android:facebook-core:14.1.0] /home/android/.gradle/caches/transforms-3/92a0ff9478fc6bebe6cf28093b125077/transformed/jetified-facebook-core-14.1.0/AndroidManifest.xml:41:9-44:40
+560            android:name="com.facebook.internal.FacebookInitProvider"
+560-->[com.facebook.android:facebook-core:14.1.0] /home/android/.gradle/caches/transforms-3/92a0ff9478fc6bebe6cf28093b125077/transformed/jetified-facebook-core-14.1.0/AndroidManifest.xml:42:13-70
+561            android:authorities="com.swipefwd.FacebookInitProvider"
+561-->[com.facebook.android:facebook-core:14.1.0] /home/android/.gradle/caches/transforms-3/92a0ff9478fc6bebe6cf28093b125077/transformed/jetified-facebook-core-14.1.0/AndroidManifest.xml:43:13-72
+562            android:exported="false" />
+562-->[com.facebook.android:facebook-core:14.1.0] /home/android/.gradle/caches/transforms-3/92a0ff9478fc6bebe6cf28093b125077/transformed/jetified-facebook-core-14.1.0/AndroidManifest.xml:44:13-37
+563
+564        <receiver
+564-->[com.facebook.android:facebook-core:14.1.0] /home/android/.gradle/caches/transforms-3/92a0ff9478fc6bebe6cf28093b125077/transformed/jetified-facebook-core-14.1.0/AndroidManifest.xml:46:9-52:20
+565            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+565-->[com.facebook.android:facebook-core:14.1.0] /home/android/.gradle/caches/transforms-3/92a0ff9478fc6bebe6cf28093b125077/transformed/jetified-facebook-core-14.1.0/AndroidManifest.xml:47:13-86
+566            android:exported="false" >
+566-->[com.facebook.android:facebook-core:14.1.0] /home/android/.gradle/caches/transforms-3/92a0ff9478fc6bebe6cf28093b125077/transformed/jetified-facebook-core-14.1.0/AndroidManifest.xml:48:13-37
+567            <intent-filter>
+567-->[com.facebook.android:facebook-core:14.1.0] /home/android/.gradle/caches/transforms-3/92a0ff9478fc6bebe6cf28093b125077/transformed/jetified-facebook-core-14.1.0/AndroidManifest.xml:49:13-51:29
+568                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+568-->[com.facebook.android:facebook-core:14.1.0] /home/android/.gradle/caches/transforms-3/92a0ff9478fc6bebe6cf28093b125077/transformed/jetified-facebook-core-14.1.0/AndroidManifest.xml:50:17-95
+568-->[com.facebook.android:facebook-core:14.1.0] /home/android/.gradle/caches/transforms-3/92a0ff9478fc6bebe6cf28093b125077/transformed/jetified-facebook-core-14.1.0/AndroidManifest.xml:50:25-92
+569            </intent-filter>
+570        </receiver>
+571        <receiver
+571-->[com.facebook.android:facebook-core:14.1.0] /home/android/.gradle/caches/transforms-3/92a0ff9478fc6bebe6cf28093b125077/transformed/jetified-facebook-core-14.1.0/AndroidManifest.xml:53:9-59:20
+572            android:name="com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver"
+572-->[com.facebook.android:facebook-core:14.1.0] /home/android/.gradle/caches/transforms-3/92a0ff9478fc6bebe6cf28093b125077/transformed/jetified-facebook-core-14.1.0/AndroidManifest.xml:54:13-118
+573            android:exported="false" >
+573-->[com.facebook.android:facebook-core:14.1.0] /home/android/.gradle/caches/transforms-3/92a0ff9478fc6bebe6cf28093b125077/transformed/jetified-facebook-core-14.1.0/AndroidManifest.xml:55:13-37
+574            <intent-filter>
+574-->[com.facebook.android:facebook-core:14.1.0] /home/android/.gradle/caches/transforms-3/92a0ff9478fc6bebe6cf28093b125077/transformed/jetified-facebook-core-14.1.0/AndroidManifest.xml:56:13-58:29
+575                <action android:name="com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED" />
+575-->[com.facebook.android:facebook-core:14.1.0] /home/android/.gradle/caches/transforms-3/92a0ff9478fc6bebe6cf28093b125077/transformed/jetified-facebook-core-14.1.0/AndroidManifest.xml:57:17-103
+575-->[com.facebook.android:facebook-core:14.1.0] /home/android/.gradle/caches/transforms-3/92a0ff9478fc6bebe6cf28093b125077/transformed/jetified-facebook-core-14.1.0/AndroidManifest.xml:57:25-100
+576            </intent-filter>
+577        </receiver>
+578
+579        <activity
+579-->[com.karumi:dexter:6.2.2] /home/android/.gradle/caches/transforms-3/0cac1ccf5bd35b1e9db7e12d282b539a/transformed/jetified-dexter-6.2.2/AndroidManifest.xml:27:9-29:72
+580            android:name="com.karumi.dexter.DexterActivity"
+580-->[com.karumi:dexter:6.2.2] /home/android/.gradle/caches/transforms-3/0cac1ccf5bd35b1e9db7e12d282b539a/transformed/jetified-dexter-6.2.2/AndroidManifest.xml:28:13-60
+581            android:theme="@style/Dexter.Internal.Theme.Transparent" />
+581-->[com.karumi:dexter:6.2.2] /home/android/.gradle/caches/transforms-3/0cac1ccf5bd35b1e9db7e12d282b539a/transformed/jetified-dexter-6.2.2/AndroidManifest.xml:29:13-69
+582        <activity
+582-->[com.google.android.libraries.places:places:2.6.0] /home/android/.gradle/caches/transforms-3/ac55590c9aaa306e21b4cd9c14381677/transformed/jetified-places-2.6.0/AndroidManifest.xml:14:9-20:20
+583            android:name="com.google.android.libraries.places.widget.AutocompleteActivity"
+583-->[com.google.android.libraries.places:places:2.6.0] /home/android/.gradle/caches/transforms-3/ac55590c9aaa306e21b4cd9c14381677/transformed/jetified-places-2.6.0/AndroidManifest.xml:15:13-91
+584            android:exported="false"
+584-->[com.google.android.libraries.places:places:2.6.0] /home/android/.gradle/caches/transforms-3/ac55590c9aaa306e21b4cd9c14381677/transformed/jetified-places-2.6.0/AndroidManifest.xml:16:13-37
+585            android:label="@string/places_autocomplete_label"
+585-->[com.google.android.libraries.places:places:2.6.0] /home/android/.gradle/caches/transforms-3/ac55590c9aaa306e21b4cd9c14381677/transformed/jetified-places-2.6.0/AndroidManifest.xml:17:13-62
+586            android:theme="@style/PlacesAutocompleteOverlay"
+586-->[com.google.android.libraries.places:places:2.6.0] /home/android/.gradle/caches/transforms-3/ac55590c9aaa306e21b4cd9c14381677/transformed/jetified-places-2.6.0/AndroidManifest.xml:18:13-61
+587            android:windowSoftInputMode="adjustResize" >
+587-->[com.google.android.libraries.places:places:2.6.0] /home/android/.gradle/caches/transforms-3/ac55590c9aaa306e21b4cd9c14381677/transformed/jetified-places-2.6.0/AndroidManifest.xml:19:13-55
+588        </activity> <!-- Needs to be explicitly declared on P+ -->
+589        <uses-library
+589-->[com.google.android.gms:play-services-maps:18.1.0] /home/android/.gradle/caches/transforms-3/9be93463690cb28f72d04ec42147f384/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:39:9-41:40
+590            android:name="org.apache.http.legacy"
+590-->[com.google.android.gms:play-services-maps:18.1.0] /home/android/.gradle/caches/transforms-3/9be93463690cb28f72d04ec42147f384/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:40:13-50
+591            android:required="false" />
+591-->[com.google.android.gms:play-services-maps:18.1.0] /home/android/.gradle/caches/transforms-3/9be93463690cb28f72d04ec42147f384/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:41:13-37
+592
+593        <activity
+593-->[com.google.android.gms:play-services-auth:20.2.0] /home/android/.gradle/caches/transforms-3/cc4b7e97c51497fbb25ed474ddc9681b/transformed/jetified-play-services-auth-20.2.0/AndroidManifest.xml:23:9-27:75
+594            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+594-->[com.google.android.gms:play-services-auth:20.2.0] /home/android/.gradle/caches/transforms-3/cc4b7e97c51497fbb25ed474ddc9681b/transformed/jetified-play-services-auth-20.2.0/AndroidManifest.xml:24:13-93
+595            android:excludeFromRecents="true"
+595-->[com.google.android.gms:play-services-auth:20.2.0] /home/android/.gradle/caches/transforms-3/cc4b7e97c51497fbb25ed474ddc9681b/transformed/jetified-play-services-auth-20.2.0/AndroidManifest.xml:25:13-46
+596            android:exported="false"
+596-->[com.google.android.gms:play-services-auth:20.2.0] /home/android/.gradle/caches/transforms-3/cc4b7e97c51497fbb25ed474ddc9681b/transformed/jetified-play-services-auth-20.2.0/AndroidManifest.xml:26:13-37
+597            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+597-->[com.google.android.gms:play-services-auth:20.2.0] /home/android/.gradle/caches/transforms-3/cc4b7e97c51497fbb25ed474ddc9681b/transformed/jetified-play-services-auth-20.2.0/AndroidManifest.xml:27:13-72
+598        <!--
+599            Service handling Google Sign-In user revocation. For apps that do not integrate with
+600            Google Sign-In, this service will never be started.
+601        -->
+602        <service
+602-->[com.google.android.gms:play-services-auth:20.2.0] /home/android/.gradle/caches/transforms-3/cc4b7e97c51497fbb25ed474ddc9681b/transformed/jetified-play-services-auth-20.2.0/AndroidManifest.xml:33:9-37:51
+603            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+603-->[com.google.android.gms:play-services-auth:20.2.0] /home/android/.gradle/caches/transforms-3/cc4b7e97c51497fbb25ed474ddc9681b/transformed/jetified-play-services-auth-20.2.0/AndroidManifest.xml:34:13-89
+604            android:exported="true"
+604-->[com.google.android.gms:play-services-auth:20.2.0] /home/android/.gradle/caches/transforms-3/cc4b7e97c51497fbb25ed474ddc9681b/transformed/jetified-play-services-auth-20.2.0/AndroidManifest.xml:35:13-36
+605            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+605-->[com.google.android.gms:play-services-auth:20.2.0] /home/android/.gradle/caches/transforms-3/cc4b7e97c51497fbb25ed474ddc9681b/transformed/jetified-play-services-auth-20.2.0/AndroidManifest.xml:36:13-107
+606            android:visibleToInstantApps="true" />
+606-->[com.google.android.gms:play-services-auth:20.2.0] /home/android/.gradle/caches/transforms-3/cc4b7e97c51497fbb25ed474ddc9681b/transformed/jetified-play-services-auth-20.2.0/AndroidManifest.xml:37:13-48
+607        <service
+607-->[com.google.firebase:firebase-auth-ktx:21.0.1] /home/android/.gradle/caches/transforms-3/0f13114817b14fde8be06ef4eedad059/transformed/jetified-firebase-auth-ktx-21.0.1/AndroidManifest.xml:8:9-14:19
+608            android:name="com.google.firebase.components.ComponentDiscoveryService"
+608-->[com.google.firebase:firebase-auth-ktx:21.0.1] /home/android/.gradle/caches/transforms-3/0f13114817b14fde8be06ef4eedad059/transformed/jetified-firebase-auth-ktx-21.0.1/AndroidManifest.xml:9:13-84
+609            android:directBootAware="true"
+609-->[com.google.firebase:firebase-common:20.1.0] /home/android/.gradle/caches/transforms-3/fc927f0de8840db8de1b7d1309e73e46/transformed/jetified-firebase-common-20.1.0/AndroidManifest.xml:35:13-43
+610            android:exported="false" >
+610-->[com.google.firebase:firebase-auth-ktx:21.0.1] /home/android/.gradle/caches/transforms-3/0f13114817b14fde8be06ef4eedad059/transformed/jetified-firebase-auth-ktx-21.0.1/AndroidManifest.xml:10:13-37
+611            <meta-data
+611-->[com.google.firebase:firebase-auth-ktx:21.0.1] /home/android/.gradle/caches/transforms-3/0f13114817b14fde8be06ef4eedad059/transformed/jetified-firebase-auth-ktx-21.0.1/AndroidManifest.xml:11:13-13:85
+612                android:name="com.google.firebase.components:com.google.firebase.auth.ktx.FirebaseAuthKtxRegistrar"
+612-->[com.google.firebase:firebase-auth-ktx:21.0.1] /home/android/.gradle/caches/transforms-3/0f13114817b14fde8be06ef4eedad059/transformed/jetified-firebase-auth-ktx-21.0.1/AndroidManifest.xml:12:17-116
+613                android:value="com.google.firebase.components.ComponentRegistrar" />
+613-->[com.google.firebase:firebase-auth-ktx:21.0.1] /home/android/.gradle/caches/transforms-3/0f13114817b14fde8be06ef4eedad059/transformed/jetified-firebase-auth-ktx-21.0.1/AndroidManifest.xml:13:17-82
+614            <meta-data
+614-->[com.google.firebase:firebase-auth:21.0.1] /home/android/.gradle/caches/transforms-3/be8af39ad115dcec517493c2c4679540/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:77:13-79:85
+615                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+615-->[com.google.firebase:firebase-auth:21.0.1] /home/android/.gradle/caches/transforms-3/be8af39ad115dcec517493c2c4679540/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:78:17-109
+616                android:value="com.google.firebase.components.ComponentRegistrar" />
+616-->[com.google.firebase:firebase-auth:21.0.1] /home/android/.gradle/caches/transforms-3/be8af39ad115dcec517493c2c4679540/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:79:17-82
+617            <meta-data
+617-->[com.google.firebase:firebase-dynamic-links:21.0.1] /home/android/.gradle/caches/transforms-3/717da084219149c7ac9a17055e7ac909/transformed/jetified-firebase-dynamic-links-21.0.1/AndroidManifest.xml:27:13-29:85
+618                android:name="com.google.firebase.components:com.google.firebase.dynamiclinks.internal.FirebaseDynamicLinkRegistrar"
+618-->[com.google.firebase:firebase-dynamic-links:21.0.1] /home/android/.gradle/caches/transforms-3/717da084219149c7ac9a17055e7ac909/transformed/jetified-firebase-dynamic-links-21.0.1/AndroidManifest.xml:28:17-133
+619                android:value="com.google.firebase.components.ComponentRegistrar" />
+619-->[com.google.firebase:firebase-dynamic-links:21.0.1] /home/android/.gradle/caches/transforms-3/717da084219149c7ac9a17055e7ac909/transformed/jetified-firebase-dynamic-links-21.0.1/AndroidManifest.xml:29:17-82
+620            <meta-data
+620-->[com.google.firebase:firebase-messaging-ktx:23.0.0] /home/android/.gradle/caches/transforms-3/94bec061aa5e5a79c036379ac515d4c6/transformed/jetified-firebase-messaging-ktx-23.0.0/AndroidManifest.xml:29:13-31:85
+621                android:name="com.google.firebase.components:com.google.firebase.messaging.ktx.FirebaseMessagingKtxRegistrar"
+621-->[com.google.firebase:firebase-messaging-ktx:23.0.0] /home/android/.gradle/caches/transforms-3/94bec061aa5e5a79c036379ac515d4c6/transformed/jetified-firebase-messaging-ktx-23.0.0/AndroidManifest.xml:30:17-126
+622                android:value="com.google.firebase.components.ComponentRegistrar" />
+622-->[com.google.firebase:firebase-messaging-ktx:23.0.0] /home/android/.gradle/caches/transforms-3/94bec061aa5e5a79c036379ac515d4c6/transformed/jetified-firebase-messaging-ktx-23.0.0/AndroidManifest.xml:31:17-82
+623            <meta-data
+623-->[com.google.firebase:firebase-config-ktx:21.0.1] /home/android/.gradle/caches/transforms-3/c5c2d679124bcd06f6c6d1c7fba05da4/transformed/jetified-firebase-config-ktx-21.0.1/AndroidManifest.xml:15:13-17:85
+624                android:name="com.google.firebase.components:com.google.firebase.remoteconfig.ktx.FirebaseRemoteConfigKtxRegistrar"
+624-->[com.google.firebase:firebase-config-ktx:21.0.1] /home/android/.gradle/caches/transforms-3/c5c2d679124bcd06f6c6d1c7fba05da4/transformed/jetified-firebase-config-ktx-21.0.1/AndroidManifest.xml:16:17-132
+625                android:value="com.google.firebase.components.ComponentRegistrar" />
+625-->[com.google.firebase:firebase-config-ktx:21.0.1] /home/android/.gradle/caches/transforms-3/c5c2d679124bcd06f6c6d1c7fba05da4/transformed/jetified-firebase-config-ktx-21.0.1/AndroidManifest.xml:17:17-82
+626            <meta-data
+626-->[com.google.firebase:firebase-crashlytics-ktx:18.2.4] /home/android/.gradle/caches/transforms-3/055f9a3b51732bac26497329cf7da43c/transformed/jetified-firebase-crashlytics-ktx-18.2.4/AndroidManifest.xml:27:13-29:85
+627                android:name="com.google.firebase.components:com.google.firebase.crashlytics.ktx.FirebaseCrashlyticsKtxRegistrar"
+627-->[com.google.firebase:firebase-crashlytics-ktx:18.2.4] /home/android/.gradle/caches/transforms-3/055f9a3b51732bac26497329cf7da43c/transformed/jetified-firebase-crashlytics-ktx-18.2.4/AndroidManifest.xml:28:17-130
+628                android:value="com.google.firebase.components.ComponentRegistrar" />
+628-->[com.google.firebase:firebase-crashlytics-ktx:18.2.4] /home/android/.gradle/caches/transforms-3/055f9a3b51732bac26497329cf7da43c/transformed/jetified-firebase-crashlytics-ktx-18.2.4/AndroidManifest.xml:29:17-82
+629            <meta-data
+629-->[com.google.firebase:firebase-analytics-ktx:20.0.0] /home/android/.gradle/caches/transforms-3/65a5a5398a69856e9aa0c686713a9ea2/transformed/jetified-firebase-analytics-ktx-20.0.0/AndroidManifest.xml:11:13-13:85
+630                android:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsKtxRegistrar"
+630-->[com.google.firebase:firebase-analytics-ktx:20.0.0] /home/android/.gradle/caches/transforms-3/65a5a5398a69856e9aa0c686713a9ea2/transformed/jetified-firebase-analytics-ktx-20.0.0/AndroidManifest.xml:12:17-126
+631                android:value="com.google.firebase.components.ComponentRegistrar" />
+631-->[com.google.firebase:firebase-analytics-ktx:20.0.0] /home/android/.gradle/caches/transforms-3/65a5a5398a69856e9aa0c686713a9ea2/transformed/jetified-firebase-analytics-ktx-20.0.0/AndroidManifest.xml:13:17-82
+632            <meta-data
+632-->[com.google.firebase:firebase-config:21.0.1] /home/android/.gradle/caches/transforms-3/ae79e1e9aab2fd3242d196ebf81ff8a5/transformed/jetified-firebase-config-21.0.1/AndroidManifest.xml:32:13-34:85
+633                android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar"
+633-->[com.google.firebase:firebase-config:21.0.1] /home/android/.gradle/caches/transforms-3/ae79e1e9aab2fd3242d196ebf81ff8a5/transformed/jetified-firebase-config-21.0.1/AndroidManifest.xml:33:17-117
+634                android:value="com.google.firebase.components.ComponentRegistrar" />
+634-->[com.google.firebase:firebase-config:21.0.1] /home/android/.gradle/caches/transforms-3/ae79e1e9aab2fd3242d196ebf81ff8a5/transformed/jetified-firebase-config-21.0.1/AndroidManifest.xml:34:17-82
+635            <meta-data
+635-->[com.google.firebase:firebase-abt:21.0.0] /home/android/.gradle/caches/transforms-3/da773e7a4f299db7b4c9053824e58417/transformed/jetified-firebase-abt-21.0.0/AndroidManifest.xml:13:13-15:85
+636                android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar"
+636-->[com.google.firebase:firebase-abt:21.0.0] /home/android/.gradle/caches/transforms-3/da773e7a4f299db7b4c9053824e58417/transformed/jetified-firebase-abt-21.0.0/AndroidManifest.xml:14:17-109
+637                android:value="com.google.firebase.components.ComponentRegistrar" />
+637-->[com.google.firebase:firebase-abt:21.0.0] /home/android/.gradle/caches/transforms-3/da773e7a4f299db7b4c9053824e58417/transformed/jetified-firebase-abt-21.0.0/AndroidManifest.xml:15:17-82
+638            <meta-data
+638-->[com.google.firebase:firebase-common-ktx:20.0.0] /home/android/.gradle/caches/transforms-3/a61d7646dd8693cce8902f38d93a368e/transformed/jetified-firebase-common-ktx-20.0.0/AndroidManifest.xml:15:13-17:85
+639                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
+639-->[com.google.firebase:firebase-common-ktx:20.0.0] /home/android/.gradle/caches/transforms-3/a61d7646dd8693cce8902f38d93a368e/transformed/jetified-firebase-common-ktx-20.0.0/AndroidManifest.xml:16:17-113
+640                android:value="com.google.firebase.components.ComponentRegistrar" />
+640-->[com.google.firebase:firebase-common-ktx:20.0.0] /home/android/.gradle/caches/transforms-3/a61d7646dd8693cce8902f38d93a368e/transformed/jetified-firebase-common-ktx-20.0.0/AndroidManifest.xml:17:17-82
+641            <meta-data
+641-->[com.google.firebase:firebase-crashlytics:18.2.4] /home/android/.gradle/caches/transforms-3/f4631715b9e2b895371b8f1f00a4b7cc/transformed/jetified-firebase-crashlytics-18.2.4/AndroidManifest.xml:18:13-20:85
+642                android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar"
+642-->[com.google.firebase:firebase-crashlytics:18.2.4] /home/android/.gradle/caches/transforms-3/f4631715b9e2b895371b8f1f00a4b7cc/transformed/jetified-firebase-crashlytics-18.2.4/AndroidManifest.xml:19:17-115
+643                android:value="com.google.firebase.components.ComponentRegistrar" />
+643-->[com.google.firebase:firebase-crashlytics:18.2.4] /home/android/.gradle/caches/transforms-3/f4631715b9e2b895371b8f1f00a4b7cc/transformed/jetified-firebase-crashlytics-18.2.4/AndroidManifest.xml:20:17-82
+644            <meta-data
+644-->[com.google.firebase:firebase-messaging:23.0.0] /home/android/.gradle/caches/transforms-3/f143b2b43abf2b6f91d842fd6049160d/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:52:13-54:85
+645                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+645-->[com.google.firebase:firebase-messaging:23.0.0] /home/android/.gradle/caches/transforms-3/f143b2b43abf2b6f91d842fd6049160d/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:53:17-119
+646                android:value="com.google.firebase.components.ComponentRegistrar" />
+646-->[com.google.firebase:firebase-messaging:23.0.0] /home/android/.gradle/caches/transforms-3/f143b2b43abf2b6f91d842fd6049160d/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:54:17-82
+647            <meta-data
+647-->[com.google.android.gms:play-services-measurement-api:20.0.0] /home/android/.gradle/caches/transforms-3/5b18c82bcd6d3533e00be5797b283951/transformed/jetified-play-services-measurement-api-20.0.0/AndroidManifest.xml:30:13-32:85
+648                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+648-->[com.google.android.gms:play-services-measurement-api:20.0.0] /home/android/.gradle/caches/transforms-3/5b18c82bcd6d3533e00be5797b283951/transformed/jetified-play-services-measurement-api-20.0.0/AndroidManifest.xml:31:17-139
+649                android:value="com.google.firebase.components.ComponentRegistrar" />
+649-->[com.google.android.gms:play-services-measurement-api:20.0.0] /home/android/.gradle/caches/transforms-3/5b18c82bcd6d3533e00be5797b283951/transformed/jetified-play-services-measurement-api-20.0.0/AndroidManifest.xml:32:17-82
+650            <meta-data
+650-->[com.google.firebase:firebase-installations:17.0.0] /home/android/.gradle/caches/transforms-3/5bc602fd9ffe9f98d49ebf7dfb3adf74/transformed/jetified-firebase-installations-17.0.0/AndroidManifest.xml:18:13-20:85
+651                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+651-->[com.google.firebase:firebase-installations:17.0.0] /home/android/.gradle/caches/transforms-3/5bc602fd9ffe9f98d49ebf7dfb3adf74/transformed/jetified-firebase-installations-17.0.0/AndroidManifest.xml:19:17-127
+652                android:value="com.google.firebase.components.ComponentRegistrar" />
+652-->[com.google.firebase:firebase-installations:17.0.0] /home/android/.gradle/caches/transforms-3/5bc602fd9ffe9f98d49ebf7dfb3adf74/transformed/jetified-firebase-installations-17.0.0/AndroidManifest.xml:20:17-82
+653            <meta-data
+653-->[com.google.firebase:firebase-datatransport:18.0.0] /home/android/.gradle/caches/transforms-3/c4b6cb24f55636fff892899ba9f3c6d1/transformed/jetified-firebase-datatransport-18.0.0/AndroidManifest.xml:28:13-30:85
+654                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+654-->[com.google.firebase:firebase-datatransport:18.0.0] /home/android/.gradle/caches/transforms-3/c4b6cb24f55636fff892899ba9f3c6d1/transformed/jetified-firebase-datatransport-18.0.0/AndroidManifest.xml:29:17-115
+655                android:value="com.google.firebase.components.ComponentRegistrar" />
+655-->[com.google.firebase:firebase-datatransport:18.0.0] /home/android/.gradle/caches/transforms-3/c4b6cb24f55636fff892899ba9f3c6d1/transformed/jetified-firebase-datatransport-18.0.0/AndroidManifest.xml:30:17-82
+656        </service>
+657
+658        <activity
+658-->[com.google.firebase:firebase-auth:21.0.1] /home/android/.gradle/caches/transforms-3/be8af39ad115dcec517493c2c4679540/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:27:9-44:20
+659            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+659-->[com.google.firebase:firebase-auth:21.0.1] /home/android/.gradle/caches/transforms-3/be8af39ad115dcec517493c2c4679540/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:28:13-80
+660            android:excludeFromRecents="true"
+660-->[com.google.firebase:firebase-auth:21.0.1] /home/android/.gradle/caches/transforms-3/be8af39ad115dcec517493c2c4679540/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:29:13-46
+661            android:exported="true"
+661-->[com.google.firebase:firebase-auth:21.0.1] /home/android/.gradle/caches/transforms-3/be8af39ad115dcec517493c2c4679540/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:30:13-36
+662            android:launchMode="singleTask"
+662-->[com.google.firebase:firebase-auth:21.0.1] /home/android/.gradle/caches/transforms-3/be8af39ad115dcec517493c2c4679540/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:31:13-44
+663            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+663-->[com.google.firebase:firebase-auth:21.0.1] /home/android/.gradle/caches/transforms-3/be8af39ad115dcec517493c2c4679540/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:32:13-72
+664            <intent-filter>
+664-->[com.google.firebase:firebase-auth:21.0.1] /home/android/.gradle/caches/transforms-3/be8af39ad115dcec517493c2c4679540/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:33:13-43:29
+665                <action android:name="android.intent.action.VIEW" />
+665-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:77:17-69
+665-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:77:25-66
+666
+667                <category android:name="android.intent.category.DEFAULT" />
+667-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:79:17-76
+667-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:79:27-73
+668                <category android:name="android.intent.category.BROWSABLE" />
+668-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:80:17-78
+668-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:80:27-75
+669
+670                <data
+670-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:245:17-248:46
+671                    android:host="firebase.auth"
+671-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:246:21-57
+672                    android:path="/"
+673                    android:scheme="genericidp" />
+673-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:248:21-43
+674            </intent-filter>
+675        </activity>
+676        <activity
+676-->[com.google.firebase:firebase-auth:21.0.1] /home/android/.gradle/caches/transforms-3/be8af39ad115dcec517493c2c4679540/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:45:9-62:20
+677            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+677-->[com.google.firebase:firebase-auth:21.0.1] /home/android/.gradle/caches/transforms-3/be8af39ad115dcec517493c2c4679540/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:46:13-79
+678            android:excludeFromRecents="true"
+678-->[com.google.firebase:firebase-auth:21.0.1] /home/android/.gradle/caches/transforms-3/be8af39ad115dcec517493c2c4679540/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:47:13-46
+679            android:exported="true"
+679-->[com.google.firebase:firebase-auth:21.0.1] /home/android/.gradle/caches/transforms-3/be8af39ad115dcec517493c2c4679540/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:48:13-36
+680            android:launchMode="singleTask"
+680-->[com.google.firebase:firebase-auth:21.0.1] /home/android/.gradle/caches/transforms-3/be8af39ad115dcec517493c2c4679540/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:49:13-44
+681            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+681-->[com.google.firebase:firebase-auth:21.0.1] /home/android/.gradle/caches/transforms-3/be8af39ad115dcec517493c2c4679540/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:50:13-72
+682            <intent-filter>
+682-->[com.google.firebase:firebase-auth:21.0.1] /home/android/.gradle/caches/transforms-3/be8af39ad115dcec517493c2c4679540/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:51:13-61:29
+683                <action android:name="android.intent.action.VIEW" />
+683-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:77:17-69
+683-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:77:25-66
+684
+685                <category android:name="android.intent.category.DEFAULT" />
+685-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:79:17-76
+685-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:79:27-73
+686                <category android:name="android.intent.category.BROWSABLE" />
+686-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:80:17-78
+686-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:80:27-75
+687
+688                <data
+688-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:245:17-248:46
+689                    android:host="firebase.auth"
+689-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:246:21-57
+690                    android:path="/"
+691                    android:scheme="recaptcha" />
+691-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:248:21-43
+692            </intent-filter>
+693        </activity>
+694
+695        <service
+695-->[com.google.firebase:firebase-auth:21.0.1] /home/android/.gradle/caches/transforms-3/be8af39ad115dcec517493c2c4679540/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:64:9-73:19
+696            android:name="com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService"
+696-->[com.google.firebase:firebase-auth:21.0.1] /home/android/.gradle/caches/transforms-3/be8af39ad115dcec517493c2c4679540/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:65:13-101
+697            android:enabled="true"
+697-->[com.google.firebase:firebase-auth:21.0.1] /home/android/.gradle/caches/transforms-3/be8af39ad115dcec517493c2c4679540/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:66:13-35
+698            android:exported="false" >
+698-->[com.google.firebase:firebase-auth:21.0.1] /home/android/.gradle/caches/transforms-3/be8af39ad115dcec517493c2c4679540/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:67:13-37
+699            <intent-filter>
+699-->[com.google.firebase:firebase-auth:21.0.1] /home/android/.gradle/caches/transforms-3/be8af39ad115dcec517493c2c4679540/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:68:13-72:29
+700                <action android:name="com.google.firebase.auth.api.gms.service.START" />
+700-->[com.google.firebase:firebase-auth:21.0.1] /home/android/.gradle/caches/transforms-3/be8af39ad115dcec517493c2c4679540/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:69:17-89
+700-->[com.google.firebase:firebase-auth:21.0.1] /home/android/.gradle/caches/transforms-3/be8af39ad115dcec517493c2c4679540/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:69:25-86
+701
+702                <category android:name="android.intent.category.DEFAULT" />
+702-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:79:17-76
+702-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:79:27-73
+703            </intent-filter>
+704        </service>
+705
+706        <provider
+706-->[com.google.mlkit:common:18.1.0] /home/android/.gradle/caches/transforms-3/27a115791e8e5622018f7e4a20d40e7d/transformed/jetified-common-18.1.0/AndroidManifest.xml:9:9-13:38
+707            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
+707-->[com.google.mlkit:common:18.1.0] /home/android/.gradle/caches/transforms-3/27a115791e8e5622018f7e4a20d40e7d/transformed/jetified-common-18.1.0/AndroidManifest.xml:10:13-78
+708            android:authorities="com.swipefwd.mlkitinitprovider"
+708-->[com.google.mlkit:common:18.1.0] /home/android/.gradle/caches/transforms-3/27a115791e8e5622018f7e4a20d40e7d/transformed/jetified-common-18.1.0/AndroidManifest.xml:11:13-69
+709            android:exported="false"
+709-->[com.google.mlkit:common:18.1.0] /home/android/.gradle/caches/transforms-3/27a115791e8e5622018f7e4a20d40e7d/transformed/jetified-common-18.1.0/AndroidManifest.xml:12:13-37
+710            android:initOrder="99" />
+710-->[com.google.mlkit:common:18.1.0] /home/android/.gradle/caches/transforms-3/27a115791e8e5622018f7e4a20d40e7d/transformed/jetified-common-18.1.0/AndroidManifest.xml:13:13-35
+711
+712        <activity
+712-->[com.google.android.gms:play-services-base:18.1.0] /home/android/.gradle/caches/transforms-3/23343bcf2cd5547878841202b7ee20a3/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:20:9-22:45
+713            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+713-->[com.google.android.gms:play-services-base:18.1.0] /home/android/.gradle/caches/transforms-3/23343bcf2cd5547878841202b7ee20a3/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:20:19-85
+714            android:exported="false"
+714-->[com.google.android.gms:play-services-base:18.1.0] /home/android/.gradle/caches/transforms-3/23343bcf2cd5547878841202b7ee20a3/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:22:19-43
+715            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+715-->[com.google.android.gms:play-services-base:18.1.0] /home/android/.gradle/caches/transforms-3/23343bcf2cd5547878841202b7ee20a3/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:21:19-78
+716
+717        <receiver
+717-->[com.google.firebase:firebase-messaging:23.0.0] /home/android/.gradle/caches/transforms-3/f143b2b43abf2b6f91d842fd6049160d/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:28:9-35:20
+718            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+718-->[com.google.firebase:firebase-messaging:23.0.0] /home/android/.gradle/caches/transforms-3/f143b2b43abf2b6f91d842fd6049160d/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:29:13-78
+719            android:exported="true"
+719-->[com.google.firebase:firebase-messaging:23.0.0] /home/android/.gradle/caches/transforms-3/f143b2b43abf2b6f91d842fd6049160d/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:30:13-36
+720            android:permission="com.google.android.c2dm.permission.SEND" >
+720-->[com.google.firebase:firebase-messaging:23.0.0] /home/android/.gradle/caches/transforms-3/f143b2b43abf2b6f91d842fd6049160d/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:31:13-73
+721            <intent-filter>
+721-->[com.google.firebase:firebase-messaging:23.0.0] /home/android/.gradle/caches/transforms-3/f143b2b43abf2b6f91d842fd6049160d/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:32:13-34:29
+722                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+722-->[com.google.firebase:firebase-messaging:23.0.0] /home/android/.gradle/caches/transforms-3/f143b2b43abf2b6f91d842fd6049160d/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:33:17-81
+722-->[com.google.firebase:firebase-messaging:23.0.0] /home/android/.gradle/caches/transforms-3/f143b2b43abf2b6f91d842fd6049160d/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:33:25-78
+723            </intent-filter>
+724        </receiver>
+725        <!--
+726             FirebaseMessagingService performs security checks at runtime,
+727             but set to not exported to explicitly avoid allowing another app to call it.
+728        -->
+729        <service
+729-->[com.google.firebase:firebase-messaging:23.0.0] /home/android/.gradle/caches/transforms-3/f143b2b43abf2b6f91d842fd6049160d/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:41:9-48:19
+730            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+730-->[com.google.firebase:firebase-messaging:23.0.0] /home/android/.gradle/caches/transforms-3/f143b2b43abf2b6f91d842fd6049160d/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:42:13-82
+731            android:directBootAware="true"
+731-->[com.google.firebase:firebase-messaging:23.0.0] /home/android/.gradle/caches/transforms-3/f143b2b43abf2b6f91d842fd6049160d/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:43:13-43
+732            android:exported="false" >
+732-->[com.google.firebase:firebase-messaging:23.0.0] /home/android/.gradle/caches/transforms-3/f143b2b43abf2b6f91d842fd6049160d/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:44:13-37
+733            <intent-filter android:priority="-500" >
+733-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:386:13-388:29
+734                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+734-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:387:17-78
+734-->/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/AndroidManifest.xml:387:25-75
+735            </intent-filter>
+736        </service>
+737
+738        <provider
+738-->[com.google.firebase:firebase-common:20.1.0] /home/android/.gradle/caches/transforms-3/fc927f0de8840db8de1b7d1309e73e46/transformed/jetified-firebase-common-20.1.0/AndroidManifest.xml:26:9-31:39
+739            android:name="com.google.firebase.provider.FirebaseInitProvider"
+739-->[com.google.firebase:firebase-common:20.1.0] /home/android/.gradle/caches/transforms-3/fc927f0de8840db8de1b7d1309e73e46/transformed/jetified-firebase-common-20.1.0/AndroidManifest.xml:27:13-77
+740            android:authorities="com.swipefwd.firebaseinitprovider"
+740-->[com.google.firebase:firebase-common:20.1.0] /home/android/.gradle/caches/transforms-3/fc927f0de8840db8de1b7d1309e73e46/transformed/jetified-firebase-common-20.1.0/AndroidManifest.xml:28:13-72
+741            android:directBootAware="true"
+741-->[com.google.firebase:firebase-common:20.1.0] /home/android/.gradle/caches/transforms-3/fc927f0de8840db8de1b7d1309e73e46/transformed/jetified-firebase-common-20.1.0/AndroidManifest.xml:29:13-43
+742            android:exported="false"
+742-->[com.google.firebase:firebase-common:20.1.0] /home/android/.gradle/caches/transforms-3/fc927f0de8840db8de1b7d1309e73e46/transformed/jetified-firebase-common-20.1.0/AndroidManifest.xml:30:13-37
+743            android:initOrder="100" />
+743-->[com.google.firebase:firebase-common:20.1.0] /home/android/.gradle/caches/transforms-3/fc927f0de8840db8de1b7d1309e73e46/transformed/jetified-firebase-common-20.1.0/AndroidManifest.xml:31:13-36
+744
+745        <receiver
+745-->[com.google.android.gms:play-services-measurement:20.0.0] /home/android/.gradle/caches/transforms-3/4045c16aaa2660932113bec684373186/transformed/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:29:9-33:20
+746            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+746-->[com.google.android.gms:play-services-measurement:20.0.0] /home/android/.gradle/caches/transforms-3/4045c16aaa2660932113bec684373186/transformed/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:30:13-85
+747            android:enabled="true"
+747-->[com.google.android.gms:play-services-measurement:20.0.0] /home/android/.gradle/caches/transforms-3/4045c16aaa2660932113bec684373186/transformed/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:31:13-35
+748            android:exported="false" >
+748-->[com.google.android.gms:play-services-measurement:20.0.0] /home/android/.gradle/caches/transforms-3/4045c16aaa2660932113bec684373186/transformed/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:32:13-37
+749        </receiver>
+750
+751        <service
+751-->[com.google.android.gms:play-services-measurement:20.0.0] /home/android/.gradle/caches/transforms-3/4045c16aaa2660932113bec684373186/transformed/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:35:9-38:40
+752            android:name="com.google.android.gms.measurement.AppMeasurementService"
+752-->[com.google.android.gms:play-services-measurement:20.0.0] /home/android/.gradle/caches/transforms-3/4045c16aaa2660932113bec684373186/transformed/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:36:13-84
+753            android:enabled="true"
+753-->[com.google.android.gms:play-services-measurement:20.0.0] /home/android/.gradle/caches/transforms-3/4045c16aaa2660932113bec684373186/transformed/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:37:13-35
+754            android:exported="false" />
+754-->[com.google.android.gms:play-services-measurement:20.0.0] /home/android/.gradle/caches/transforms-3/4045c16aaa2660932113bec684373186/transformed/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:38:13-37
+755        <service
+755-->[com.google.android.gms:play-services-measurement:20.0.0] /home/android/.gradle/caches/transforms-3/4045c16aaa2660932113bec684373186/transformed/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:39:9-43:72
+756            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+756-->[com.google.android.gms:play-services-measurement:20.0.0] /home/android/.gradle/caches/transforms-3/4045c16aaa2660932113bec684373186/transformed/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:40:13-87
+757            android:enabled="true"
+757-->[com.google.android.gms:play-services-measurement:20.0.0] /home/android/.gradle/caches/transforms-3/4045c16aaa2660932113bec684373186/transformed/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:41:13-35
+758            android:exported="false"
+758-->[com.google.android.gms:play-services-measurement:20.0.0] /home/android/.gradle/caches/transforms-3/4045c16aaa2660932113bec684373186/transformed/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:42:13-37
+759            android:permission="android.permission.BIND_JOB_SERVICE" />
+759-->[com.google.android.gms:play-services-measurement:20.0.0] /home/android/.gradle/caches/transforms-3/4045c16aaa2660932113bec684373186/transformed/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:43:13-69
+760
+761        <meta-data
+761-->[com.google.android.gms:play-services-basement:18.1.0] /home/android/.gradle/caches/transforms-3/17987fa23bf180d43cf32c50bb98e85c/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
+762            android:name="com.google.android.gms.version"
+762-->[com.google.android.gms:play-services-basement:18.1.0] /home/android/.gradle/caches/transforms-3/17987fa23bf180d43cf32c50bb98e85c/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
+763            android:value="@integer/google_play_services_version" />
+763-->[com.google.android.gms:play-services-basement:18.1.0] /home/android/.gradle/caches/transforms-3/17987fa23bf180d43cf32c50bb98e85c/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
+764
+765        <provider
+765-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:31:9-39:20
+766            android:name="androidx.startup.InitializationProvider"
+766-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:32:13-67
+767            android:authorities="com.swipefwd.androidx-startup"
+767-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:33:13-68
+768            android:exported="false" >
+768-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:34:13-37
+769            <meta-data
+769-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:36:13-38:52
+770                android:name="androidx.work.WorkManagerInitializer"
+770-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:37:17-68
+771                android:value="androidx.startup" />
+771-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:38:17-49
+772            <meta-data
+772-->[androidx.emoji2:emoji2:1.0.0] /home/android/.gradle/caches/transforms-3/658a490dbbf0ba6eb1130fb79a11f7e6/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
+773                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+773-->[androidx.emoji2:emoji2:1.0.0] /home/android/.gradle/caches/transforms-3/658a490dbbf0ba6eb1130fb79a11f7e6/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:32:17-75
+774                android:value="androidx.startup" />
+774-->[androidx.emoji2:emoji2:1.0.0] /home/android/.gradle/caches/transforms-3/658a490dbbf0ba6eb1130fb79a11f7e6/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:33:17-49
+775            <meta-data
+775-->[androidx.lifecycle:lifecycle-process:2.4.0] /home/android/.gradle/caches/transforms-3/30c4622fe840dc60aad1954558cf71d4/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
+776                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+776-->[androidx.lifecycle:lifecycle-process:2.4.0] /home/android/.gradle/caches/transforms-3/30c4622fe840dc60aad1954558cf71d4/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
+777                android:value="androidx.startup" />
+777-->[androidx.lifecycle:lifecycle-process:2.4.0] /home/android/.gradle/caches/transforms-3/30c4622fe840dc60aad1954558cf71d4/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
+778        </provider>
+779
+780        <service
+780-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:41:9-46:35
+781            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+781-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:42:13-88
+782            android:directBootAware="false"
+782-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:43:13-44
+783            android:enabled="@bool/enable_system_alarm_service_default"
+783-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:44:13-72
+784            android:exported="false" />
+784-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:45:13-37
+785        <service
+785-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:47:9-53:35
+786            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+786-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:48:13-84
+787            android:directBootAware="false"
+787-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:49:13-44
+788            android:enabled="@bool/enable_system_job_service_default"
+788-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:50:13-70
+789            android:exported="true"
+789-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:51:13-36
+790            android:permission="android.permission.BIND_JOB_SERVICE" />
+790-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:52:13-69
+791        <service
+791-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:54:9-59:35
+792            android:name="androidx.work.impl.foreground.SystemForegroundService"
+792-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:55:13-81
+793            android:directBootAware="false"
+793-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:56:13-44
+794            android:enabled="@bool/enable_system_foreground_service_default"
+794-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:57:13-77
+795            android:exported="false" />
+795-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:58:13-37
+796
+797        <receiver
+797-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:61:9-66:35
+798            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+798-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:62:13-88
+799            android:directBootAware="false"
+799-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:63:13-44
+800            android:enabled="true"
+800-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:64:13-35
+801            android:exported="false" />
+801-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:65:13-37
+802        <receiver
+802-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:67:9-77:20
+803            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+803-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:68:13-106
+804            android:directBootAware="false"
+804-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:69:13-44
+805            android:enabled="false"
+805-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:70:13-36
+806            android:exported="false" >
+806-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:71:13-37
+807            <intent-filter>
+807-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:73:13-76:29
+808                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+808-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:74:17-87
+808-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:74:25-84
+809                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+809-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:75:17-90
+809-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:75:25-87
+810            </intent-filter>
+811        </receiver>
+812        <receiver
+812-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:78:9-88:20
+813            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+813-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:79:13-104
+814            android:directBootAware="false"
+814-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:80:13-44
+815            android:enabled="false"
+815-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:81:13-36
+816            android:exported="false" >
+816-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:82:13-37
+817            <intent-filter>
+817-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:84:13-87:29
+818                <action android:name="android.intent.action.BATTERY_OKAY" />
+818-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:85:17-77
+818-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:85:25-74
+819                <action android:name="android.intent.action.BATTERY_LOW" />
+819-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:86:17-76
+819-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:86:25-73
+820            </intent-filter>
+821        </receiver>
+822        <receiver
+822-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:89:9-99:20
+823            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+823-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:90:13-104
+824            android:directBootAware="false"
+824-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:91:13-44
+825            android:enabled="false"
+825-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:92:13-36
+826            android:exported="false" >
+826-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:93:13-37
+827            <intent-filter>
+827-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:95:13-98:29
+828                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+828-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:96:17-83
+828-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:96:25-80
+829                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+829-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:97:17-82
+829-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:97:25-79
+830            </intent-filter>
+831        </receiver>
+832        <receiver
+832-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:100:9-109:20
+833            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+833-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:101:13-103
+834            android:directBootAware="false"
+834-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:102:13-44
+835            android:enabled="false"
+835-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:103:13-36
+836            android:exported="false" >
+836-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:104:13-37
+837            <intent-filter>
+837-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:106:13-108:29
+838                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+838-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:107:17-79
+838-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:107:25-76
+839            </intent-filter>
+840        </receiver>
+841        <receiver
+841-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:110:9-121:20
+842            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+842-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:111:13-88
+843            android:directBootAware="false"
+843-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:112:13-44
+844            android:enabled="false"
+844-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:113:13-36
+845            android:exported="false" >
+845-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:114:13-37
+846            <intent-filter>
+846-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:116:13-120:29
+847                <action android:name="android.intent.action.BOOT_COMPLETED" />
+847-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:117:17-79
+847-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:117:25-76
+848                <action android:name="android.intent.action.TIME_SET" />
+848-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:118:17-73
+848-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:118:25-70
+849                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+849-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:119:17-81
+849-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:119:25-78
+850            </intent-filter>
+851        </receiver>
+852        <receiver
+852-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:122:9-131:20
+853            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+853-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:123:13-99
+854            android:directBootAware="false"
+854-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:124:13-44
+855            android:enabled="@bool/enable_system_alarm_service_default"
+855-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:125:13-72
+856            android:exported="false" >
+856-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:126:13-37
+857            <intent-filter>
+857-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:128:13-130:29
+858                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+858-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:129:17-98
+858-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:129:25-95
+859            </intent-filter>
+860        </receiver>
+861        <receiver
+861-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:132:9-142:20
+862            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+862-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:133:13-78
+863            android:directBootAware="false"
+863-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:134:13-44
+864            android:enabled="true"
+864-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:135:13-35
+865            android:exported="true"
+865-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:136:13-36
+866            android:permission="android.permission.DUMP" >
+866-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:137:13-57
+867            <intent-filter>
+867-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:139:13-141:29
+868                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+868-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:140:17-88
+868-->[androidx.work:work-runtime:2.7.0] /home/android/.gradle/caches/transforms-3/bc413e8abc639edb022eb8cd418cadc7/transformed/work-runtime-2.7.0/AndroidManifest.xml:140:25-85
+869            </intent-filter>
+870        </receiver>
+871
+872        <service
+872-->[androidx.room:room-runtime:2.4.3] /home/android/.gradle/caches/transforms-3/75a2f5cd73a7d566ff40d4554358cef5/transformed/room-runtime-2.4.3/AndroidManifest.xml:25:9-28:40
+873            android:name="androidx.room.MultiInstanceInvalidationService"
+873-->[androidx.room:room-runtime:2.4.3] /home/android/.gradle/caches/transforms-3/75a2f5cd73a7d566ff40d4554358cef5/transformed/room-runtime-2.4.3/AndroidManifest.xml:26:13-74
+874            android:directBootAware="true"
+874-->[androidx.room:room-runtime:2.4.3] /home/android/.gradle/caches/transforms-3/75a2f5cd73a7d566ff40d4554358cef5/transformed/room-runtime-2.4.3/AndroidManifest.xml:27:13-43
+875            android:exported="false" />
+875-->[androidx.room:room-runtime:2.4.3] /home/android/.gradle/caches/transforms-3/75a2f5cd73a7d566ff40d4554358cef5/transformed/room-runtime-2.4.3/AndroidManifest.xml:28:13-37
+876        <service
+876-->[com.google.android.datatransport:transport-backend-cct:3.1.0] /home/android/.gradle/caches/transforms-3/61321e05e1eeff8de61a3f6cdc6c12aa/transformed/jetified-transport-backend-cct-3.1.0/AndroidManifest.xml:29:9-35:19
+877            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+877-->[com.google.android.datatransport:transport-backend-cct:3.1.0] /home/android/.gradle/caches/transforms-3/61321e05e1eeff8de61a3f6cdc6c12aa/transformed/jetified-transport-backend-cct-3.1.0/AndroidManifest.xml:30:13-103
+878            android:exported="false" >
+878-->[com.google.android.datatransport:transport-backend-cct:3.1.0] /home/android/.gradle/caches/transforms-3/61321e05e1eeff8de61a3f6cdc6c12aa/transformed/jetified-transport-backend-cct-3.1.0/AndroidManifest.xml:31:13-37
+879            <meta-data
+879-->[com.google.android.datatransport:transport-backend-cct:3.1.0] /home/android/.gradle/caches/transforms-3/61321e05e1eeff8de61a3f6cdc6c12aa/transformed/jetified-transport-backend-cct-3.1.0/AndroidManifest.xml:32:13-34:39
+880                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+880-->[com.google.android.datatransport:transport-backend-cct:3.1.0] /home/android/.gradle/caches/transforms-3/61321e05e1eeff8de61a3f6cdc6c12aa/transformed/jetified-transport-backend-cct-3.1.0/AndroidManifest.xml:33:17-94
+881                android:value="cct" />
+881-->[com.google.android.datatransport:transport-backend-cct:3.1.0] /home/android/.gradle/caches/transforms-3/61321e05e1eeff8de61a3f6cdc6c12aa/transformed/jetified-transport-backend-cct-3.1.0/AndroidManifest.xml:34:17-36
+882        </service>
+883        <service
+883-->[com.google.android.datatransport:transport-runtime:3.1.0] /home/android/.gradle/caches/transforms-3/4d37ba44aba7235f83713dacdd74b4e7/transformed/jetified-transport-runtime-3.1.0/AndroidManifest.xml:26:9-30:19
+884            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+884-->[com.google.android.datatransport:transport-runtime:3.1.0] /home/android/.gradle/caches/transforms-3/4d37ba44aba7235f83713dacdd74b4e7/transformed/jetified-transport-runtime-3.1.0/AndroidManifest.xml:27:13-117
+885            android:exported="false"
+885-->[com.google.android.datatransport:transport-runtime:3.1.0] /home/android/.gradle/caches/transforms-3/4d37ba44aba7235f83713dacdd74b4e7/transformed/jetified-transport-runtime-3.1.0/AndroidManifest.xml:28:13-37
+886            android:permission="android.permission.BIND_JOB_SERVICE" >
+886-->[com.google.android.datatransport:transport-runtime:3.1.0] /home/android/.gradle/caches/transforms-3/4d37ba44aba7235f83713dacdd74b4e7/transformed/jetified-transport-runtime-3.1.0/AndroidManifest.xml:29:13-69
+887        </service>
+888
+889        <receiver
+889-->[com.google.android.datatransport:transport-runtime:3.1.0] /home/android/.gradle/caches/transforms-3/4d37ba44aba7235f83713dacdd74b4e7/transformed/jetified-transport-runtime-3.1.0/AndroidManifest.xml:32:9-34:40
+890            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+890-->[com.google.android.datatransport:transport-runtime:3.1.0] /home/android/.gradle/caches/transforms-3/4d37ba44aba7235f83713dacdd74b4e7/transformed/jetified-transport-runtime-3.1.0/AndroidManifest.xml:33:13-132
+891            android:exported="false" />
+891-->[com.google.android.datatransport:transport-runtime:3.1.0] /home/android/.gradle/caches/transforms-3/4d37ba44aba7235f83713dacdd74b4e7/transformed/jetified-transport-runtime-3.1.0/AndroidManifest.xml:34:13-37
+892
+893        <meta-data
+893-->[com.android.billingclient:billing:5.0.0] /home/android/.gradle/caches/transforms-3/c09985e7fd795491b873083d12315c44/transformed/jetified-billing-5.0.0/AndroidManifest.xml:13:9-15:37
+894            android:name="com.google.android.play.billingclient.version"
+894-->[com.android.billingclient:billing:5.0.0] /home/android/.gradle/caches/transforms-3/c09985e7fd795491b873083d12315c44/transformed/jetified-billing-5.0.0/AndroidManifest.xml:14:13-73
+895            android:value="5.0.0" />
+895-->[com.android.billingclient:billing:5.0.0] /home/android/.gradle/caches/transforms-3/c09985e7fd795491b873083d12315c44/transformed/jetified-billing-5.0.0/AndroidManifest.xml:15:13-34
+896
+897        <activity
+897-->[com.android.billingclient:billing:5.0.0] /home/android/.gradle/caches/transforms-3/c09985e7fd795491b873083d12315c44/transformed/jetified-billing-5.0.0/AndroidManifest.xml:17:9-21:75
+898            android:name="com.android.billingclient.api.ProxyBillingActivity"
+898-->[com.android.billingclient:billing:5.0.0] /home/android/.gradle/caches/transforms-3/c09985e7fd795491b873083d12315c44/transformed/jetified-billing-5.0.0/AndroidManifest.xml:18:13-78
+899            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+899-->[com.android.billingclient:billing:5.0.0] /home/android/.gradle/caches/transforms-3/c09985e7fd795491b873083d12315c44/transformed/jetified-billing-5.0.0/AndroidManifest.xml:19:13-96
+900            android:exported="false"
+900-->[com.android.billingclient:billing:5.0.0] /home/android/.gradle/caches/transforms-3/c09985e7fd795491b873083d12315c44/transformed/jetified-billing-5.0.0/AndroidManifest.xml:20:13-37
+901            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+901-->[com.android.billingclient:billing:5.0.0] /home/android/.gradle/caches/transforms-3/c09985e7fd795491b873083d12315c44/transformed/jetified-billing-5.0.0/AndroidManifest.xml:21:13-72
+902    </application>
+903
+904</manifest>

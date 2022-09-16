@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  wheel picker  -->
+    <declare-styleable name="WheelPicker">
+        <attr name="wheel_data" format="reference" />
+        <attr name="wheel_selected_item_position" format="integer" />
+        <attr name="wheel_item_text_size" format="dimension" />
+        <attr name="wheel_item_text_color" format="color" />
+        <attr name="wheel_selected_item_text_color" format="color" />
+        <attr name="wheel_same_width" format="boolean" />
+        <attr name="wheel_maximum_width_text" format="string" />
+        <attr name="wheel_maximum_width_text_position" format="integer" />
+        <attr name="wheel_visible_item_count" format="integer" />
+        <attr name="wheel_item_space" format="dimension" />
+        <attr name="wheel_cyclic" format="boolean" />
+        <attr name="wheel_indicator" format="boolean" />
+        <attr name="wheel_indicator_color" format="color" />
+        <attr name="wheel_indicator_size" format="dimension" />
+        <attr name="wheel_curtain" format="boolean" />
+        <attr name="wheel_curtain_color" format="color" />
+        <attr name="wheel_atmospheric" format="boolean" />
+        <attr name="wheel_curved" format="boolean" />
+        <attr name="wheel_custom_paddingTop" format="boolean" />
+        <attr name="wheel_item_align" format="enum">
+            <enum name="center" value="0" />
+            <enum name="left" value="1" />
+            <enum name="right" value="2" />
+            <enum name="shift_right" value="3" />
+            <enum name="shift_left" value="4" />
+        </attr>
+        <attr name="wheel_font_path" format="string" />
+    </declare-styleable>
+    <declare-styleable name="SwipeDeck">
+        <attr name="max_visible" format="integer" />
+        <attr name="rotation_degrees" format="float" />
+        <attr name="card_spacing" format="dimension" />
+        <attr name="render_above" format="boolean" />
+        <attr name="render_below" format="boolean" />
+        <attr name="opacity_end" format="float" />
+        <attr name="card_gravity" format="enum">
+            <enum name="top" value="0" />
+            <enum name="center" value="1" />
+            <enum name="bottom" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <!--  Rounded ImageView  -->
+    <declare-styleable name="RoundedImageView">
+        <attr name="cornerRadius" format="dimension" />
+        <attr name="reverseMask" format="boolean" />
+        <attr name="roundedCorners">
+            <flag name="topLeft" value="8" />
+            <flag name="topRight" value="4" />
+            <flag name="bottomLeft" value="2" />
+            <flag name="bottomRight" value="1" />
+            <flag name="top" value="12" />
+            <flag name="bottom" value="3" />
+            <flag name="all" value="15" />
+        </attr>
+    </declare-styleable>
+
+    <!--  Range Seekbar  -->
+    <!-- Common attributes -->
+    <attr name="corner_radius" format="float" />
+    <attr name="min_value" format="float" />
+    <attr name="max_value" format="float" />
+    <attr name="min_start_value" format="float" />
+    <attr name="max_start_value" format="float" />
+    <attr name="steps" format="float" />
+    <attr name="gap" format="float" />
+    <attr name="fix_gap" format="float" />
+    <attr name="bar_color_mode" format="enum">
+        <enum name="solid" value="0" />
+        <enum name="gradient" value="1" />
+    </attr>
+    <attr name="bar_color" format="color" />
+    <attr name="bar_gradient_start" format="color" />
+    <attr name="bar_gradient_end" format="color" />
+    <attr name="bar_highlight_color_mode" format="enum">
+        <enum name="solid" value="0" />
+        <enum name="gradient" value="1" />
+    </attr>
+    <attr name="bar_highlight_color" format="color" />
+    <attr name="bar_highlight_gradient_start" format="color" />
+    <attr name="bar_highlight_gradient_end" format="color" />
+    <attr name="thumb_diameter" format="dimension" />
+    <attr name="seekbar_position" format="enum">
+        <enum name="left" value="0" />
+        <enum name="right" value="1" />
+    </attr>
+    <attr name="data_type" format="enum">
+        <enum name="_long" value="0" />
+        <enum name="_double" value="1" />
+        <enum name="_integer" value="2" />
+        <enum name="_float" value="3" />
+        <enum name="_short" value="4" />
+        <enum name="_byte" value="5" />
+    </attr>
+    <attr name="bar_height" format="dimension" />
+    <attr name="seek_bar_touch_enabled" format="boolean" />
+
+    <!-- Seekbar -->
+    <declare-styleable name="CrystalSeekbar">
+        <attr name="corner_radius" />
+        <attr name="min_value" />
+        <attr name="max_value" />
+        <attr name="min_start_value" />
+        <attr name="max_start_value" />
+        <attr name="steps" />
+        <attr name="gap" />
+        <attr name="fix_gap" />
+        <attr name="bar_height" />
+        <attr name="bar_color_mode" />
+        <attr name="bar_color" />
+        <attr name="bar_gradient_start" />
+        <attr name="bar_gradient_end" />
+        <attr name="bar_highlight_color_mode" />
+        <attr name="bar_highlight_color" />
+        <attr name="bar_highlight_gradient_start" />
+        <attr name="bar_highlight_gradient_end" />
+        <attr name="thumb_diameter" />
+        <attr name="seekbar_position" />
+        <attr name="data_type" />
+        <attr name="thumb_color" format="color" />
+        <attr name="thumb_color_pressed" format="color" />
+        <attr name="thumb_image" format="reference" />
+        <attr name="thumb_image_pressed" format="reference" />
+        <attr name="seek_bar_touch_enabled" />
+    </declare-styleable>
+
+<!--  OTPView  -->
+    <declare-styleable name="OtpTextView">
+        <attr name="android:textColor" />
+        <attr name="otp" format="string" />
+        <attr name="hide_otp" format="boolean" />
+        <attr name="hide_otp_drawable" format="reference" />
+        <attr name="length" format="integer" />
+        <attr name="width" format="dimension" />
+        <attr name="height" format="dimension" />
+        <attr name="box_margin" format="dimension" />
+        <attr name="box_margin_left" format="dimension" />
+        <attr name="box_margin_right" format="dimension" />
+        <attr name="box_margin_top" format="dimension" />
+        <attr name="box_margin_bottom" format="dimension" />
+        <attr name="otp_bar_height" format="dimension" />
+        <attr name="bar_enabled" format="boolean" />
+        <attr name="otp_box_background" format="reference" />
+        <attr name="otp_box_background_active" format="reference" />
+        <attr name="otp_box_background_inactive" format="reference" />
+        <attr name="otp_box_background_success" format="reference" />
+        <attr name="otp_box_background_error" format="reference" />
+        <attr name="bar_margin" format="dimension" />
+        <attr name="bar_margin_bottom" format="dimension" />
+        <attr name="bar_margin_right" format="dimension" />
+        <attr name="bar_margin_left" format="dimension" />
+        <attr name="bar_margin_top" format="dimension" />
+        <attr name="otp_text_size" format="dimension" />
+        <attr name="bar_active_color" format="color" />
+        <attr name="bar_inactive_color" format="color" />
+        <attr name="bar_error_color" format="color" />
+        <attr name="bar_success_color" format="color" />
+        <attr name="text_typeface" format="string" />
+    </declare-styleable>
+
+    <!--toggle-->
+    <declare-styleable name="SlideToActView">
+        <attr name="text" format="string" />
+        <attr name="text_size" format="dimension" />
+        <attr name="text_style" format="enum">
+            <enum name="normal" value="0" />
+            <enum name="bold" value="1" />
+            <enum name="italic" value="2" />
+        </attr>
+        <attr name="area_margin" format="dimension" />
+        <attr name="icon_margin" format="dimension" />
+        <attr name="inner_color" format="color" />
+        <attr name="outer_color" format="color" />
+        <attr name="text_color" format="color" />
+        <attr name="border_radius" format="dimension" />
+        <attr name="slider_height" format="dimension" />
+        <attr name="slider_width" format="dimension" />
+        <attr name="animation_duration" format="integer" />
+        <attr name="bump_vibration" format="integer" />
+        <attr name="slider_locked" format="boolean" />
+        <attr name="slider_reversed" format="boolean" />
+        <attr name="slider_icon" format="reference" />
+        <attr name="slider_icon_color" format="color" />
+        <attr name="rotate_icon" format="boolean" />
+        <attr name="animate_completion" format="boolean" />
+        <attr name="text_appearance" format="reference" />
+        <attr name="complete_icon" format="reference" />
+        <attr name="stroke_color" format="color"/>
+    </declare-styleable>
+    <declare-styleable name="SlideToActViewTheme">
+        <attr name="slideToActViewStyle" format="reference" />
+    </declare-styleable>
+
+    <!--    custom loader-->
+    <declare-styleable name="CircleView">
+        <attr name="circleRadius" format="dimension" />
+        <attr name="circleColor" format="color" />
+        <attr name="circleDrawOnlystroke" format="boolean" />
+        <attr name="circleStrokeWidth" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="TrailingCircularDotsLoader">
+        <attr name="trailingcircular_dotsRadius" format="dimension" />
+        <attr name="trailingcircular_noOfTrailingDots" format="integer" />
+        <attr name="trailingcircular_bigCircleRadius" format="dimension" />
+        <attr name="trailingcircular_dotsColor" format="color" />
+        <attr name="trailingcircular_animDuration" format="integer" />
+        <attr name="trailingcircular_animDelay" format="integer" />
+    </declare-styleable>
+    <!--    loading view-->
+    <declare-styleable name="LoadingView">
+        <attr name="lv_external_radius" format="dimension" />
+        <attr name="lv_internal_radius" format="dimension" />
+        <attr name="lv_duration" format="integer" />
+        <attr name="lv_start_color" format="color" />
+        <attr name="lv_end_color" format="color" />
+    </declare-styleable>
+
+    <color name="color_start">#00CFDB</color>
+    <color name="color_end">#0063A6</color>
+    <declare-styleable name="CrystalRangeSeekbar" >
+        <attr name="corner_radius" />
+        <attr name="min_value" />
+        <attr name="max_value" />
+        <attr name="min_start_value" />
+        <attr name="max_start_value" />
+        <attr name="steps" />
+        <attr name="gap" />
+        <attr name="fix_gap" />
+        <attr name="bar_height"/>
+        <attr name="bar_color_mode" />
+        <attr name="bar_color" />
+        <attr name="bar_gradient_start" />
+        <attr name="bar_gradient_end" />
+        <attr name="bar_highlight_color_mode" />
+        <attr name="bar_highlight_color" />
+        <attr name="bar_highlight_gradient_start" />
+        <attr name="bar_highlight_gradient_end" />
+        <attr name="thumb_diameter" />
+        <attr name="position" />
+        <attr name="data_type" />
+        <attr name="left_thumb_color" format="color" />
+        <attr name="left_thumb_color_pressed" format="color" />
+        <attr name="left_thumb_image" format="reference" />
+        <attr name="left_thumb_image_pressed" format="reference" />
+        <attr name="right_thumb_color" format="color" />
+        <attr name="right_thumb_color_pressed" format="color" />
+        <attr name="right_thumb_image" format="reference" />
+        <attr name="right_thumb_image_pressed" format="reference" />
+        <attr name="seek_bar_touch_enabled" />
+    </declare-styleable>
+    <declare-styleable name="SegmentedButton">
+        <attr name="android:background" />
+        <attr name="selectedBackground" />
+
+        <attr name="rounded" format="boolean" />
+
+        <attr name="rippleColor" />
+
+        <attr name="drawable" format="reference" />
+        <attr name="drawablePadding" format="dimension" />
+        <attr name="drawableTint" format="color" />
+        <attr name="selectedDrawableTint" format="color" />
+        <attr name="drawableWidth" format="dimension" />
+        <attr name="drawableHeight" format="dimension" />
+        <attr name="drawableGravity" format="integer">
+            <flag name="top" value="0x30" />
+            <flag name="bottom" value="0x50" />
+            <flag name="left" value="0x03" />
+            <flag name="right" value="0x05" />
+        </attr>
+
+<!--        <attr name="text" format="string" />-->
+        <attr name="textColor" format="color" />
+        <attr name="selectedTextColor" format="color" />
+        <attr name="textSize" format="dimension" />
+        <attr name="linesCount" format="integer" />
+        <attr name="android:ellipsize">
+            <enum name="none" value="0" />
+            <enum name="start" value="1" />
+            <enum name="middle" value="2" />
+            <enum name="end" value="3" />
+            <enum name="marquee" value="4" />
+        </attr>
+        <attr name="android:fontFamily" format="string" />
+        <attr name="textStyle" format="integer">
+            <flag name="normal" value="0" />
+            <flag name="bold" value="1" />
+            <flag name="italic" value="2" />
+        </attr>
+        <attr name="selectedTextStyle" format="integer">
+            <flag name="normal" value="0" />
+            <flag name="bold" value="1" />
+            <flag name="italic" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="SegmentedButtonGroup">
+        <attr name="android:background" />
+        <attr name="selectedBackground" />
+
+        <attr name="borderWidth" format="dimension" />
+        <attr name="borderColor" format="color" />
+        <attr name="borderDashWidth" format="dimension" />
+        <attr name="borderDashGap" format="dimension" />
+
+        <attr name="selectedBorderWidth" format="dimension" />
+        <attr name="selectedBorderColor" format="color" />
+        <attr name="selectedBorderDashWidth" format="dimension" />
+        <attr name="selectedBorderDashGap" format="dimension" />
+
+        <attr name="radius" format="dimension" />
+        <attr name="selectedButtonRadius" format="dimension" />
+        <attr name="position" format="integer" />
+        <attr name="draggable" format="boolean" />
+        <attr name="android:clickable" />
+
+        <attr name="ripple" format="boolean" />
+        <attr name="rippleColor" />
+
+        <attr name="divider" />
+        <attr name="dividerWidth" format="dimension" />
+        <attr name="dividerRadius" format="dimension" />
+        <attr name="dividerPadding" format="dimension" />
+
+        <attr name="selectionAnimationDuration" format="integer" />
+        <attr name="selectionAnimationInterpolator" format="enum">
+            <enum name="none" value="-1" />
+            <enum name="fastOutSlowIn" value="0" />
+            <enum name="bounce" value="1" />
+            <enum name="linear" value="2" />
+            <enum name="decelerate" value="3" />
+            <enum name="cycle" value="4" />
+            <enum name="anticipate" value="5" />
+            <enum name="accelerateDecelerate" value="6" />
+            <enum name="accelerate" value="7" />
+            <enum name="anticipateOvershoot" value="8" />
+            <enum name="fastOutLinearIn" value="9" />
+            <enum name="linearOutSlowIn" value="10" />
+            <enum name="overshoot" value="11" />
+        </attr>
+    </declare-styleable>
+</resources>

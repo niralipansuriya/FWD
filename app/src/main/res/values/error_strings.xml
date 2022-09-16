@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- common errors -->
+    <string name="error_something_went_wrong">Something went wrong</string>
+    <string name="error_message_please_check_internet">Please check your internet connection</string>
+    <string name="error_try_again_something_went_wrong">Something went wrong
+        \n Please Try again</string>
+
+    <!-- otp verify screen -->
+    <string name="error_message_enter_otp">Please enter otp</string>
+
+</resources>

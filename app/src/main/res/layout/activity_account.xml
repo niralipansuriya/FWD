@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnClose"
+        style="@style/Widget.MaterialComponents.Button.TextButton.Dialog.Flush"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="16dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        app:icon="@drawable/cancel_black"
+        app:iconTintMode="multiply"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="@string/account"
+        android:textAppearance="@style/AppTheme.MediumFont"
+        android:textColor="@color/colorPagerDesc"
+        android:textSize="18sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="15dp"
+        android:fadeScrollbars="true"
+        android:scrollbarSize="5dp"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:text="@string/phone_number"
+                android:textAppearance="@style/AppTheme.MediumFont"
+                android:textColor="@color/colorPagerDesc"
+                android:textSize="14sp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtPhone"
+                style="@style/EditTextTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:clickable="false"
+                android:focusable="false"
+                android:hint="@string/phone_number"
+                android:imeOptions="actionDone"
+                android:inputType="phone"
+                android:lineSpacingExtra="3dp"
+                tools:text="+91-985-5539-261" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/linked_social_media_accounts"
+                android:textAppearance="@style/AppTheme.MediumFont"
+                android:textColor="@color/colorPagerDesc"
+                android:textSize="14sp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtFb"
+                style="@style/EditTextTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/grey_border_bg"
+                android:drawableStart="@drawable/facebook_gray"
+                android:drawableEnd="@drawable/right_arrow"
+                android:drawablePadding="10dp"
+                android:focusable="false"
+                android:hint="@string/continue_facebook"
+                android:lineSpacingExtra="3dp"
+                android:singleLine="true"
+                android:textColor="@color/colorPagerDesc"
+                android:textSize="15sp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtInsta"
+                style="@style/EditTextTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/grey_border_bg"
+                android:drawableStart="@drawable/instagram_gray"
+                android:drawableEnd="@drawable/right_arrow"
+                android:drawablePadding="10dp"
+                android:focusable="false"
+                android:hint="@string/instagram"
+                android:lineSpacingExtra="3dp"
+                android:singleLine="true"
+                android:textColor="@color/colorPagerDesc"
+                android:textSize="15sp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtGoogle"
+                style="@style/EditTextTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/grey_border_bg"
+                android:drawableStart="@drawable/google_gray"
+                android:drawableEnd="@drawable/right_arrow"
+                android:drawablePadding="10dp"
+                android:focusable="false"
+                android:hint="@string/google"
+                android:lineSpacingExtra="3dp"
+                android:singleLine="true"
+                android:textColor="@color/colorPagerDesc"
+                android:textSize="15sp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtLinkedin"
+                style="@style/EditTextTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/grey_border_bg"
+                android:drawableStart="@drawable/linkedin_gray"
+                android:drawableEnd="@drawable/right_arrow"
+                android:drawablePadding="10dp"
+                android:focusable="false"
+                android:hint="@string/linkedin"
+                android:lineSpacingExtra="3dp"
+                android:singleLine="true"
+                android:textColor="@color/colorPagerDesc"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/email_settings"
+                android:textAppearance="@style/AppTheme.MediumFont"
+                android:textColor="@color/colorPagerDesc"
+                android:textSize="14sp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtEmail"
+                style="@style/EditTextTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/grey_border_bg"
+                android:drawableEnd="@drawable/right_arrow"
+                android:drawablePadding="10dp"
+                android:focusable="false"
+                android:hint="@string/email_settings"
+                android:lineSpacingExtra="3dp"
+                android:singleLine="true"
+                android:textColor="@color/colorPagerDesc"
+                android:textSize="15sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtAccountDisable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/account_visibility"
+                    android:textAppearance="@style/AppTheme.MediumFont"
+                    android:textColor="@color/colorPagerDesc"
+                    android:textSize="17sp" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/txtAccountDisable"
+                    android:layout_alignBottom="@id/txtAccountDisable"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@id/txtAccountDisable"
+                    app:srcCompat="@drawable/info" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="20dp"
+                    android:text="@string/no_yes"
+                    android:textAppearance="@style/AppTheme.MediumFont"
+                    android:textColor="@color/colorPagerDesc"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlDating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="20dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@id/toggleDating"
+                    android:text="@string/user_dater"
+                    android:textAppearance="@style/AppTheme.MediumFont"
+                    android:textColor="@color/colorPagerDesc"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatToggleButton
+                    android:id="@+id/toggleDating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/toggle_button_selector"
+                    android:checked="true"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    android:tag="@string/user_dater"
+                    android:textOff=""
+                    android:textOn="" />
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/viewDater"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorGrey" />
+
+            <RelativeLayout
+                android:id="@+id/rlMatchMaking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@id/toggleMatchMaking"
+                    android:text="@string/user_matchmaker"
+                    android:textAppearance="@style/AppTheme.MediumFont"
+                    android:textColor="@color/colorPagerDesc"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatToggleButton
+                    android:id="@+id/toggleMatchMaking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/toggle_button_selector"
+                    android:checked="true"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    android:tag="@string/user_matchmaker"
+                    android:textOff=""
+                    android:textOn="" />
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/viewConnector"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorGrey" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/notifications"
+                    android:textAppearance="@style/AppTheme.MediumFont"
+                    android:textColor="@color/colorPagerDesc"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="20dp"
+                    android:text="@string/travel_on_off"
+                    android:textAppearance="@style/AppTheme.MediumFont"
+                    android:textColor="@color/colorPagerDesc"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:lineSpacingExtra="5dp"
+                android:paddingTop="24dp"
+                android:paddingBottom="14dp"
+                android:text="@string/notification_desc"
+                android:textAppearance="@style/AppTheme.MediumFont"
+                android:textColor="@color/colorGrey"
+                android:textSize="12sp" />
+
+            <RelativeLayout
+                android:id="@+id/rlConnection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="20dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@id/toggleConnection"
+                    android:text="@string/add_new_connection"
+                    android:textAppearance="@style/AppTheme.MediumFont"
+                    android:textColor="@color/colorPagerDesc"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatToggleButton
+                    android:id="@+id/toggleConnection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/toggle_button_selector"
+                    android:checked="true"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    android:tag="@string/add_new_connection"
+                    android:textOff=""
+                    android:textOn="" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorGrey" />
+
+            <RelativeLayout
+                android:id="@+id/rlNewFwds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@id/toggleFwds"
+                    android:text="@string/new_fwd"
+                    android:textAppearance="@style/AppTheme.MediumFont"
+                    android:textColor="@color/colorPagerDesc"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatToggleButton
+                    android:id="@+id/toggleFwds"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/toggle_button_selector"
+                    android:checked="true"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    android:tag="@string/new_fwd"
+                    android:textOff=""
+                    android:textOn="" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorGrey" />
+
+            <RelativeLayout
+                android:id="@+id/rlMatches"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@id/toggleMatches"
+                    android:text="@string/new_matches"
+                    android:textAppearance="@style/AppTheme.MediumFont"
+                    android:textColor="@color/colorPagerDesc"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatToggleButton
+                    android:id="@+id/toggleMatches"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/toggle_button_selector"
+                    android:checked="true"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    android:tag="@string/new_matches"
+                    android:textOff=""
+                    android:textOn="" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorGrey" />
+
+            <RelativeLayout
+                android:id="@+id/rlMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@id/toggleMessages"
+                    android:text="@string/new_messages"
+                    android:textAppearance="@style/AppTheme.MediumFont"
+                    android:textColor="@color/colorPagerDesc"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatToggleButton
+                    android:id="@+id/toggleMessages"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/toggle_button_selector"
+                    android:checked="true"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    android:tag="@string/new_messages"
+                    android:textOff=""
+                    android:textOn="" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorGrey" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="15dp"
+                app:srcCompat="@drawable/logo_null_large" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/fwd"
+                app:tint="@color/colorPagerDesc" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnDeleteAccount"
+                style="@style/Widget.MaterialComponents.Button.TextButton.Dialog.Flush"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="40dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:text="@string/delete_account"
+                android:textAppearance="@style/AppTheme.MediumFont"
+                android:textColor="@color/light_orange"
+                android:textSize="14sp"
+                app:rippleColor="@color/orange_20" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

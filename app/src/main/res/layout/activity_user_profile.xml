@@ -1,0 +1,1292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutProfileMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:animateLayoutChanges="true"
+    android:focusableInTouchMode="true">
+    <!--android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"-->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:id="@+id/layoutMain"
+        android:animateLayoutChanges="true"
+        android:focusableInTouchMode="true"
+        >
+
+
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/layoutMainScroll"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="10dp"
+        android:fadeScrollbars="true"
+        android:scrollbarSize="5dp"
+        android:scrollbars="vertical"
+        android:animateLayoutChanges="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingStart="28dp"
+            android:paddingEnd="22dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/back_arrow_3"
+                app:tint="@color/colorPagerDesc" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtProfile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="@string/screen_profile"
+                android:textAppearance="@style/AppTheme.MediumFont"
+                android:textColor="@color/colorPagerDesc"
+                android:textSize="22sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ivBack" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtProfileHeader"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:letterSpacing="0.03"
+                app:fontFamily="@font/medium"
+
+                android:lineSpacingExtra="5dp"
+                android:text="@string/header_profile_dater"
+                android:textAppearance="@style/AppTheme.MediumFont"
+                android:textColor="@color/colorPagerDesc"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtProfile" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtUploadPhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                app:fontFamily="@font/medium"
+                android:fontFamily="@font/medium"
+                android:letterSpacing="0.03"
+                android:text="@string/update_profile"
+                android:textAppearance="@style/AppTheme.MediumFont"
+                android:textColor="@color/colorPagerDesc"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtProfileHeader" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/img_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:visibility="visible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtUploadPhoto">
+
+                <RelativeLayout
+                    android:id="@+id/addImagerl"
+                    android:layout_width="261dp"
+                    android:layout_height="261dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <com.swipefwd.utils.RoundedImageView
+                        android:id="@+id/tvAddImage1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="85dp"
+                        android:layout_marginBottom="35dp"
+                        app:srcCompat="@drawable/add_photo_new_2" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/choosePhoto1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvAddImage1"
+                        android:layout_centerInParent="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:fontFamily="@font/regular"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:lineSpacingExtra="3dp"
+                        android:text="@string/choose_photo"
+                        android:textAppearance="@style/AppTheme.RegularFont"
+                        android:textColor="@color/colorPagerDesc"
+                        android:textSize="13sp"
+                        app:fontFamily="@font/regular"
+                        tools:text="@string/profile_guideline" />
+                </RelativeLayout>
+
+
+                <com.ramijemli.percentagechartview.PercentageChartView
+                    android:id="@+id/progressSettings"
+                    android:layout_width="261dp"
+                    android:layout_height="261dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:pcv_animDuration="800"
+                    app:pcv_animInterpolator="accelerate_decelerate"
+                    app:pcv_backgroundBarColor="@color/light_grey"
+                    app:pcv_backgroundBarThickness="6dp"
+                    app:pcv_gradientColors="#6C67EF,#5EA3FB"
+                    app:pcv_gradientType="linear"
+                    app:pcv_mode="ring"
+                    app:pcv_orientation="clockwise"
+                    app:pcv_progressBarThickness="6dp"
+                    app:pcv_startAngle="90"
+                    app:pcv_textColor="@android:color/transparent" />
+
+                <com.swipefwd.utils.RoundedImageView
+                    android:id="@+id/imgSettings"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:scaleType="centerCrop"
+                    android:visibility="invisible"
+                    app:cornerRadius="1000dp"
+                    app:layout_constraintBottom_toBottomOf="@id/progressSettings"
+                    app:layout_constraintEnd_toEndOf="@id/progressSettings"
+                    app:layout_constraintStart_toStartOf="@id/progressSettings"
+                    app:layout_constraintTop_toTopOf="@id/progressSettings"
+                    app:roundedCorners="all"
+                    tools:srcCompat="@drawable/image_profile" />
+
+                <TextView
+                    android:id="@+id/txtProgress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/profile_progress_bg"
+                    android:paddingStart="6dp"
+                    android:paddingTop="2dp"
+                    android:paddingEnd="6dp"
+                    android:paddingBottom="2dp"
+                    android:textAppearance="@style/AppTheme.MediumFont"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@id/progressSettings"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/imgSettings"
+                    tools:text="45%" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivClose"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="35dp"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="@id/img_profile"
+                app:layout_constraintTop_toTopOf="@id/img_profile"
+                app:srcCompat="@drawable/cancel_photo_gray_new" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layoutVerified"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:paddingStart="2dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/img_profile">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivNotVerified"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtVerifiedTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/not_verified"
+                    android:fontFamily="@font/medium"
+                    android:textAppearance="@style/AppTheme.MediumFont"
+                    android:textColor="@color/colorGrey"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toEndOf="@id/ivNotVerified"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtVerified"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="24dp"
+                    android:fontFamily="@font/medium"
+                    android:lineSpacingExtra="3dp"
+                    android:text="@string/not_verified_message"
+                    android:textAppearance="@style/AppTheme.MediumFont"
+                    android:textColor="@color/colorGrey"
+                    android:textSize="15sp"
+                    app:fontFamily="@font/medium"
+                    app:layout_constraintEnd_toStartOf="@id/ivArrow"
+                    app:layout_constraintStart_toEndOf="@id/ivNotVerified"
+                    app:layout_constraintTop_toBottomOf="@id/txtVerifiedTitle" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivArrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:tint="@color/settings_name"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/txtVerified"
+                    app:layout_constraintTop_toTopOf="@id/txtVerified"
+                    app:srcCompat="@drawable/right_arrow_verification" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtFName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/first_name"
+                app:fontFamily="@font/medium"
+                android:textAppearance="@style/AppTheme.MediumFont"
+                android:textColor="@color/colorPagerDesc"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/layoutVerified" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                app:layout_constraintLeft_toRightOf="@id/txtFName"
+                app:layout_constraintTop_toBottomOf="@id/layoutVerified"
+                app:srcCompat="@drawable/red_asterisk" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtFirstName"
+                style="@style/EditTextTheme"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:digits="abcdefghijklmnopqrstuvwxyz'ABCDEFGHIJKLMNOPQRSTUVWXYZ012345678 9"
+                android:ellipsize="end"
+                android:background="@drawable/grey_border_bg"
+
+                android:hint="@string/first_name"
+                android:imeOptions="actionNext"
+                android:fontFamily="@font/regular"
+                android:importantForAutofill="no"
+                android:inputType="textVisiblePassword|textNoSuggestions|textCapSentences"
+                android:maxLength="25"
+                android:singleLine="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtFName" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtLName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="@string/last_name"
+                android:textAppearance="@style/AppTheme.MediumFont"
+                android:textColor="@color/colorPagerDesc"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edtFirstName" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="29dp"
+                app:layout_constraintLeft_toRightOf="@id/txtLName"
+                app:layout_constraintTop_toBottomOf="@id/edtFirstName"
+                app:srcCompat="@drawable/red_asterisk" />
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtLastName"
+                style="@style/EditTextTheme"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:digits="abcdefghijklmnopqrstuvwxyz'ABCDEFGHIJKLMNOPQRSTUVWXYZ012345678 9"
+                android:hint="@string/last_name"
+                android:imeOptions="actionNext"
+                android:background="@drawable/grey_border_bg"
+
+                android:importantForAutofill="no"
+                android:fontFamily="@font/regular"
+                android:inputType="textVisiblePassword|textNoSuggestions|textCapSentences"
+                android:maxLength="25"
+                android:singleLine="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtLName" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtDob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="@string/birth_date"
+                android:textAppearance="@style/AppTheme.MediumFont"
+                android:textColor="@color/colorPagerDesc"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edtLastName" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="29dp"
+                app:layout_constraintLeft_toRightOf="@id/txtDob"
+                app:layout_constraintTop_toBottomOf="@id/edtLastName"
+                app:srcCompat="@drawable/red_asterisk" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtBirthDate"
+                style="@style/EditTextTheme"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:fontFamily="@font/regular"
+                android:background="@drawable/grey_border_bg"
+
+                android:hint="@string/dob_hint"
+                android:imeOptions="actionDone"
+                android:inputType="textNoSuggestions"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtDob" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="@string/user_gender"
+                android:textAppearance="@style/AppTheme.MediumFont"
+                android:textColor="@color/colorPagerDesc"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edtBirthDate" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="29dp"
+                android:visibility="visible"
+                app:layout_constraintLeft_toRightOf="@id/txtGender"
+                app:layout_constraintTop_toBottomOf="@id/edtBirthDate"
+                app:srcCompat="@drawable/red_asterisk" />
+
+            <com.addisonelliott.segmentedbutton.SegmentedButtonGroup
+                android:id="@+id/btnSegmentGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:borderColor="@color/colorAccent"
+                app:borderWidth="1dp"
+                app:divider="@color/colorAccent"
+                app:draggable="false"
+                app:layout_constraintTop_toBottomOf="@id/txtGender"
+                app:radius="30dp"
+                app:ripple="false"
+                app:rippleColor="@color/colorAccent"
+                app:selectedBackground="@drawable/blue_gradient_bg"
+                app:selectionAnimationDuration="10"
+                tools:layout_editor_absoluteX="28dp">
+
+                <com.addisonelliott.segmentedbutton.SegmentedButton
+                    android:id="@+id/btnMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/regular"
+                    app:selectedTextColor="@color/white"
+                    app:selectedTextStyle="bold"
+                    app:text="@string/gender_male"
+                    app:textColor="@color/colorPagerDesc"
+                    app:textSize="15sp" />
+
+                <com.addisonelliott.segmentedbutton.SegmentedButton
+                    android:id="@+id/btnFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/regular"
+                    app:selectedTextColor="@color/white"
+                    app:selectedTextStyle="bold"
+                    app:text="@string/gender_female"
+                    app:textColor="@color/colorPagerDesc"
+                    app:textSize="15sp" />
+
+                <com.addisonelliott.segmentedbutton.SegmentedButton
+                    android:id="@+id/btnNone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/regular"
+                    app:selectedTextColor="@color/white"
+                    app:selectedTextStyle="bold"
+                    app:text="@string/gender_none"
+                    app:textColor="@color/colorPagerDesc"
+                    app:textSize="15sp" />
+            </com.addisonelliott.segmentedbutton.SegmentedButtonGroup>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtAreaLive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="@string/location"
+                android:textAppearance="@style/AppTheme.MediumFont"
+                android:textColor="@color/colorPagerDesc"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnSegmentGender" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/astericAi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:layout_constraintLeft_toRightOf="@id/txtAreaLive"
+                app:layout_constraintTop_toTopOf="@id/txtAreaLive"
+                app:srcCompat="@drawable/red_asterisk" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivInfo"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="5dp"
+                app:layout_constraintBottom_toBottomOf="@id/txtAreaLive"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/txtAreaLive"
+                app:srcCompat="@drawable/info" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:id="@+id/edtLocationOuter"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtAreaLive">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtLocation"
+                    style="@style/EditTextTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/grey_border_bg"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:fontFamily="@font/regular"
+
+                    android:hint="@string/hint_location"
+                    android:inputType="textNoSuggestions"
+                    android:paddingEnd="30dp" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="9sp"
+                    android:layout_height="15sp"
+                    android:id="@+id/locNextArrow"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/next_arrow_blue_new"/>
+
+            </RelativeLayout>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnAddMore"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/add_more_info"
+                android:textAppearance="@style/AppTheme.MediumFont"
+                android:textSize="17sp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edtLocationOuter"
+                app:rippleColor="@color/blue_gradient_2_ripple" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layoutAddMore"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:animateLayoutChanges="true"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btnAddMore"
+                tools:visibility="visible">
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtTravelling"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:letterSpacing="0.03"
+                    android:text="@string/travel_location"
+                    android:textAppearance="@style/AppTheme.MediumFont"
+                    android:textColor="@color/colorPagerDesc"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtOnOff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/travel_on_off"
+                    android:textAppearance="@style/AppTheme.MediumFont"
+                    android:textColor="@color/colorPagerDesc"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtTravelLocation"
+                    style="@style/EditTextTheme"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="32dp"
+                    android:drawableStart="@drawable/lock"
+                    android:drawableEnd="@drawable/right_arrow"
+                    android:drawablePadding="5dp"
+                    android:enabled="false"
+                    android:hint="@string/travel_hint"
+                    android:fontFamily="@font/regular"
+                    android:background="@drawable/grey_border_bg"
+
+                    android:inputType="textNoSuggestions"
+                    android:singleLine="true"
+                    android:textAppearance="@style/AppTheme.RegularFont"
+                    android:textColor="@color/colorPagerDesc"
+                    android:textColorHint="@color/colorGrey"
+                    app:layout_constraintEnd_toStartOf="@id/toggleTravelLocation"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txtTravelling" />
+
+                <androidx.appcompat.widget.AppCompatToggleButton
+                    android:id="@+id/toggleTravelLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/toggle_button_selector"
+                    android:clickable="true"
+                    android:fitsSystemWindows="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="false"
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    android:textOff=""
+                    android:textOn=""
+                    app:layout_constraintBottom_toBottomOf="@id/edtTravelLocation"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/edtTravelLocation" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtLocationMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:letterSpacing="0.03"
+                    android:lineSpacingExtra="5dp"
+                    android:paddingEnd="9dp"
+                    android:text="@string/travelling_message"
+                    android:textAppearance="@style/AppTheme.RegularFont"
+                    android:textColor="@color/colorPagerDesc"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/edtTravelLocation" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvUploadPhoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:letterSpacing="0.03"
+                    android:text="@string/upload_photo"
+                    android:textAppearance="@style/AppTheme.MediumFont"
+                    android:textColor="@color/colorPagerDesc"
+                    android:textSize="15sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txtLocationMessage" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/layoutSelectedImage"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="9dp"
+                    android:layout_marginEnd="-5dp"
+                    app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvUploadPhoto"
+                    app:spanCount="3"
+                    tools:itemCount="6"
+                    tools:listitem="@layout/item_selected_photo" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvBio"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="11dp"
+                    android:text="@string/bio"
+                    app:fontFamily="@font/medium"
+                    android:textAppearance="@style/AppTheme.MediumFont"
+                    android:textColor="@color/colorPagerDesc"
+                    android:textSize="15sp"
+                    app:layout_constraintEnd_toStartOf="@id/tvBioCharacter"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/layoutSelectedImage" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvBioCharacter"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="11dp"
+                    android:layout_marginEnd="10dp"
+                    android:gravity="end"
+                    android:text="0/150"
+                    android:textAppearance="@style/AppTheme.MediumFont"
+                    android:textColor="@color/colorPagerDesc"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/tvBio"
+                    app:layout_constraintTop_toBottomOf="@id/layoutSelectedImage"
+                    tools:text="@string/bio" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtBio"
+                    style="@style/EditTextTheme"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:elegantTextHeight="true"
+                    android:focusableInTouchMode="true"
+                    android:fontFamily="@font/regular"
+                    android:background="@drawable/grey_border_bg"
+
+                    android:gravity="top"
+                    android:hint="@string/bio_hint"
+                    android:imeOptions="actionNext"
+                    android:inputType="textVisiblePassword|textCapSentences|textNoSuggestions|textMultiLine"
+                    android:letterSpacing="0.03"
+                    android:lineSpacingExtra="4dp"
+                    android:lines="3"
+                    android:maxLength="150"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:scrollbars="vertical"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvBio" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtHeight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:text="@string/height"
+                    android:textAppearance="@style/AppTheme.MediumFont"
+                    android:textColor="@color/colorPagerDesc"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/edtBio" />
+
+                <LinearLayout
+                    android:id="@+id/layoutHeight"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txtHeight">
+
+                    <TextView
+                        android:id="@+id/txtHeightValue"
+                        style="@style/TextBorderTheme"
+                        android:layout_width="0dp"
+                        android:background="@drawable/grey_border_bg"
+
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="12dp"
+                        android:layout_weight="1"
+                        app:drawableEndCompat="@drawable/right_arrow" />
+
+                    <com.swipefwd.utils.segmentedButtonTemp.SegmentedButtonGroup2
+                        android:id="@+id/segmentedHeight"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        app:borderColor="@color/colorAccent"
+                        app:borderWidth="1dp"
+                        app:divider="@color/colorAccent"
+                        app:draggable="false"
+                        app:radius="30dp"
+                        app:ripple="false"
+                        app:rippleColor="@color/colorAccent"
+                        app:selectionAnimationDuration="10">
+
+                        <com.swipefwd.utils.segmentedButtonTemp.SegmentedButton
+                            android:id="@+id/btnFt"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/bold"
+                            android:padding="12dp"
+                            app:selectedBackground="@drawable/height_radio_btn_gradient_1"
+                            app:selectedTextColor="@color/white"
+                            app:text="@string/ft_inch"
+                            app:textColor="@color/blue_gradient_2"
+                            app:textSize="16sp" />
+
+                        <com.swipefwd.utils.segmentedButtonTemp.SegmentedButton
+                            android:id="@+id/btnCm"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/bold"
+                            android:padding="12dp"
+                            app:selectedBackground="@drawable/height_radio_btn_gradient_2"
+                            app:selectedTextColor="@color/white"
+                            app:text="@string/cm"
+                            app:textColor="@color/blue_gradient_2"
+                            app:textSize="16sp" />
+                    </com.swipefwd.utils.segmentedButtonTemp.SegmentedButtonGroup2>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutUserDetails"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/layoutHeight">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:text="@string/language"
+                        android:textAppearance="@style/AppTheme.MediumFont"
+                        android:textColor="@color/colorPagerDesc"
+                        android:textSize="15sp" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtLanguage"
+                        style="@style/EditTextTheme"
+                        android:fontFamily="@font/regular"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/grey_border_bg"
+                        android:drawableEnd="@drawable/right_arrow"
+                        android:focusable="false"
+                        android:hint="@string/language_hint"
+                        android:inputType="textNoSuggestions"
+                        android:singleLine="true"
+                        android:textSize="16sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:text="@string/occupation"
+                        android:textAppearance="@style/AppTheme.MediumFont"
+                        android:textColor="@color/colorPagerDesc"
+                        android:textSize="15sp" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtOccupation"
+                        style="@style/EditTextTheme"
+                        android:fontFamily="@font/regular"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/grey_border_bg"
+                        android:drawableEnd="@drawable/right_arrow"
+                        android:focusable="false"
+                        android:hint="@string/occupation_hint"
+                        android:inputType="textNoSuggestions"
+                        android:singleLine="true"
+                        android:textSize="16sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:text="@string/education"
+                        android:textAppearance="@style/AppTheme.MediumFont"
+                        android:textColor="@color/colorPagerDesc"
+                        android:textSize="15sp" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtEducation"
+                        style="@style/EditTextTheme"
+                        android:fontFamily="@font/regular"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/grey_border_bg"
+                        android:drawableEnd="@drawable/right_arrow"
+                        android:focusable="false"
+                        android:hint="@string/education_hint"
+                        android:inputType="textNoSuggestions"
+                        android:singleLine="true"
+                        android:textSize="16sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:text="@string/astrological_sign"
+                        android:textAppearance="@style/AppTheme.MediumFont"
+                        android:textColor="@color/colorPagerDesc"
+                        android:textSize="15sp" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/layoutAstroSign"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/grey_border_bg"
+                        android:paddingStart="20dp"
+                        android:paddingTop="14dp"
+                        android:paddingEnd="15dp"
+                        android:paddingBottom="14dp">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/imgAstro"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:visibility="gone"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:srcCompat="@drawable/aries" />
+
+                        <TextView
+                            android:id="@+id/edtAstroSign"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:focusable="false"
+                            android:gravity="start"
+                            android:hint="@string/zodiac_hint"
+                            android:singleLine="true"
+                            android:textAppearance="@style/AppTheme.RegularFont"
+                            android:textColor="@color/colorPagerDesc"
+                            android:textColorHint="@color/colorGrey"
+                            android:textSize="16sp"
+                            app:drawableEndCompat="@drawable/right_arrow"
+                            app:layout_constraintBottom_toBottomOf="@id/imgAstro"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/imgAstro"
+                            app:layout_constraintTop_toTopOf="@id/imgAstro"
+                            tools:text="@string/app_name" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:text="@string/caste"
+                        android:textAppearance="@style/AppTheme.MediumFont"
+                        android:textColor="@color/colorPagerDesc"
+                        android:textSize="15sp"
+                        android:visibility="gone" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtCaste"
+                        style="@style/EditTextTheme"
+                        android:fontFamily="@font/regular"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/grey_border_bg"
+                        android:drawableEnd="@drawable/right_arrow"
+                        android:focusable="false"
+                        android:hint="@string/caste_hint"
+                        android:inputType="textNoSuggestions"
+                        android:singleLine="true"
+                        android:visibility="gone" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:text="@string/children"
+                        android:textAppearance="@style/AppTheme.MediumFont"
+                        android:textColor="@color/colorPagerDesc"
+                        android:textSize="15sp" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtChildren"
+                        style="@style/EditTextTheme"
+                        android:fontFamily="@font/regular"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/grey_border_bg"
+                        android:drawableEnd="@drawable/right_arrow"
+                        android:focusable="false"
+                        android:hint="@string/children_hint"
+                        android:inputType="textNoSuggestions"
+                        android:singleLine="true"
+                        android:textSize="16sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:text="@string/religion"
+                        android:textAppearance="@style/AppTheme.MediumFont"
+                        android:textColor="@color/colorPagerDesc"
+                        android:textSize="15sp" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtReligion"
+                        style="@style/EditTextTheme"
+                        android:layout_width="match_parent"
+                        android:fontFamily="@font/regular"
+
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/grey_border_bg"
+                        android:drawableEnd="@drawable/right_arrow"
+                        android:focusable="false"
+                        android:hint="@string/religion_hint"
+                        android:inputType="textNoSuggestions"
+                        android:singleLine="true"
+                        android:textSize="16sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:text="@string/covid_vaccine"
+                        android:textAppearance="@style/AppTheme.MediumFont"
+                        android:textColor="@color/colorPagerDesc"
+                        android:textSize="15sp" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtCovid"
+                        style="@style/EditTextTheme"
+                        android:layout_width="match_parent"
+                        android:fontFamily="@font/regular"
+
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/grey_border_bg"
+                        android:drawableEnd="@drawable/right_arrow"
+                        android:focusable="false"
+                        android:hint="@string/covid_status_hint"
+                        android:inputType="textNoSuggestions"
+                        android:singleLine="true"
+                        android:textSize="16sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:text="@string/smoking"
+                        android:textAppearance="@style/AppTheme.MediumFont"
+                        android:textColor="@color/colorPagerDesc"
+                        android:textSize="15sp" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtSmoking"
+                        style="@style/EditTextTheme"
+                        android:layout_width="match_parent"
+                        android:fontFamily="@font/regular"
+
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/grey_border_bg"
+                        android:drawableEnd="@drawable/right_arrow"
+                        android:focusable="false"
+                        android:hint="@string/smoke_hint"
+                        android:inputType="textNoSuggestions"
+                        android:singleLine="true"
+                        android:textSize="16sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:text="@string/relationship_interest"
+                        android:textAppearance="@style/AppTheme.MediumFont"
+                        android:textColor="@color/colorPagerDesc"
+                        android:textSize="15sp" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtLookingFor"
+                        style="@style/EditTextTheme"
+                        android:fontFamily="@font/regular"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/grey_border_bg"
+                        android:drawableEnd="@drawable/right_arrow"
+                        android:focusable="false"
+                        android:hint="@string/what_are_you_looking_for"
+                        android:inputType="textNoSuggestions"
+                        android:singleLine="true" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:text="@string/instagram"
+                        android:textAppearance="@style/AppTheme.MediumFont"
+                        android:textColor="@color/colorPagerDesc"
+                        android:textSize="15sp" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtInstagram"
+                        style="@style/EditTextTheme"
+                        android:layout_width="match_parent"
+                        android:fontFamily="@font/regular"
+
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/grey_border_bg"
+                        android:drawableStart="@drawable/instagram_gray"
+                        android:drawableEnd="@drawable/right_arrow"
+                        android:drawablePadding="10dp"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:hint="@string/instagram_hint"
+                        android:inputType="textNoSuggestions"
+                        android:textColor="@color/fontBlack" />
+
+                    <RelativeLayout
+                        android:id="@+id/layoutShowInProfile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="30dp"
+                        android:visibility="gone">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txtShowInInstagram"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:layout_toStartOf="@+id/toggleInstagram"
+                            android:text="@string/show_in_instagram"
+                            android:textAppearance="@style/AppTheme.MediumFont"
+                            android:textColor="@color/colorPagerDesc"
+                            android:textSize="15sp" />
+
+                        <androidx.appcompat.widget.AppCompatToggleButton
+                            android:id="@+id/toggleInstagram"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:background="@drawable/toggle_button_selector"
+                            android:clickable="true"
+                            android:fitsSystemWindows="true"
+                            android:focusable="true"
+                            android:focusableInTouchMode="false"
+                            android:minWidth="0dp"
+                            android:minHeight="0dp"
+                            android:textOff=""
+                            android:textOn="" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnContinue"
+                style="@style/materialIconButtonTheme"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:text="@string/common_continue"
+                android:textSize="17sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/layoutAddMore" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtFields"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:drawableStart="@drawable/red_asterisk"
+                android:gravity="center"
+                android:letterSpacing="0.03"
+                android:text="@string/required_fields"
+                android:textAppearance="@style/AppTheme.RegularFont"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btnContinue" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       android:visibility="gone"
+        android:background="@color/white"
+        android:id="@+id/relFadedView">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageFadedBackground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="@color/transparent"
+            android:scaleType="centerCrop"
+            />
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageFaded"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+             />
+
+        <!--android:paddingTop="36dp"-->
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivInfo2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            app:srcCompat="@drawable/info" />
+        <ImageView
+            android:layout_width="25sp"
+            android:layout_height="15sp"
+            android:id="@+id/toolTipArrowTop"
+            android:rotation="180"
+            android:background="@drawable/arrow_gradient"/>
+        <ImageView
+            android:layout_width="25sp"
+            android:layout_height="15sp"
+            android:id="@+id/toolTipArrowBottom"
+            android:background="@drawable/arrow_gradient"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="30dp"
+            android:paddingTop="20dp"
+            android:animateLayoutChanges="true"
+            android:id="@+id/linLocAnim"
+            android:paddingBottom="10dp"
+            android:background="@drawable/blue_gradient_bg_without_center_color"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtTipHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="5dp"
+                    android:text="@string/location_message_1"
+                    android:textAppearance="@style/AppTheme.MediumFont"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"/>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgToolTip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:visibility="gone"
+
+                    app:srcCompat="@drawable/verify_profile" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtTipDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:lineSpacingExtra="8dp"
+                app:fontFamily="@font/regular"
+                android:text="@string/location_message_2"
+                android:textAppearance="@style/AppTheme.RegularFont"
+                android:textColor="@color/white"
+                android:textSize="15dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnTipGotIt"
+                style="@style/Widget.MaterialComponents.Button.TextButton.Dialog.Flush"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="4dp"
+                android:insetTop="-6dp"
+                android:insetBottom="0dp"
+                android:text="@string/got_it"
+                android:textAllCaps="true"
+                android:textAppearance="@style/AppTheme.BoldFont"
+                android:textColor="@color/white"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

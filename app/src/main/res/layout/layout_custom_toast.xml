@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/customToastContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/corner_orange_gradient_bg"
+    android:orientation="horizontal">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/toastText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="0dp"
+        android:layout_toStartOf="@+id/ivCancel"
+        android:background="@android:color/transparent"
+        android:lineSpacingExtra="3dp"
+        android:textAppearance="@style/AppTheme.MediumFont"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        tools:text="@string/check_email" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="0dp"
+        android:background="@android:color/transparent"
+        android:paddingStart="15dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="5dp"
+        android:paddingBottom="5dp"
+        app:srcCompat="@drawable/cancel_white" />
+</RelativeLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.swiping.dater_both.NoProfilesActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="0dp"
+            android:layout_height="?android:actionBarSize"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="15dp"
+            android:padding="15dp"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/imgChat"
+            app:layout_constraintStart_toEndOf="@id/imgHome"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/fwd" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgHome"
+            android:layout_width="wrap_content"
+            android:layout_height="?android:actionBarSize"
+            android:layout_marginStart="15dp"
+            android:padding="15dp"
+            app:layout_constraintBottom_toBottomOf="@id/ivLogo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/ivLogo"
+            app:srcCompat="@drawable/home"
+            app:tint="@color/colorPagerDesc" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgChat"
+            android:layout_width="wrap_content"
+            android:layout_height="?android:actionBarSize"
+            android:layout_marginEnd="15dp"
+            android:padding="15dp"
+            app:layout_constraintBottom_toBottomOf="@id/ivLogo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/ivLogo"
+            app:srcCompat="@drawable/chat"
+            app:tint="@color/colorPagerDesc" />
+
+        <TextView
+            android:id="@+id/txtBadge"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="top|center"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="6dp"
+            android:background="@drawable/alert"
+            android:maxLength="3"
+            android:textAppearance="@style/AppTheme.RegularFont"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="@id/imgChat"
+            app:layout_constraintTop_toTopOf="@id/imgChat"
+            tools:ignore="SmallSp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.swipefwd.utils.RoundedImageView
+        android:id="@+id/imgUser"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="80dp"
+        android:elevation="12dp"
+        android:scaleType="centerCrop"
+        app:cornerRadius="1000dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layoutHeader"
+        app:roundedCorners="all"
+        app:srcCompat="@drawable/image_profile" />
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Raj has run out of profile"
+        android:textAppearance="@style/AppTheme.MediumFont"
+        android:textColor="@color/colorPagerDesc"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgUser" />
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Encourage him to widen his search\nparameters.\n\nOr check back soon when more\nprofiles are added for him."
+        android:textAppearance="@style/AppTheme.RegularFont"
+        android:textColor="@color/colorPagerDesc"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt1" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnGotIt"
+        style="@style/materialIconButtonTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="30dp"
+        android:enabled="true"
+        android:text="@string/got_it"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layoutMain"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:paddingHorizontal="8dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtIndex"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:textAppearance="@style/AppTheme.RegularFont"
+        android:textColor="@color/colorGrey"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="@id/ivClose"
+        app:layout_constraintEnd_toStartOf="@id/ivClose"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ivClose"
+        tools:text="2/9" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivClose"
+        android:layout_width="wrap_content"
+        android:layout_height="?actionBarSize"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:padding="10dp"
+        android:src="@drawable/close_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:lineSpacingExtra="3dp"
+        android:text="@string/occupation_title"
+        android:textAppearance="@style/AppTheme.MediumFont"
+        android:textColor="@color/colorPagerTitle"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivClose" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtOccupationTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/title"
+        android:textAppearance="@style/AppTheme.MediumFont"
+        android:textColor="@color/colorPagerDesc"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtTitle" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/txtOccupationName"
+        style="@style/EditTextTheme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/grey_border_bg"
+        android:imeOptions="actionNext"
+        android:inputType="textVisiblePassword|textNoSuggestions|textCapSentences"
+        android:maxLength="25"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtOccupationTitle"
+        tools:text="Title" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtOccupationCompany"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/company_title"
+        android:textAppearance="@style/AppTheme.MediumFont"
+        android:textColor="@color/colorPagerDesc"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtOccupationName" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/txtCompanyName"
+        style="@style/EditTextTheme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/grey_border_bg"
+        android:imeOptions="actionDone"
+        android:inputType="textVisiblePassword|textNoSuggestions|textCapSentences"
+        android:maxLength="25"
+        android:textAppearance="@style/AppTheme.RegularFont"
+        android:textColor="@color/colorPagerDesc"
+        android:textColorHint="@color/colorGrey"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtOccupationCompany"
+        tools:text="Title" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/txtSkip"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="6dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/common_skip"
+        android:textAllCaps="false"
+        android:textAppearance="@style/AppTheme.MediumFont"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:backgroundTint="@color/colorGrey"
+        app:cornerRadius="25dp"
+        app:layout_constraintBottom_toBottomOf="@id/txtSubmit"
+        app:layout_constraintEnd_toStartOf="@id/txtSubmit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/txtSubmit" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/txtSubmit"
+        style="@style/materialIconButtonTheme"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="40dp"
+        android:layout_weight="1"
+        android:clickable="false"
+        android:enabled="false"
+        android:text="@string/common_submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/txtSkip" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

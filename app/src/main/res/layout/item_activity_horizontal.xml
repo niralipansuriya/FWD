@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutMain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center|top"
+    android:orientation="horizontal">
+
+    <com.swipefwd.utils.RoundedImageView
+        android:id="@+id/img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="20dp"
+        android:elevation="5dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="8dp"
+        android:scaleType="centerCrop"
+        app:cornerRadius="1000dp"
+        app:reverseMask="false"
+        app:roundedCorners="all"
+        tools:srcCompat="@drawable/image_profile" />
+
+    <TextView
+        android:id="@+id/txtUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|center"
+        android:textAppearance="@style/AppTheme.RegularFont"
+        android:textColor="@color/colorPagerDesc"
+        android:textSize="14sp"
+        android:singleLine="true"
+        tools:text="Bhuv" />
+
+</LinearLayout>

@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/ivLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingBottom="10dp"
+        android:gravity="center"
+        android:letterSpacing="0.4"
+        android:text="@string/app_name"
+        android:textAppearance="@style/AppTheme.MediumFont"
+        android:textColor="@color/blue_gradient_2"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/ivLogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ivLogo"
+        app:srcCompat="@drawable/cancel_darkgray" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/bottomLayout"
+        app:layout_constraintTop_toBottomOf="@id/ivLogo">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.ramijemli.percentagechartview.PercentageChartView
+                    android:id="@+id/progressSettings"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:pcv_animDuration="800"
+                    app:pcv_animInterpolator="accelerate_decelerate"
+                    app:pcv_backgroundBarColor="@color/light_grey"
+                    app:pcv_backgroundBarThickness="6dp"
+                    app:pcv_gradientColors="#6C67EF,#5EA3FB"
+                    app:pcv_gradientType="linear"
+                    app:pcv_mode="ring"
+                    app:pcv_orientation="clockwise"
+                    app:pcv_progressBarThickness="6dp"
+                    app:pcv_startAngle="90"
+                    app:pcv_textColor="@android:color/transparent" />
+
+                <com.swipefwd.utils.RoundedImageView
+                    android:id="@+id/imgSettings"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    app:cornerRadius="1000dp"
+                    app:layout_constraintBottom_toBottomOf="@id/progressSettings"
+                    app:layout_constraintEnd_toEndOf="@id/progressSettings"
+                    app:layout_constraintStart_toStartOf="@id/progressSettings"
+                    app:layout_constraintTop_toTopOf="@id/progressSettings"
+                    app:roundedCorners="all"
+                    tools:srcCompat="@drawable/image_profile" />
+
+                <TextView
+                    android:id="@+id/txtProgress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/profile_progress_bg"
+                    android:paddingStart="6dp"
+                    android:paddingTop="2dp"
+                    android:paddingEnd="6dp"
+                    android:paddingBottom="2dp"
+                    tools:text="70%"
+                    android:textAppearance="@style/AppTheme.RegularFont"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="@id/progressSettings"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/imgSettings" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textAppearance="@style/AppTheme.MediumFont"
+                android:textColor="@color/colorPagerTitle"
+                android:textSize="20sp"
+                tools:text="Riyaan" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnAccount"
+                style="@style/Widget.MaterialComponents.Button.TextButton.Dialog.Flush"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:text="@string/account"
+                android:textAppearance="@style/AppTheme.RegularFont"
+                android:textColor="@color/colorPagerDesc"
+                android:textSize="16sp"
+                app:rippleColor="@color/colorGrey" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnDeleteacc"
+                style="@style/Widget.MaterialComponents.Button.TextButton.Dialog.Flush"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:text="@string/delete_account"
+                android:textAppearance="@style/AppTheme.RegularFont"
+                android:textColor="@color/colorPagerDesc"
+                android:textSize="16sp"
+                app:rippleColor="@color/colorGrey" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnDatingPref"
+                style="@style/Widget.MaterialComponents.Button.TextButton.Dialog.Flush"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:text="@string/dating_preferences"
+                android:textAppearance="@style/AppTheme.RegularFont"
+                android:textColor="@color/colorPagerDesc"
+                android:textSize="16sp"
+                app:rippleColor="@color/colorGrey" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSubscription"
+                style="@style/Widget.MaterialComponents.Button.TextButton.Dialog.Flush"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:text="@string/subscriptions"
+                android:textAppearance="@style/AppTheme.RegularFont"
+                android:textColor="@color/colorPagerDesc"
+                android:textSize="16sp"
+                app:rippleColor="@color/colorGrey" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnTutorials"
+                style="@style/Widget.MaterialComponents.Button.TextButton.Dialog.Flush"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:text="@string/tutorials"
+                android:textAppearance="@style/AppTheme.RegularFont"
+                android:textColor="@color/colorPagerDesc"
+                android:textSize="16sp"
+                app:rippleColor="@color/colorGrey" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnWallet"
+                style="@style/Widget.MaterialComponents.Button.TextButton.Dialog.Flush"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:text="@string/wallet"
+                android:visibility="gone"
+                android:textAppearance="@style/AppTheme.RegularFont"
+                android:textColor="@color/colorPagerDesc"
+                android:textSize="16sp"
+                app:rippleColor="@color/colorGrey" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnFAQ"
+                style="@style/Widget.MaterialComponents.Button.TextButton.Dialog.Flush"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:text="@string/faq"
+                android:textAppearance="@style/AppTheme.RegularFont"
+                android:textColor="@color/colorPagerDesc"
+                android:textSize="16sp"
+                app:rippleColor="@color/colorGrey" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnContact"
+                style="@style/Widget.MaterialComponents.Button.TextButton.Dialog.Flush"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:text="@string/contact"
+                android:textAppearance="@style/AppTheme.RegularFont"
+                android:textColor="@color/colorPagerDesc"
+                android:textSize="16sp"
+                app:rippleColor="@color/colorGrey" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnVersion"
+                style="@style/Widget.MaterialComponents.Button.TextButton.Dialog.Flush"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:text="@string/version"
+                android:textAppearance="@style/AppTheme.RegularFont"
+                android:textColor="@color/colorPagerDesc"
+                android:textSize="16sp"
+                app:rippleColor="@color/colorGrey" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/blue_gradient_bg"
+        android:paddingStart="40dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="40dp"
+        android:paddingBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnLogout"
+            style="@style/Widget.MaterialComponents.Button.TextButton.Dialog.Flush"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/log_out"
+            android:textAppearance="@style/AppTheme.MediumFont"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnTerms"
+            style="@style/Widget.MaterialComponents.Button.TextButton.Dialog.Flush"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/terms_of_use"
+            android:textAppearance="@style/AppTheme.RegularFont"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnLogout" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnPrivacy"
+            style="@style/Widget.MaterialComponents.Button.TextButton.Dialog.Flush"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/privacy_policy"
+            android:textAppearance="@style/AppTheme.RegularFont"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/btnTerms"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/btnTerms" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

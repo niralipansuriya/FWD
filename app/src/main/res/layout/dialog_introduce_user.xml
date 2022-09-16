@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgDialogGradient"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/rectangle" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="16dp">
+
+            <com.swipefwd.utils.RoundedImageView
+                android:id="@+id/imgUser"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:elevation="5dp"
+                android:scaleType="centerCrop"
+                app:cornerRadius="1000dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/layoutHeader"
+                app:roundedCorners="all"
+                app:srcCompat="@drawable/image_profile" />
+
+            <TextView
+                android:id="@+id/txtTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/introduce_user"
+                android:textAppearance="@style/AppTheme.MediumFont"
+                android:textColor="@color/colorPagerDesc"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:lineSpacingExtra="6dp"
+                android:paddingStart="40dp"
+                android:paddingEnd="40dp"
+                android:text="@string/introduce_message"
+                android:textAlignment="center"
+                android:textAppearance="@style/AppTheme.RegularFont"
+                android:textColor="@color/colorPagerDesc"
+                android:textSize="13sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/colorGrey_20" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnThink"
+                style="@style/Widget.MaterialComponents.Button.TextButton.Dialog.Flush"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:text="@string/let_me_think"
+                android:textAppearance="@style/AppTheme.MediumFont"
+                android:textColor="@color/dark_blue"
+                android:textSize="15sp"
+                app:rippleColor="@color/dark_blue_20" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnConnect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/blue_gradient_bg"
+                android:enabled="true"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:text="@string/connect_user"
+                android:textAppearance="@style/AppTheme.MediumFont"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:backgroundTint="@null" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?actionBarSize"
+    android:background="@drawable/blue_gradient_bg"
+    android:fitsSystemWindows="true"
+    android:focusable="false"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+<!--    <androidx.appcompat.widget.AppCompatImageView-->
+<!--        android:id="@+id/imgBack"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="?actionBarSize"-->
+<!--        android:layout_marginStart="17dp"-->
+<!--        android:layout_marginTop="22dp"-->
+<!--        android:paddingStart="8dp"-->
+<!--        android:paddingEnd="8dp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:srcCompat="@drawable/back_arrow_recovery_new_2"-->
+<!--        app:tint="@color/whiteColor" />-->
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgBack"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="33dp"
+        app:srcCompat="@drawable/back_arrow"
+        app:tint="@color/whiteColor" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:overScrollMode="never"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgLogo"
+                android:layout_width="126dp"
+                android:layout_height="115dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="45dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imgBack"
+                app:srcCompat="@drawable/white_fwd_logo_new" />
+
+            <TextView
+                android:id="@+id/txtTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:gravity="center"
+                android:text="@string/account_recovery"
+                android:textAppearance="@style/AppTheme.MediumFont"
+                android:textColor="@color/whiteColor"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imgLogo" />
+
+            <TextView
+                android:id="@+id/txtMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="42dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginEnd="42dp"
+                android:gravity="center"
+                android:letterSpacing="0.04"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/tell_us_email"
+                android:textAppearance="@style/AppTheme.MediumFont"
+                android:textColor="@color/whiteColor"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtTitle" />
+<!--            textEmailAddress|-->
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtEmail"
+                style="@style/EditTextTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginEnd="30dp"
+                android:maxLength="100"
+                android:gravity="center_vertical"
+                android:hint="@string/your_email"
+                android:importantForAutofill="no"
+                android:inputType="textVisiblePassword|textNoSuggestions"
+                android:singleLine="true"
+                android:textAppearance="@style/AppTheme.MediumFont"
+                android:textColor="@color/colorPagerDesc"
+                android:textColorHint="@color/colorGrey"
+                android:textSize="14sp" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgNext1"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="end"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="26dp"
+                android:background="@drawable/right_arrow_enable"
+                android:elevation="4dp"
+                android:visibility="gone" />
+<!--
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgNext1"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="end"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="26dp"
+                android:background="@drawable/next_button_selector"
+                android:elevation="4dp"
+                android:visibility="gone" />
+-->
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/txtSkip"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:text="@string/common_skip"
+                android:textAppearance="@style/AppTheme.MediumFont"
+                android:textColor="@color/whiteColor"
+                android:textSize="16sp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edtEmail"
+                app:rippleColor="@color/blue_gradient_2_ripple" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgNext"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/right_arrow_enable"
+        android:elevation="4dp" />
+<!--
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgNext"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/next_button_selector"
+        android:elevation="4dp" />
+-->
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient
+        android:angle="360"
+        android:endColor="#5EA3FB"
+        android:startColor="#6C67EF"
+        android:type="linear" />
+
+    <corners android:radius="25dp" />
+</shape>
+<!--<shape xmlns:android="http://schemas.android.com/apk/res/android">-->
+<!--<gradient-->
+<!--    android:angle="360"-->
+<!--    android:endColor="@color/blue_gradient_3_btn"-->
+<!--    android:startColor="@color/blue_gradient_2_btn"-->
+<!--    android:type="linear" />-->
+
+<!--<corners android:radius="25dp" />-->
+<!--</shape>-->

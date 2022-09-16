@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="15dp"
+        android:visibility="gone"
+        app:srcCompat="@drawable/cancel_black" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutToggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="15dp"
+        android:animateLayoutChanges="true">
+
+        <com.swipefwd.utils.SlideToActView
+            android:id="@+id/toggleUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            app:animate_completion="false"
+            app:area_margin="4dp"
+            app:border_radius="23dp"
+            app:icon_margin="10dp"
+            app:inner_color="@color/whiteColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:outer_color="@color/colorPagerDesc"
+            app:rotate_icon="true"
+            app:slider_height="40dp"
+            app:slider_icon="@drawable/right_grayarrow"
+            app:slider_icon_color="@color/grey_light"
+            app:slider_reversed="true"
+            app:slider_width="174dp"
+            app:stroke_color="@color/gray_30"
+            app:text="@string/user_matchmaker"
+            app:text_appearance="@style/AppTheme.MediumFont"
+            app:text_size="14sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtTip"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/user_matchmaker" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivNotification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/toggleUser"
+            app:layout_constraintStart_toStartOf="@id/toggleUser"
+            app:layout_constraintTop_toTopOf="@id/toggleUser"
+            app:srcCompat="@drawable/alert"
+            tools:visibility="visible" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/txtHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutToggle"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="35dp"
+        android:gravity="center"
+        android:text="@string/home"
+        android:textAppearance="@style/AppTheme.MediumFont"
+        android:textColor="@color/colorPagerDesc"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/txtGreetMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtHome"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/home_matchmaker"
+        android:textAppearance="@style/AppTheme.RegularFont"
+        android:textColor="@color/colorPagerDesc"
+        android:textSize="14sp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/txtGreetMsg"
+        android:animateLayoutChanges="true"
+        android:background="@color/color_background">
+
+        <LinearLayout
+            android:id="@+id/layoutNoMembers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingStart="40dp"
+            android:paddingEnd="40dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/txtTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:lineSpacingExtra="10dp"
+                android:text="@string/home_matchmaker_title"
+                android:textAppearance="@style/AppTheme.MediumFont"
+                android:textColor="@color/colorPagerDesc"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txtInviteFriends"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="40dp"
+                android:gravity="center"
+                android:lineSpacingExtra="10dp"
+                android:text="@string/invite_msg_matchmaker"
+                android:textAppearance="@style/AppTheme.MediumFont"
+                android:textColor="@color/colorPagerDesc"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/cardLogo"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="100dp"
+            android:background="@drawable/white_radius"
+            app:layout_constraintBottom_toTopOf="@id/btnNewRequest"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="@id/layoutView"
+            app:layout_constraintStart_toStartOf="@id/layoutView"
+            app:layout_constraintTop_toTopOf="@id/layoutView" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutCenterFwd"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="60dp"
+            android:animateLayoutChanges="true"
+            app:layout_constraintBottom_toBottomOf="@id/cardLogo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/cardLogo">
+
+            <com.swipefwd.utils.RoundedImageView
+                android:id="@+id/cardLogo1"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:elevation="5dp"
+                android:scaleType="centerCrop"
+                app:cornerRadius="1000dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintEnd_toStartOf="@id/cardLogo2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_max="80dp"
+                app:layout_constraintWidth_min="80dp"
+                app:roundedCorners="all"
+                app:srcCompat="@drawable/fwd_logo" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtUser1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textAppearance="@style/AppTheme.RegularFont"
+                android:textColor="@color/colorPagerDesc"
+                android:textSize="14sp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@id/cardLogo1"
+                app:layout_constraintStart_toStartOf="@id/cardLogo1"
+                app:layout_constraintTop_toBottomOf="@id/cardLogo1"
+                tools:text="@string/app_name" />
+
+            <com.swipefwd.utils.RoundedImageView
+                android:id="@+id/cardLogo2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:elevation="5dp"
+                android:scaleType="centerCrop"
+                android:visibility="gone"
+                app:cornerRadius="1000dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/cardLogo1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_max="80dp"
+                app:layout_constraintWidth_min="80dp"
+                app:roundedCorners="all"
+                app:srcCompat="@drawable/fwd_logo" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtUser2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textAppearance="@style/AppTheme.RegularFont"
+                android:textColor="@color/colorPagerDesc"
+                android:textSize="14sp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@id/cardLogo2"
+                app:layout_constraintStart_toStartOf="@id/cardLogo2"
+                app:layout_constraintTop_toBottomOf="@id/cardLogo2"
+                tools:text="@string/app_name" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <include
+            android:id="@+id/layout1"
+            layout="@layout/item_circle_connector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/layout2"
+            layout="@layout/item_circle_connector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/layout3"
+            layout="@layout/item_circle_connector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/layout4"
+            layout="@layout/item_circle_connector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <include
+            android:id="@+id/layout5"
+            layout="@layout/item_circle_connector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/layout6"
+            layout="@layout/item_circle_connector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/layout7"
+            layout="@layout/item_circle_connector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/layout8"
+            layout="@layout/item_circle_connector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/layout9"
+            layout="@layout/item_circle_connector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/layout10"
+            layout="@layout/item_circle_connector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/btnNewRequest"
+            android:layout_width="157dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:animateLayoutChanges="true"
+            android:background="@drawable/rounded_blue_gradient_bg"
+            android:paddingStart="42dp"
+            android:paddingTop="15dp"
+            android:paddingEnd="42dp"
+            android:paddingBottom="15dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivAlert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/txtAddFriend"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/alert" />
+
+            <TextView
+                android:id="@+id/txtAddFriend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/invites"
+                android:textAppearance="@style/AppTheme.MediumFont"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/ivAlert"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/btnConnect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/rounded_blue_gradient_bg"
+            android:paddingStart="40dp"
+            android:paddingTop="15dp"
+            android:paddingEnd="40dp"
+            android:paddingBottom="15dp"
+            android:text="@string/contacts"
+            android:textAppearance="@style/AppTheme.MediumFont"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/btnGreenConnect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/corner_green_gradient_bg"
+            android:paddingStart="40dp"
+            android:paddingTop="15dp"
+            android:paddingEnd="40dp"
+            android:paddingBottom="15dp"
+            android:text="@string/connect"
+            android:textAppearance="@style/AppTheme.MediumFont"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

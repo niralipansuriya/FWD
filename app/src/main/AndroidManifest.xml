@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.swipefwd">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" /> <!-- Android 10 and above, you don’t need this permission anymore. -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <queries>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE" />
+        </intent>
+    </queries>
+    <queries>
+        <provider android:authorities="com.facebook.katana.provider.PlatformProvider" /> <!-- allows app to access Facebook app features -->
+        <provider android:authorities="com.facebook.orca.provider.PlatformProvider" /> <!-- allows sharing to Messenger app -->
+    </queries>
+    <queries>
+        <package android:name="com.facebook.katana" />
+    </queries>
+
+    <application
+        android:name=".utils.AppController"
+        android:allowBackup="false"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:allowBackup">
+        <activity
+            android:name=".ui.auth.otpverify.OtpActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/noAnimTheme" >
+          <!--  <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+        </activity>
+        <activity
+            android:name=".ui.activity.ActivityCameraVerification"
+            android:exported="false" />
+        <activity
+            android:name=".ui.auth.phone.PhoneNumberActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"
+            android:theme="@style/noAnimTheme"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter
+                android:label="@string/app_name"
+                tools:ignore="AppLinkUrlError">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.profile.CheckEmailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.profile.AccountRecoveryActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ui.tutorial.onboard.OnBoardingActivity"
+            android:exported="true"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".ui.video.VideoTutorial"
+            android:exported="true"
+            android:screenOrientation="nosensor" >
+           <!-- <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+        </activity>
+        <activity
+            android:name=".ui.tutorial.TutorialActivity"
+            android:exported="true"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".ui.tutorial.welcome.WelcomeActivity"
+            android:exported="true"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".ui.auth.sociallogin.google.GoogleLogInActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Activity.Transparent" />
+        <activity
+            android:name=".ui.auth.sociallogin.facebook.FacebookLoginActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Activity.Transparent" />
+        <activity
+            android:name=".ui.auth.sociallogin.linkedin.LinkedInLoginActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Activity.Transparent" />
+        <activity
+            android:name=".ui.home.settings.PurchaseSuccessActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".ui.home.settings.tutorials.TutorialActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".ui.swiping.dater_both.InstagramFullScreenActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".ui.swiping.dater_both.SwipeChatActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".ui.home.AgreementActivity"
+            android:screenOrientation="nosensor" /> <!-- <activity -->
+        <!-- android:name=".ui.auth.phone.PhoneNumberActivity" -->
+        <!-- android:screenOrientation="nosensor" -->
+        <!-- android:theme="@style/noAnimTheme" /> -->
+        <activity
+            android:name=".ui.auth.sociallogin.linkedin.LinkedInWebActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".ui.swiping.dater_both.ChangePreferencesActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".ui.swiping.dater_both.NoProfilesActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".ui.home.LoadingActivity"
+            android:screenOrientation="nosensor" /> <!-- android:theme="@style/AppTheme.FullScreen" -->
+        <activity
+            android:name=".ui.swiping.dater_both.SwipeProfileActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".ui.swiping.dater_both.SingleFriendProfileDarkActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".ui.home.message.BlockReasonActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".ui.home.message.ChatActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".ui.home.message.MatchChatActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".ui.home.TabManagerActivity"
+            android:theme="@style/noAnimTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.profile.AdvancePreferenceActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".ui.home.settings.UpdateAppActivity"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AppTheme.FullScreen" />
+        <activity
+            android:name=".ui.home.settings.AccountSuspendActivity"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AppTheme.FullScreen" />
+        <activity
+            android:name=".ui.home.settings.ContactActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".ui.home.settings.ProfileActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".ui.home.settings.deleteaccount.DeleteReasonActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".ui.home.settings.deleteaccount.AccountDeletedActivity"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AppTheme.FullScreen" />
+        <activity
+            android:name=".ui.home.settings.AccountActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".ui.profile.LocationActivity"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AppTheme.MapScreen" />
+        <activity
+            android:name=".ui.auth.login.LoginActivity"
+            android:exported="true"
+            android:screenOrientation="nosensor">
+
+            <!-- Accepts URIs that begin with "http://www.example.com/gizmos” -->
+            <!-- note that the leading "/" is required for pathPrefix -->
+            <!-- Accepts URIs that begin with "example://gizmos” -->
+            <!-- <data android:scheme="example" -->
+            <!-- android:host="gizmos" /> -->
+
+          <!--  <intent-filter
+                android:label="@string/app_name"
+                tools:ignore="AppLinkUrlError">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>--> <!--commented by nirali-->
+        </activity>
+        <activity
+            android:name=".ui.splash.SplashActivity"
+            android:noHistory="true"
+            android:exported="true"
+            android:screenOrientation="nosensor">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter android:label="@string/app_name">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="swipefwdapp.page.link"
+                    android:pathPrefix="/"
+                    android:scheme="https" />
+            </intent-filter>
+            <intent-filter
+                android:autoVerify="true"
+                android:label="SwipeFWD">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="swipefwd.com"
+                    android:pathPattern=".*"
+                    android:scheme="http" />
+                <data
+                    android:host="swipefwd.com"
+                    android:pathPattern=".*"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.auth.register.UserInfoActivity"
+            android:screenOrientation="nosensor"
+            android:theme="@style/noAnimTheme" />
+        <activity
+            android:name=".ui.updateuserprofile.UserProfileActivity"
+            android:exported = "true"
+            android:screenOrientation="nosensor" >
+
+        </activity>
+        <activity
+            android:name=".ui.profile.PreferencesActivity"
+            android:screenOrientation="nosensor"
+            android:exported="true">
+           <!-- <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+        </activity>
+        <activity
+            android:name=".ui.home.tribe.ContactsActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".ui.home.tribe.SelectedContactListActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".ui.home.wallet.BuyCoinsActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".ui.home.wallet.GiftCoinsActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".ui.home.wallet.RedeemCoinsActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".ui.home.wallet.UserListForGiftCoinsActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".ui.profile.SelectOccupationActivity"
+            android:screenOrientation="nosensor"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.profile.SelectSchoolActivity"
+            android:screenOrientation="nosensor"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name=".ui.profile.SelectLanguageActivity"
+            android:screenOrientation="nosensor"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.profile.SelectRelationshipActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".ui.profile.SelectReligionActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".ui.profile.SelectChildrenPlanActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".ui.profile.SelectCastActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".ui.profile.SelectAstroSignActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".ui.profile.SelectSmokeActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".ui.profile.EmailActivity"
+            android:screenOrientation="nosensor"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ui.profile.InstagramWebActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".ui.profile.SelectMultipleCastActivity"
+            android:screenOrientation="nosensor"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.profile.SelectVaccineStatusActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".ui.home.tribe.RequestsListActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".ui.home.settings.UserSubscriptionActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".ui.home.tribe.ConnectorContactActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".ui.profile.TravelActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".ui.main.WebViewActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".ui.home.settings.deleteaccount.AccountDeleteSelectionActivity"
+            android:screenOrientation="nosensor" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <service
+            android:name=".xmpp.XmppService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".fcm.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name=".utils.MySMSBroadcastReceiver"
+            android:exported="true"
+            android:permission="com.google.android.gms.auth.api.phone.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED" />
+
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ClientToken"
+            android:value="@string/facebook_client_token" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+    </application>
+
+</manifest>

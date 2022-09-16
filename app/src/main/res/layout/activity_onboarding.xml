@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/layoutIndicator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <me.relex.circleindicator.CircleIndicator
+        android:id="@+id/layoutIndicator"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="15dp"
+        app:ci_animator="@animator/indicator_no_animator"
+        app:ci_drawable="@drawable/oval_hover"
+        app:ci_drawable_unselected="@drawable/oval"
+        app:ci_height="8dp"
+        app:ci_margin="15dp"
+        app:ci_width="8dp"
+        app:layout_constraintBottom_toTopOf="@id/btnSkip"
+        app:layout_constraintEnd_toEndOf="@id/pager"
+        app:layout_constraintStart_toStartOf="@id/pager"
+        app:layout_constraintTop_toBottomOf="@id/pager" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSkip"
+        style="@style/Widget.MaterialComponents.Button.TextButton.Dialog.Flush"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:gravity="center"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:padding="10dp"
+        android:text="@string/common_skip"
+        android:textAppearance="@style/AppTheme.RegularFont"
+        android:textColor="@color/colorGrey"
+        android:textSize="16sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/pager"
+        app:layout_constraintStart_toStartOf="@id/pager"
+        app:rippleColor="@color/colorGrey" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnContinue"
+        style="@style/materialIconButtonTheme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:gravity="center"
+        android:text="@string/common_continue"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/pager"
+        app:layout_constraintStart_toStartOf="@id/pager" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

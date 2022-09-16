@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="15dp"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txtPrice"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/blue_gradient_rounded_bg"
+        android:gravity="center"
+        android:textAppearance="@style/AppTheme.MediumFont"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="$6499" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtTalkTimeValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:textAppearance="@style/AppTheme.MediumFont"
+        android:textColor="@color/colorPagerDesc"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toStartOf="@id/txtDataValue"
+        app:layout_constraintStart_toEndOf="@id/txtPrice"
+        app:layout_constraintTop_toTopOf="@id/txtPrice"
+        tools:text="$21" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtTalkTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/talktime"
+        android:textAppearance="@style/AppTheme.RegularFont"
+        android:textColor="@color/colorPagerDesc"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@id/txtDataValue"
+        app:layout_constraintStart_toEndOf="@id/txtPrice"
+        app:layout_constraintBottom_toBottomOf="@id/txtPrice"
+        app:layout_constraintTop_toBottomOf="@id/txtTalkTimeValue" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtDataValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textAppearance="@style/AppTheme.MediumFont"
+        android:textColor="@color/colorPagerDesc"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toStartOf="@id/txtValidityValue"
+        app:layout_constraintStart_toEndOf="@id/txtTalkTimeValue"
+        app:layout_constraintTop_toTopOf="@id/txtPrice"
+        tools:text="300MB" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtData"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/data"
+        android:textAppearance="@style/AppTheme.RegularFont"
+        android:textColor="@color/colorPagerDesc"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@id/txtPrice"
+        app:layout_constraintEnd_toStartOf="@id/txtValidityValue"
+        app:layout_constraintStart_toEndOf="@id/txtTalkTimeValue"
+        app:layout_constraintTop_toBottomOf="@id/txtDataValue" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtValidityValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textAppearance="@style/AppTheme.MediumFont"
+        android:textColor="@color/colorPagerDesc"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toStartOf="@id/txtBuy"
+        app:layout_constraintStart_toEndOf="@id/txtDataValue"
+        app:layout_constraintTop_toTopOf="@id/txtPrice"
+        tools:text="365 Days" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtValidity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/validity"
+        android:textAppearance="@style/AppTheme.RegularFont"
+        android:textColor="@color/colorPagerDesc"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@id/txtPrice"
+        app:layout_constraintEnd_toStartOf="@id/txtBuy"
+        app:layout_constraintStart_toEndOf="@id/txtDataValue"
+        app:layout_constraintTop_toBottomOf="@id/txtValidityValue" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txtBuy"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/corner_mint_gradient_bg"
+        android:drawableEnd="@drawable/arrowdarkgray_right_small"
+        android:gravity="center"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="@string/buy"
+        android:textAllCaps="false"
+        android:textAppearance="@style/AppTheme.MediumFont"
+        android:textColor="@color/colorPagerDesc"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@id/txtPrice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/txtPrice" />
+</androidx.constraintlayout.widget.ConstraintLayout>

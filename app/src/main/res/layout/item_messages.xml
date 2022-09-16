@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipeMessage"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/llDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnDelete"
+            style="@style/materialIconOrangeButtonTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:paddingStart="32dp"
+            android:paddingEnd="32dp"
+            android:text="@string/common_delete"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="16dp"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="6dp"
+            app:layout_constraintBottom_toBottomOf="@id/layoutText"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/layoutText">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgMessages"
+                    android:layout_width="54dp"
+                    android:layout_height="56dp"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/user_girl_image" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!--                  <androidx.constraintlayout.widget.ConstraintLayout-->
+            <!--                      android:layout_width="wrap_content"-->
+            <!--                      android:layout_height="wrap_content">-->
+
+            <!--                  <com.ramijemli.percentagechartview.PercentageChartView-->
+            <!--                      android:id="@+id/progressMessage"-->
+            <!--                      android:layout_width="60dp"-->
+            <!--                      android:layout_height="60dp"-->
+            <!--                      app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--                      app:layout_constraintEnd_toEndOf="parent"-->
+            <!--                      app:layout_constraintStart_toStartOf="parent"-->
+            <!--                      app:layout_constraintTop_toTopOf="parent"-->
+            <!--                      app:pcv_animDuration="800"-->
+            <!--                      app:pcv_animInterpolator="accelerate_decelerate"-->
+            <!--                      app:pcv_backgroundBarColor="@color/light_grey"-->
+            <!--                      app:pcv_backgroundBarThickness="2dp"-->
+            <!--                      app:pcv_gradientColors="#00EDD2,#79FDD3"-->
+            <!--                      app:pcv_gradientType="linear"-->
+            <!--                      app:pcv_mode="ring"-->
+            <!--                      app:pcv_orientation="clockwise"-->
+            <!--                      app:pcv_progressBarThickness="2dp"-->
+            <!--                      app:pcv_startAngle="270"-->
+            <!--                      app:pcv_textColor="@android:color/transparent" />-->
+
+            <!--                  <androidx.appcompat.widget.AppCompatImageView-->
+            <!--                      android:id="@+id/imgMatches"-->
+            <!--                      android:layout_width="56dp"-->
+            <!--                      android:layout_height="56dp"-->
+            <!--                      android:scaleType="centerCrop"-->
+            <!--                      app:layout_constraintBottom_toBottomOf="@id/progressMessage"-->
+            <!--                      app:layout_constraintEnd_toEndOf="@id/progressMessage"-->
+            <!--                      app:layout_constraintStart_toStartOf="@id/progressMessage"-->
+            <!--                      app:layout_constraintTop_toTopOf="@id/progressMessage"-->
+            <!--                      app:srcCompat="@drawable/user_girl_image" />-->
+
+            <!--                      <androidx.appcompat.widget.AppCompatImageView-->
+            <!--                          android:id="@+id/imgOnline"-->
+            <!--                          android:layout_width="wrap_content"-->
+            <!--                          app:srcCompat="@drawable/online"-->
+            <!--                          android:layout_marginEnd="4dp"-->
+            <!--                          android:layout_marginBottom="2dp"-->
+            <!--                          app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--                          app:layout_constraintEnd_toEndOf="parent"-->
+            <!--                          android:layout_height="wrap_content"/>-->
+
+            <!--                  </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgOnline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="12dp"
+            app:layout_constraintBottom_toBottomOf="@id/cardMessage"
+            app:layout_constraintEnd_toEndOf="@id/cardMessage"
+            app:srcCompat="@drawable/online" />
+
+        <LinearLayout
+            android:id="@+id/layoutText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/cardMessage"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Diya"
+                android:textAppearance="@style/AppTheme.MediumFont"
+                android:textColor="@color/colorPagerDesc"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txtMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Hi there."
+                android:textAppearance="@style/AppTheme.RegularFont"
+                android:textColor="@color/colorPagerDesc"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txtExpire"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="(Conversation expires in 5 hours)"
+                android:textAppearance="@style/AppTheme.RegularFont"
+                android:textColor="@color/colorPagerDesc"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/colorGrey_20"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/cardMessage"
+            app:layout_constraintTop_toBottomOf="@id/cardMessage" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.daimajia.swipe.SwipeLayout>

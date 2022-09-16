@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="actionMenuTextColor">@color/white</item>
+        <item name="android:windowBackground">@color/color_background</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+        <item name="android:autofilledHighlight" tools:targetApi="o">@color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:candidatesTextStyleSpans">candidates</item>
+        <item name="android:windowAnimationStyle">@style/CustomActivityAnimation</item>
+    </style>
+
+    <style name="CustomActivityAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/enter_anim</item>
+        <item name="android:activityOpenExitAnimation">@anim/leave_anim</item>
+        <item name="android:activityCloseEnterAnimation">@anim/right_to_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/left_to_right</item>
+    </style>
+
+    <style name="Theme.Splash" parent="AppTheme">
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="actionMenuTextColor">@color/white</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+        <item name="android:autofilledHighlight" tools:targetApi="o">@color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:candidatesTextStyleSpans">candidates</item>
+        <item name="android:windowBackground">@drawable/splash_background</item>
+    </style>
+
+    <style name="AppTheme.FullScreen" parent="AppTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+<!--        <item name="android:windowBackground">@drawable/splash_background</item>-->
+    </style>
+
+
+    <style name="AppTheme.MapScreen" parent="AppTheme">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="AppTheme.BoldFont">
+        <item name="android:fontFamily">@font/bold</item>
+    </style>
+
+    <style name="AppTheme.MediumFont">
+        <item name="android:fontFamily">@font/medium</item>
+        <item name="hintTextAppearance">@style/AppTheme.HintMediumFont</item>
+    </style>
+
+    <style name="AppTheme.HintMediumFont">
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="AppTheme.RegularFont">
+        <item name="android:fontFamily">@font/regular</item>
+    </style>
+
+    <style name="AppTheme.ProRegularFont">
+        <item name="android:fontFamily">@font/pro_regular</item>
+        <item name="android:letterSpacing">0.02</item>
+    </style>
+
+    <style name="materialIconButtonTheme" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="fontFamily">@font/medium</item>
+        <item name="android:textAppearance">@style/AppTheme.MediumFont</item>
+        <item name="android:background">@drawable/button_gradient_enable_selector</item>
+        <item name="backgroundTint">@null</item>
+        <item name="cornerRadius">25dp</item>
+    </style>
+
+    <style name="materialIconOrangeButtonTheme" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:textAppearance">@style/AppTheme.MediumFont</item>
+        <item name="android:background">@drawable/button_orange_gradient_enable_selector</item>
+        <item name="backgroundTint">@null</item>
+        <item name="cornerRadius">25dp</item>
+    </style>
+
+    <style name="materialIconMintButtonTheme" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:textAppearance">@style/AppTheme.MediumFont</item>
+        <item name="android:background">@drawable/button_mint_gradient_enable_selector</item>
+        <item name="backgroundTint">@null</item>
+        <item name="cornerRadius">25dp</item>
+    </style>
+
+    <style name="PermissionDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@drawable/corner_white_bg</item>
+    </style>
+
+    <style name="SlideDialogTheme" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@style/SlideAnimation</item>
+    </style>
+
+    <style name="SlideDialogThemePsst" parent="Theme.AppCompat.Dialog">
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowFullscreen">true</item>
+    <item name="android:windowBackground">@android:color/transparent</item>
+  </style>
+
+    <style name="NoConnectorDialogTheme" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="SlideBottomSheetDialogTheme" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@drawable/rectangle</item>
+        <!--<item name="android:windowAnimationStyle">@style/SlideAnimation</item>-->
+    </style>
+
+    <style name="SlideDialogThemePermission" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/corner_white_bg</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="textColor">@color/colorPagerDesc</item>
+        <item name="android:windowAnimationStyle">@style/SlideAnimation</item>
+    </style>
+
+    <style name="SlideAnimation" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowEnterAnimation">@anim/slide_up_dialog</item>
+        <item name="android:windowExitAnimation">@anim/slide_down_dialog</item>
+    </style>
+
+    <style name="TopCornerCardViewStyle" parent="@style/Widget.MaterialComponents.CardView">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay_card_custom_top_corners
+        </item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay_card_custom_top_corners" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">25dp</item>
+        <item name="cornerSizeTopLeft">25dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay_card_custom_all_corners" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">40dp</item>
+        <item name="cornerSizeTopLeft">40dp</item>
+        <item name="cornerSizeBottomRight">40dp</item>
+        <item name="cornerSizeBottomLeft">40dp</item>
+    </style>
+
+    <style name="EditTextTheme" parent="@style/Widget.AppCompat.EditText">
+        <item name="android:background">@drawable/corner_blue_border_bg</item>
+        <item name="android:textColorHint">@color/colorGrey</item>
+        <item name="android:textColor">@color/fontBlack</item>
+        <item name="android:paddingStart">20dp</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingBottom">14dp</item>
+        <item name="android:paddingEnd">20dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="fontFamily">@font/regular</item>
+        <item name="android:lineSpacingExtra">3dp</item>
+        <item name="android:textAppearance">@style/AppTheme.RegularFont</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+
+    <style name="EditTextThemeColorLess" parent="@style/Widget.AppCompat.EditText">
+        <item name="android:background">@null</item>
+        <item name="android:textColorHint">@color/colorGrey</item>
+        <item name="android:textColor">@color/fontBlack</item>
+        <item name="android:paddingStart">20dp</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingBottom">14dp</item>
+        <item name="android:paddingEnd">12dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:lineSpacingExtra">3dp</item>
+        <item name="android:textAppearance">@style/AppTheme.RegularFont</item>
+    </style>
+
+    <style name="TextBorderTheme" parent="@style/Widget.AppCompat.TextView">
+        <item name="android:background">@drawable/corner_blue_border_bg</item>
+        <item name="android:textColorHint">@color/colorGrey</item>
+        <item name="android:textColor">@color/colorPagerDesc</item>
+        <item name="android:paddingStart">20dp</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingBottom">14dp</item>
+        <item name="android:paddingEnd">12dp</item>
+    </style>
+
+    <style name="ZoomDialogTheme" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@style/ZoomAnimation</item>
+    </style>
+    <style name="SlideUpDialogueTheme" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowAnimationStyle">@style/dialogueSlideInOut</item>
+    </style>
+
+    <style name="ZoomAnimation" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowEnterAnimation">@anim/zoom_in_dialog</item>
+        <item name="android:windowExitAnimation">@anim/zoom_out_dialog</item>
+    </style>
+    <style name="dialogueSlideInOut" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowEnterAnimation">@anim/slide_up_dialog</item>
+    </style>
+
+    <style name="OptionsDialogTheme" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="TabTextAppearance" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/colorPagerDesc</item>
+        <item name="fontFamily">@font/medium</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="SingleTabTextAppearance" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/color_message</item>
+        <item name="fontFamily">@font/regular</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <!--https://developpaper.com/android-shape-property-to-create-a-circular-progress-bar/-->
+    <style name="CustomProgressStyle">
+        <item name="android:indeterminateDrawable">@drawable/progress_rotate</item>
+        <item name="android:minWidth">70dp</item>
+        <item name="android:maxWidth">70dp</item>
+        <item name="android:minHeight">70dp</item>
+        <item name="android:maxHeight">70dp</item>
+    </style>
+
+    <style name="CustomMiniProgressStyle">
+        <item name="android:indeterminateDrawable">@drawable/progress_mini_rotate</item>
+        <item name="android:minWidth">40dp</item>
+        <item name="android:maxWidth">40dp</item>
+        <item name="android:minHeight">40dp</item>
+        <item name="android:maxHeight">40dp</item>
+    </style>
+
+    <style name="noAnimTheme" parent="AppTheme">
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+    <style name="ChipTextAppearance" parent="TextAppearance.MaterialComponents.Chip">
+        <item name="android:textColor">@color/chip_color</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAppearance">@style/AppTheme.RegularFont</item>
+    </style>
+
+    <style name="PositiveButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="AlertDialogTheme" parent="ThemeOverlay.AppCompat.Dialog.Alert">
+        <item name="buttonBarPositiveButtonStyle">@style/PositiveButtonStyle</item>
+    </style>
+
+    <style name="RangeSlider">
+        <item name="colorPrimary">@color/blue_seek_bg</item>
+    </style>
+
+    <style name="SlideToActView">
+        <item name="text">@string/user_dater</item>
+        <item name="text_size">@dimen/slidetoact_default_text_size</item>
+        <item name="area_margin">@dimen/slidetoact_default_area_margin</item>
+        <item name="inner_color">@color/colorPagerDesc</item>
+        <item name="outer_color">@color/white</item>
+        <item name="slider_locked">false</item>
+    </style>
+
+    <style name="CustomAlertDialog" parent="ThemeOverlay.AppCompat.Dialog.Alert">
+        <item name="android:background">@drawable/corner_white_bg</item>
+        <item name="textSize">15sp</item>
+        <item name="textColor">@color/colorPagerDesc</item>
+        <item name="fontFamily">@font/regular</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+    <!-- transparent activity theme -->
+    <style name="Activity.Transparent" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowActivityTransitions">false</item>
+    </style>
+
+<!--     Psst-->
+    <style name="MyCustomTheme" parent="@android:style/Theme.Panel">
+        <item name="android:windowAnimationStyle">@style/MyAnimation.Window</item>
+    </style>
+
+    <style name="MyAnimation.Window" parent="@android:style/Animation.Activity">
+        <item name="android:windowEnterAnimation">@anim/center_grow_open</item>
+        <item name="android:windowExitAnimation">@anim/center_grow_close</item>
+    </style>
+
+    <style name="SlideDialogThemeCountryPicker" parent="@android:style/Theme.Panel">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@style/SlideAnimation</item>
+    </style>
+
+</resources>

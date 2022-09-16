@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutRedeemCoin"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:animateLayoutChanges="true"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgBack"
+            android:layout_width="wrap_content"
+            android:layout_height="?android:actionBarSize"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="16dp"
+            android:padding="15dp"
+            app:srcCompat="@drawable/back_arrow"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.swipefwd.utils.wheelPicker.WheelPicker
+            android:id="@+id/pickerCoins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/pickerMoney"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:wheel_atmospheric="true"
+            app:wheel_curved="true"
+            app:wheel_cyclic="false"
+            app:wheel_indicator="false"
+            app:wheel_item_align="center"
+            app:wheel_item_space="10dp"
+            app:wheel_item_text_color="@color/colorGrey"
+            app:wheel_item_text_size="25sp"
+            app:wheel_same_width="true"
+            app:wheel_selected_item_text_color="@color/colorPagerDesc" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivCoin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/pickerCoins"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/coin_active" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="0dp"
+            android:layout_height="0.5dp"
+            android:background="@color/black"
+            android:elevation="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/ivCoin" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="0dp"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/black"
+            android:elevation="10dp"
+            app:layout_constraintBottom_toBottomOf="@id/ivCoin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.swipefwd.utils.wheelPicker.WheelPicker
+            android:id="@+id/pickerMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="30dp"
+            app:layout_constraintBottom_toBottomOf="@id/pickerCoins"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/pickerCoins"
+            app:layout_constraintTop_toTopOf="@id/pickerCoins"
+            app:wheel_atmospheric="true"
+            app:wheel_curved="true"
+            app:wheel_cyclic="false"
+            app:wheel_indicator="false"
+            app:wheel_item_align="center"
+            app:wheel_item_space="10dp"
+            app:wheel_item_text_color="@color/colorGrey"
+            app:wheel_same_width="true"
+            app:wheel_selected_item_text_color="@color/colorPagerDesc" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivRupee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/pickerCoins"
+            app:layout_constraintStart_toEndOf="@id/pickerMoney"
+            app:layout_constraintTop_toTopOf="@id/pickerCoins"
+            app:srcCompat="@drawable/rupee1" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRedeemCoins"
+            android:layout_width="245dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/corner_green_gradient_bg"
+            android:elevation="50dp"
+            android:enabled="true"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="@string/mobile_recharge"
+            android:textAppearance="@style/AppTheme.MediumFont"
+            android:textColor="@color/colorPagerDesc"
+            android:textSize="15sp"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutSuccess"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:animateLayoutChanges="true"
+        android:background="@drawable/gradient"
+        android:fitsSystemWindows="true"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivStar"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerInParent="true"
+            tools:srcCompat="@drawable/flash1" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ivStar"
+            android:layout_margin="30dp"
+            android:gravity="center"
+            android:lineSpacingExtra="10dp"
+            android:text="₹210 was added to your Google Wallet"
+            android:textAppearance="@style/AppTheme.MediumFont"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

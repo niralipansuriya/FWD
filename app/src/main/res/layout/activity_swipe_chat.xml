@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="?android:actionBarSize"
+        android:layout_marginEnd="15dp"
+        android:padding="15dp"
+        android:tint="@color/cross_grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cancel_black_old" />
+
+    <ScrollView
+        android:id="@+id/ScrollChat"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:fadeScrollbars="true"
+        android:scrollbarSize="5dp"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toTopOf="@id/bottomLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivCancel">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="30dp"
+                android:gravity="center"
+                android:lineSpacingExtra="8dp"
+                android:text="@string/chat_match"
+                android:textAppearance="@style/AppTheme.MediumFont"
+                android:textColor="@color/colorPagerDesc"
+                android:textSize="20sp"
+                app:layout_constraintTop_toBottomOf="@id/rlImages" />
+
+            <RelativeLayout
+                android:id="@+id/rlImages"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imgCancel">
+
+                <com.swipefwd.utils.RoundedImageView
+                    android:id="@+id/img1"
+                    android:visibility="gone"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:elevation="5dp"
+                    android:scaleType="centerCrop"
+                    app:cornerRadius="1000dp"
+                    app:roundedCorners="all" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtYou"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/blue_gradient_rounded_bg"
+                    android:elevation="6dp"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:text="You"
+                    android:textAppearance="@style/AppTheme.MediumFont"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <com.swipefwd.utils.RoundedImageView
+                    android:id="@+id/img2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:elevation="10dp"
+                    android:scaleType="centerCrop"
+                    app:cornerRadius="1000dp"
+                    app:roundedCorners="all"
+                    tools:srcCompat="@drawable/user_girl_image" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                android:gravity="center"
+                android:lineSpacingExtra="8dp"
+                android:textAppearance="@style/AppTheme.RegularFont"
+                android:textColor="@color/colorPagerDesc"
+                android:textSize="14sp"
+                app:layout_constraintTop_toBottomOf="@id/rlImages"
+                tools:text="@string/chat_message" />
+
+            <TextView
+                android:id="@+id/txt3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                android:gravity="center"
+                android:lineSpacingExtra="8dp"
+                android:textAppearance="@style/AppTheme.RegularFont"
+                android:textColor="@color/colorPagerDesc"
+                android:textSize="14sp"
+                app:layout_constraintTop_toBottomOf="@id/rlImages"
+                android:text="@string/chat_message_1" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcvChat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="10dp"
+                android:visibility="gone"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintTop_toBottomOf="@id/txtDate"
+                tools:listitem="@layout/item_chat_sender" />
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivGallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            app:layout_constraintBottom_toBottomOf="@id/edtMessage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/edtMessage"
+            app:srcCompat="@drawable/gallery" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtMessage"
+            style="@style/EditTextTheme"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/corner_grey_bg"
+            android:hint="@string/start_message"
+            android:inputType="textVisiblePassword|textNoSuggestions|textCapSentences"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/ivRecord"
+            app:layout_constraintStart_toEndOf="@id/ivGallery"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivRecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            app:layout_constraintBottom_toBottomOf="@id/edtMessage"
+            app:layout_constraintEnd_toStartOf="@id/ivSend"
+            app:layout_constraintTop_toTopOf="@id/edtMessage"
+            app:srcCompat="@drawable/record" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/edtMessage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/edtMessage"
+            app:srcCompat="@drawable/send_arrow" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

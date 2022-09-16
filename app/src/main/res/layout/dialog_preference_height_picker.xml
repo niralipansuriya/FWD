@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgDialogGradient"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/rectangle" />
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pullDown"
+        app:layout_constraintBottom_toTopOf="@id/cardBottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <View
+            android:layout_width="54dp"
+            android:layout_height="5dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/corner_white_bg"
+            />
+    </RelativeLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardBottom"
+        style="@style/TopCornerCardViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardPreventCornerOverlap="false"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relHeight">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtHeight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/top_blue_corner_gradient_bg"
+                android:gravity="center"
+                android:padding="30dp"
+                android:text="@string/height"
+                android:textAppearance="@style/AppTheme.MediumFont"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtAgeRange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtHeight"
+                android:letterSpacing="0.03"
+                android:paddingStart="30dp"
+                android:paddingTop="30dp"
+                android:text="Between 146 and 210 cm"
+                android:textAppearance="@style/AppTheme.MediumFont"
+                android:textColor="@color/colorPagerDesc"
+                android:textSize="14sp" />
+            <!--old slider
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtAgeRange"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="30dp"
+            android:theme="@style/RangeSlider"
+            android:thumb="@drawable/seekbar_thumb"
+            android:valueFrom="146.0"
+            android:valueTo="210.0"
+            app:labelBehavior="gone"
+            app:values="@array/height_initial_range_slider_values" />-->
+            <com.swipefwd.utils.crystalRangeSeekbar.widgets.CrystalRangeSeekbar
+                android:id="@+id/heightRangeSeekbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtAgeRange"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="30dp"
+                app:bar_color="#C9CCFC"
+                app:bar_color_mode="solid"
+                app:bar_highlight_color_mode="gradient"
+                app:bar_highlight_gradient_end="#4D79FF"
+                app:bar_highlight_gradient_start="#846DFC"
+                app:corner_radius="10"
+                app:data_type="_float"
+                app:labelBehavior="gone"
+                app:left_thumb_image="@drawable/seekbar_thumb"
+                app:left_thumb_image_pressed="@drawable/seekbar_thumb"
+                app:max_value="210.0"
+                app:min_value="146.0"
+                app:right_thumb_image="@drawable/seekbar_thumb"
+                app:right_thumb_image_pressed="@drawable/seekbar_thumb"
+                app:values="@array/height_initial_range_slider_values" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtRunOutOf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/heightRangeSeekbar"
+                android:letterSpacing="0.03"
+                android:paddingStart="30dp"
+                android:paddingTop="60dp"
+                android:text="See other people if I run out"
+                android:textAppearance="@style/AppTheme.MediumFont"
+                android:textColor="@color/colorPagerDesc"
+                android:textSize="14sp" />
+
+            <androidx.appcompat.widget.AppCompatToggleButton
+                android:id="@+id/toggleRunOut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/heightRangeSeekbar"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="55dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/toggle_button_selector"
+                android:checked="true"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:tag="@string/user_dater"
+                android:textOff=""
+                android:textOn="" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtRunOutOf"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="60dp"
+                android:paddingStart="30dp"
+                android:paddingEnd="30dp"
+                android:weightSum="1">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/txtSkip"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="6dp"
+                    android:layout_weight="0.5"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:text="@string/common_skip"
+                    android:textAllCaps="false"
+                    android:textAppearance="@style/AppTheme.MediumFont"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    app:backgroundTint="@color/colorGrey"
+                    app:cornerRadius="25dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnSubmit"
+                    style="@style/materialIconButtonTheme"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_weight="0.5"
+                    android:enabled="true"
+                    android:text="@string/common_submit" />
+            </LinearLayout>
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

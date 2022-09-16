@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgCancel"
+        app:srcCompat="@drawable/logo_null_large" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:padding="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cancel_darkgray" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:padding="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back_arrow" />
+
+    <LinearLayout
+        android:id="@+id/llDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/ivLogo">
+
+        <TextView
+            android:id="@+id/txtDesc1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:lineSpacingExtra="5dp"
+            android:text="@string/delete_reason_msg1"
+            android:textAppearance="@style/AppTheme.MediumFont"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtDesc2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:lineSpacingExtra="5dp"
+            android:text="@string/delete_reason_msg2"
+            android:textAppearance="@style/AppTheme.MediumFont"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtDesc3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:lineSpacingExtra="5dp"
+            android:text="@string/delete_reason_msg3"
+            android:textAppearance="@style/AppTheme.MediumFont"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingStart="30dp"
+        android:paddingTop="16dp"
+        android:paddingEnd="30dp"
+        android:paddingBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtReason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/corner_grey_bg"
+            android:hint="@string/start_message"
+            android:inputType="textVisiblePassword|textNoSuggestions"
+            android:imeOptions="actionDone"
+            android:lineSpacingExtra="3dp"
+            android:padding="12dp"
+            android:singleLine="true"
+            android:textAppearance="@style/AppTheme.RegularFont"
+            android:textColor="@color/colorPagerDesc"
+            android:textColorHint="@color/colorGrey"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

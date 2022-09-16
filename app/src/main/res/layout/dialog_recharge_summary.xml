@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgDialogGradient"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/rectangle" />
+
+    <View
+        android:layout_width="54dp"
+        android:layout_height="5dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/corner_white_bg"
+        app:layout_constraintBottom_toTopOf="@id/cardBottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardBottom"
+        style="@style/TopCornerCardViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardPreventCornerOverlap="false"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="40dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtSummary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/recharge_summary"
+                android:textAppearance="@style/AppTheme.MediumFont"
+                android:textColor="@color/colorPagerDesc"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@id/layoutConfirm" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:text="@string/mobile_number"
+                    android:textAppearance="@style/AppTheme.MediumFont"
+                    android:textColor="@color/colorGrey"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtNumberValue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="30dp"
+                    android:gravity="end"
+                    android:textAppearance="@style/AppTheme.MediumFont"
+                    android:textColor="@color/colorPagerDesc"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/txtNumber"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="587485385" />
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/view_background"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txtNumber" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtCircle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/operator_circle"
+                    android:textAppearance="@style/AppTheme.MediumFont"
+                    android:textColor="@color/colorGrey"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/view1" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtCircleValue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="30dp"
+                    android:gravity="end"
+                    android:textAppearance="@style/AppTheme.MediumFont"
+                    android:textColor="@color/colorPagerDesc"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="@id/txtCircle"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/txtTalktime"
+                    app:layout_constraintTop_toTopOf="@id/txtCircle"
+                    tools:text="587485385" />
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/view_background"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txtCircle" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtValidity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/validity"
+                    android:textAppearance="@style/AppTheme.MediumFont"
+                    android:textColor="@color/colorGrey"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/view2" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtValidityValue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="30dp"
+                    android:gravity="end"
+                    android:textAppearance="@style/AppTheme.MediumFont"
+                    android:textColor="@color/colorPagerDesc"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="@id/txtValidity"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/txtValidity"
+                    app:layout_constraintTop_toTopOf="@id/txtValidity"
+                    tools:text="587485385" />
+
+                <View
+                    android:id="@+id/view3"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/view_background"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txtValidity" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtTalktime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/talktime"
+                    android:textAppearance="@style/AppTheme.MediumFont"
+                    android:textColor="@color/colorGrey"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/view3" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtTalktimeValue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="30dp"
+                    android:gravity="end"
+                    android:textAppearance="@style/AppTheme.MediumFont"
+                    android:textColor="@color/colorPagerDesc"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="@id/txtTalktime"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/txtTalktime"
+                    app:layout_constraintTop_toTopOf="@id/txtTalktime"
+                    tools:text="587485385" />
+
+                <View
+                    android:id="@+id/view4"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/view_background"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txtTalktime" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtPlanDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/plan_desc"
+                    android:textAppearance="@style/AppTheme.MediumFont"
+                    android:textColor="@color/colorGrey"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/view4" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtPlanValue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="30dp"
+                    android:gravity="end"
+                    android:textAppearance="@style/AppTheme.MediumFont"
+                    android:textColor="@color/colorPagerDesc"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="@id/txtPlanDesc"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/txtPlanDesc"
+                    app:layout_constraintTop_toTopOf="@id/txtPlanDesc"
+                    tools:text="587485385" />
+
+                <View
+                    android:id="@+id/view5"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/view_background"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txtPlanDesc" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/recharge_amount"
+                    android:textAppearance="@style/AppTheme.MediumFont"
+                    android:textColor="@color/colorGrey"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/view5" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtAmountValue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="30dp"
+                    android:gravity="end"
+                    android:textAppearance="@style/AppTheme.MediumFont"
+                    android:textColor="@color/colorPagerDesc"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="@id/txtAmount"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/txtAmount"
+                    app:layout_constraintTop_toTopOf="@id/txtAmount"
+                    tools:text="587485385" />
+
+                <LinearLayout
+                    android:id="@+id/layoutTotalAmount"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:animateLayoutChanges="true"
+                    android:background="@drawable/blue_gradient_bg"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txtAmountValue">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtTotal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="30dp"
+                        android:layout_weight="1"
+                        android:text="@string/total_amount"
+                        android:textAppearance="@style/AppTheme.MediumFont"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtTotalAmount"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|center"
+                        android:layout_marginEnd="30dp"
+                        android:layout_weight="1"
+                        android:textAlignment="textEnd"
+                        android:textAppearance="@style/AppTheme.MediumFont"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        tools:text="$32" />
+                </LinearLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnApplyBalance"
+                    style="@style/Widget.MaterialComponents.Button.TextButton.Dialog.Flush"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:text="@string/apply_balance"
+                    android:textAllCaps="false"
+                    android:textColor="@color/blue_gradient_2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txtAmountValue"
+                    app:rippleColor="@color/view_background" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnPurchase"
+                style="@style/materialIconMintButtonTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="40dp"
+                android:text="@string/purchase"
+                android:textColor="@color/colorPagerDesc" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnContinue"
+                style="@style/materialIconMintButtonTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="40dp"
+                android:text="@string/common_continue"
+                android:textColor="@color/colorPagerDesc"
+                android:visibility="gone" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

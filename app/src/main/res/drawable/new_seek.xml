@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="oval"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<!--            <gradient-->
+<!--                android:type="linear"-->
+<!--                >-->
+
+<!--                <item-->
+<!--                    android:color="#6C67EF"-->
+<!--                    android:offset="0"-->
+<!--                    />-->
+
+<!--                <item-->
+<!--                    android:color="#6973F1"-->
+<!--                    android:offset="0.553"-->
+<!--                    />-->
+
+<!--                <item-->
+<!--                    android:color="#5EA3FB"-->
+<!--                    android:offset="1"-->
+<!--                    />-->
+
+<!--            </gradient>-->
+    <gradient
+        android:centerColor="#6973F1"
+        android:endColor="#5EA3FB"
+        android:startColor="#6C67EF"
+        android:type="linear" />
+            <size
+                android:width="21dp"
+                android:height="21dp"/>
+        </shape>
+
+<!--<vector-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:aapt="http://schemas.android.com/aapt"-->
+<!--    android:width="21dp"-->
+<!--    android:height="21dp"-->
+<!--    android:viewportWidth="21"-->
+<!--    android:viewportHeight="21"-->
+<!--    >-->
+
+<!--    <group>-->
+
+<!--        <clip-path-->
+<!--            android:pathData="M1.5 1.5H19.5V19.5H1.5V1.5Z"-->
+<!--            />-->
+
+<!--        <group-->
+<!--            android:translateX="0"-->
+<!--            android:translateY="0.5"-->
+<!--            android:pivotX="10.5"-->
+<!--            android:pivotY="10.5"-->
+<!--            android:scaleX="1.939"-->
+<!--            android:scaleY="1.939"-->
+<!--            >-->
+
+<!--            <path-->
+<!--                android:pathData="M1.5 1.5V19.5H19.5V1.5"-->
+<!--                >-->
+
+<!--                <aapt:attr name="android:fillColor">-->
+
+<!--                    <gradient-->
+<!--                        android:type="linear"-->
+<!--                        android:startX="6"-->
+<!--                        android:startY="10.5"-->
+<!--                        android:endX="15"-->
+<!--                        android:endY="10.5"-->
+<!--                        >-->
+
+<!--                        <item-->
+<!--                            android:color="#6C67EF"-->
+<!--                            android:offset="0"-->
+<!--                            />-->
+
+<!--                        <item-->
+<!--                            android:color="#6973F1"-->
+<!--                            android:offset="0.553"-->
+<!--                            />-->
+
+<!--                        <item-->
+<!--                            android:color="#5EA3FB"-->
+<!--                            android:offset="1"-->
+<!--                            />-->
+
+<!--                    </gradient>-->
+
+<!--                </aapt:attr>-->
+
+<!--            </path>-->
+
+<!--        </group>-->
+
+<!--    </group>-->
+
+<!--    <path-->
+<!--        android:pathData="M1.5 1.5H19.5V19.5H1.5V1.5Z"-->
+<!--        android:strokeWidth="3"-->
+<!--        android:strokeColor="#F9FAFB"-->
+<!--        />-->
+
+<!--</vector>-->
+

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaultsMap>
+    <entry>
+        <key>android_version</key>
+        <value>0</value>
+    </entry>
+    <entry>
+        <key>android_force_update</key>
+        <value>0</value>
+    </entry>
+    <entry>
+        <key>android_update_message</key>
+        <value>Fetching Config</value>
+    </entry>
+    <entry>
+        <key>android_other_message</key>
+        <value>Fetching Config</value>
+    </entry>
+</defaultsMap>

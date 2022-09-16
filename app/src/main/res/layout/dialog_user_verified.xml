@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgDialogGradient"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/rectangle" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cvUserVerified"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:animateLayoutChanges="false"
+        android:layout_marginEnd="30dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/llUserVerified"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="22dp"
+            >
+
+
+           <!-- <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_gravity="center">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/image_profile" />
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivBlueTick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/imgUser"
+                    android:layout_toEndOf="@id/imgUser"
+                    app:layout_constraintCircle="@id/imgUser"
+                    app:layout_constraintCircleAngle="140"
+                    app:layout_constraintCircleRadius="47dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/verify_profile"
+                     />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+            <RelativeLayout
+                android:layout_width="110dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/image_profile" />
+
+
+                <RelativeLayout
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:id="@+id/ivBlueTick"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/gradient_circle"
+                    android:layout_marginEnd="14dp"
+                    android:layout_marginBottom="14dp">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/check_white" />
+
+                </RelativeLayout>
+
+
+                <!--<androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivBlueTick"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="22dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/verify_profile"
+                    android:rotation="15" />-->
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/you_ve_been_verified"
+                android:textAppearance="@style/AppTheme.MediumFont"
+                android:textColor="@color/colorPagerDesc"
+                android:textSize="16sp" />
+<!--            android:layout_marginTop="16dp"-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:gravity="center"
+                android:lineSpacingExtra="6dp"
+                android:text="@string/verified_dialog_text"
+                android:textAppearance="@style/AppTheme.RegularFont"
+                android:textColor="@color/colorPagerDesc"
+                android:textSize="13sp" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="24dp"
+                app:cardCornerRadius="16dp">
+                <RelativeLayout
+                    android:id="@+id/rlBtnContinue"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:visibility="visible"
+                    android:background="@drawable/bottom_corners_for_button">
+
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/btnContinue"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:text="@string/common_continue"
+                    android:textAppearance="@style/AppTheme.MediumFont"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:gravity="center"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

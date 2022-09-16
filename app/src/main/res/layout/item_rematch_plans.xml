@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutItemPlans"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="20dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="20dp"
+    android:layout_marginBottom="5dp"
+    android:background="@drawable/grey_border_bg"
+    android:paddingStart="30dp"
+    android:paddingTop="5dp"
+    android:paddingEnd="20dp"
+    android:paddingBottom="5dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtPlanMonth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@id/txtPlanMonthOffer"
+        android:textAppearance="@style/AppTheme.BoldFont"
+        android:textColor="@color/colorPagerDesc"
+        android:textSize="13sp"
+        tools:text="1 week" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtPlanValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtPlanMonth"
+        android:textAppearance="@style/AppTheme.RegularFont"
+        android:textColor="@color/colorPagerDesc"
+        android:textSize="13sp"
+        tools:text="$7.99 / week" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtSavePlan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/corner_mint_bottom_gradient_bg"
+        android:paddingStart="10dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="5dp"
+        android:text="BEST VALUE"
+        android:textAppearance="@style/AppTheme.BoldFont"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtPlanMonthOffer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:textAppearance="@style/AppTheme.BoldFont"
+        android:textColor="@color/colorPagerDesc"
+        android:textSize="13sp"
+        tools:text="Easy" />
+
+</RelativeLayout>

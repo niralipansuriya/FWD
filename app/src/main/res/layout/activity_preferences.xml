@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?actionBarSize">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:paddingStart="30dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back_pref"
+        app:tint="@color/colorPagerDesc" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtPreference"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivBack"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:lineSpacingExtra="-5sp"
+        android:text="@string/preferences"
+        android:textAppearance="@style/AppTheme.MediumFont"
+        android:textColor="@color/colorPagerTitle"
+        android:textSize="23sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivBack"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:layout_toEndOf="@id/txtPreference"
+        android:layout_toRightOf="@id/txtPreference"
+        android:text="†"
+        android:textColor="@color/orange_gradient_1"
+        android:textSize="19sp" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/layoutScroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtPreference"
+        android:layout_marginTop="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/labelPrefLocation"
+            android:layout_below="@id/txtPreference"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/meet_preference"
+                android:textAppearance="@style/AppTheme.MediumFont"
+                android:textColor="@color/colorPagerDesc"
+                android:textSize="15sp" />
+
+            <com.addisonelliott.segmentedbutton.SegmentedButtonGroup
+                android:id="@+id/btnSegmentGender"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="18dp"
+                app:borderColor="@color/colorAccent"
+                app:borderWidth="1dp"
+                app:divider="@color/colorAccent"
+                app:draggable="false"
+                app:position="2"
+                app:radius="25dp"
+                app:ripple="false"
+                app:rippleColor="@color/colorAccent"
+                app:selectedBackground="@drawable/blue_gradient_bg"
+                app:selectionAnimationDuration="10">
+
+                <com.addisonelliott.segmentedbutton.SegmentedButton
+                    android:id="@+id/btnMale"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/regular"
+                    android:padding="12dp"
+                    app:selectedTextColor="@color/white"
+                    app:selectedTextStyle="bold"
+                    app:text="@string/men"
+                    app:textColor="@color/colorPagerDesc"
+                    app:textSize="16sp" />
+
+                <com.addisonelliott.segmentedbutton.SegmentedButton
+                    android:id="@+id/btnFemale"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.4"
+                    android:fontFamily="@font/regular"
+                    android:padding="12dp"
+                    app:selectedTextColor="@color/white"
+                    app:selectedTextStyle="bold"
+                    app:text="@string/women"
+                    app:textColor="@color/colorPagerDesc"
+                    app:textSize="16sp" />
+
+                <com.addisonelliott.segmentedbutton.SegmentedButton
+                    android:id="@+id/btnNone"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.4"
+                    android:fontFamily="@font/regular"
+                    android:padding="12dp"
+                    app:selectedTextColor="@color/white"
+                    app:selectedTextStyle="bold"
+                    app:text="@string/everyone"
+                    app:textColor="@color/colorPagerDesc"
+                    app:textSize="16sp" />
+            </com.addisonelliott.segmentedbutton.SegmentedButtonGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="26dp"
+                android:layout_marginRight="2dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/age_range"
+                    android:textAppearance="@style/AppTheme.MediumFont"
+                    android:textColor="@color/colorPagerDesc"
+                    android:textSize="15sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtAgeRange"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="between 18 - 99"
+                    android:textAppearance="@style/AppTheme.MediumFont"
+                    android:textColor="@color/colorPagerDesc"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <com.swipefwd.utils.crystalRangeSeekbar.widgets.CrystalRangeSeekbar
+                android:id="@+id/ageRangeSeekbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                app:bar_color="#C9CCFC"
+                app:bar_color_mode="solid"
+                app:bar_highlight_color_mode="gradient"
+                app:bar_highlight_gradient_end="#4D79FF"
+                app:bar_highlight_gradient_start="#846DFC"
+                app:corner_radius="10"
+                app:data_type="_float"
+                app:labelBehavior="gone"
+                app:left_thumb_image="@drawable/seekbar_thumb"
+                app:left_thumb_image_pressed="@drawable/seekbar_thumb"
+                app:max_value="99.0"
+                app:min_value="18.0"
+                app:right_thumb_image="@drawable/seekbar_thumb"
+                app:right_thumb_image_pressed="@drawable/seekbar_thumb"
+                app:values="@array/initial_range_slider_values" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="2dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/distance"
+                    android:textAppearance="@style/AppTheme.MediumFont"
+                    android:textColor="@color/colorPagerDesc"
+                    android:textSize="15sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/star_symbol"
+                    android:textAppearance="@style/AppTheme.RegularFont"
+                    android:textColor="@color/color_orange"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtDistance"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:text="160 km away"
+                    android:textAppearance="@style/AppTheme.MediumFont"
+                    android:textColor="@color/colorPagerDesc"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <com.swipefwd.utils.crystalRangeSeekbar.widgets.CrystalSeekbar
+                android:id="@+id/seekDistance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                app:bar_color="#C9CCFC"
+                app:bar_color_mode="solid"
+                app:bar_highlight_color_mode="gradient"
+                app:bar_highlight_gradient_end="#4D79FF"
+                app:bar_highlight_gradient_start="#846DFC"
+                app:corner_radius="10"
+                app:data_type="_float"
+                app:labelBehavior="gone"
+                app:max_value="160.0"
+                app:min_start_value="25.0"
+                app:min_value="1.0"
+                app:thumb_image="@drawable/seekbar_thumb"
+                app:thumb_image_pressed="@drawable/seekbar_thumb" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnAdvancedFilters"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="35dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:text="@string/advanced_dating_filters"
+                android:textAppearance="@style/AppTheme.MediumFont"
+                android:textColor="@color/blue_gradient_2"
+                android:textSize="17sp"
+                app:rippleColor="@color/blue_gradient_2_ripple" />
+
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/labelPrefLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnContinue"
+        android:layout_marginTop="110dp"
+        android:gravity="center"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:lineSpacingExtra="5dp"
+        android:textAppearance="@style/AppTheme.MediumFont"
+        android:textColor="@color/colorGrey"
+        android:textSize="12sp"
+        tools:text="@string/preference_match_location_text" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnContinue"
+        style="@style/materialIconButtonTheme"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:enabled="true"
+        android:text="@string/common_continue" />
+<!--    <androidx.appcompat.widget.AppCompatTextView-->
+<!--        android:id="@+id/labelPrefLocation"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_above="@id/btnContinue"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginBottom="30dp"-->
+<!--        android:gravity="center"-->
+<!--        android:lineSpacingExtra="5dp"-->
+<!--        android:textAppearance="@style/AppTheme.MediumFont"-->
+<!--        android:textColor="@color/colorGrey"-->
+<!--        android:textSize="11sp"-->
+<!--        tools:text="@string/preference_match_location_text" />-->
+
+<!--    <com.google.android.material.button.MaterialButton-->
+<!--        android:id="@+id/btnContinue"-->
+<!--        style="@style/materialIconButtonTheme"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginStart="30dp"-->
+<!--        android:layout_marginEnd="30dp"-->
+<!--        android:layout_marginBottom="50dp"-->
+<!--        android:enabled="true"-->
+<!--        android:text="@string/common_continue" />-->
+</RelativeLayout>

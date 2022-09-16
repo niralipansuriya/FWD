@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgDialogGradient"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/rectangle" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pullDown"
+            android:layout_gravity="center">
+            <View
+                android:layout_width="54dp"
+                android:layout_height="5dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/corner_white_bg"
+                />
+        </RelativeLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            style="@style/TopCornerCardViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardPreventCornerOverlap="false">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/planPager"
+                    android:layout_width="0dp"
+                    android:layout_height="170dp"
+                    android:layout_marginBottom="20dp"
+                    app:layout_constraintBottom_toTopOf="@id/txtText"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:background="@color/blue_gradient_2" />
+
+                <me.relex.circleindicator.CircleIndicator3
+                    android:id="@+id/layoutIndicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:background="@drawable/corner_white_bg"
+                    app:ci_animator="@animator/indicator_no_animator"
+                    app:ci_drawable="@drawable/oval"
+                    app:ci_drawable_unselected="@drawable/inactive_ellipse"
+                    app:ci_height="5dp"
+                    app:ci_margin="5dp"
+                    app:ci_width="5dp"
+                    app:layout_constraintBottom_toBottomOf="@id/planPager"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/planPager" />
+
+                <me.relex.circleindicator.CircleIndicator3
+                    android:id="@+id/layoutIndicatorGreen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:background="@drawable/corner_white_bg"
+                    android:visibility="gone"
+                    app:ci_animator="@animator/indicator_no_animator"
+                    app:ci_drawable="@drawable/ovel_green"
+                    app:ci_drawable_unselected="@drawable/inactive_ellipse"
+                    app:ci_height="5dp"
+                    app:ci_margin="5dp"
+                    app:ci_width="5dp"
+                    app:layout_constraintBottom_toBottomOf="@id/planPager"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/planPager" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="@string/subscription"
+                    android:textAppearance="@style/AppTheme.BoldFont"
+                    android:textColor="@color/blue_gradient_2"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toTopOf="@id/rvPlansList"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvPlansList"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintBottom_toTopOf="@id/txtPlanType"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:itemCount="4"
+                    tools:listitem="@layout/item_rematch_plans" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtPlanType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:textAppearance="@style/AppTheme.BoldFont"
+                    android:textColor="@color/colorPagerDesc"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toTopOf="@id/layoutPlan"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:text="@string/text_1" />
+
+                <RelativeLayout
+                    android:id="@+id/layoutPlan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/grey_border_bg"
+                    android:paddingStart="30dp"
+                    android:paddingTop="5dp"
+                    android:paddingEnd="30dp"
+                    android:paddingBottom="5dp"
+                    app:layout_constraintBottom_toTopOf="@id/txtPlanMessage"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtPlanMonth"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/AppTheme.BoldFont"
+                        android:textColor="@color/colorPagerDesc"
+                        android:textSize="14sp"
+                        tools:text="24 hours" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtPlanValue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtPlanMonth"
+                        android:textAppearance="@style/AppTheme.RegularFont"
+                        android:textColor="@color/colorPagerDesc"
+                        android:textSize="14sp"
+                        tools:text="$.99" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtPlanMonthOffer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerInParent="true"
+                        android:text="Easy"
+                        android:textAppearance="@style/AppTheme.BoldFont"
+                        android:textColor="@color/colorPagerDesc"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtPlanMessage"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="5dp"
+                    android:paddingStart="15dp"
+                    android:paddingTop="15dp"
+                    android:paddingEnd="15dp"
+                    android:text="@string/plan_message"
+                    android:textAppearance="@style/AppTheme.RegularFont"
+                    android:textColor="@color/colorGrey"
+                    android:textSize="11sp"
+                    app:layout_constraintBottom_toTopOf="@id/txtLink"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtLink"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:paddingBottom="15dp"
+                    android:text="@string/plan_message_link"
+                    android:textAppearance="@style/AppTheme.RegularFont"
+                    android:textColor="@color/colorGrey"
+                    android:textSize="11sp"
+                    app:layout_constraintBottom_toTopOf="@id/txtGetDiamond"
+                    app:layout_constraintEnd_toEndOf="@id/txtPlanMessage"
+                    app:layout_constraintStart_toStartOf="@id/txtPlanMessage" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/txtGetDiamond"
+                    style="@style/materialIconButtonTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="30dp"
+                    android:text="@string/purchase"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

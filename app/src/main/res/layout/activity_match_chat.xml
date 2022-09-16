@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.message.MatchChatActivity">
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivBack"
+        android:layout_width="wrap_content"
+        android:layout_height="?android:actionBarSize"
+        android:layout_marginStart="15dp"
+        android:padding="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back_arrow" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="?android:actionBarSize"
+        android:padding="15dp"
+        app:layout_constraintEnd_toStartOf="@id/ivOptions"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/video" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgToolbarUser"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        app:layout_constraintBottom_toBottomOf="@id/ivBack"
+        app:layout_constraintStart_toEndOf="@id/ivBack"
+        app:layout_constraintTop_toTopOf="@id/ivBack"
+        app:srcCompat="@drawable/user_girl_image" />
+
+    <TextView
+        android:id="@+id/txtToolbarName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Nehrika"
+        android:textAllCaps="true"
+        android:textAppearance="@style/AppTheme.MediumFont"
+        android:textColor="@color/colorPagerDesc"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@id/ivBack"
+        app:layout_constraintStart_toEndOf="@id/imgToolbarUser"
+        app:layout_constraintTop_toTopOf="@id/ivBack" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivOptions"
+        android:layout_width="wrap_content"
+        android:layout_height="?android:actionBarSize"
+        android:layout_marginEnd="15dp"
+        android:padding="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/more" />
+
+    <TextView
+        android:id="@+id/txtDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Feb 12, 2021"
+        android:textAllCaps="true"
+        android:textAppearance="@style/AppTheme.RegularFont"
+        android:textColor="@color/colorGrey"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivBack" />
+
+    <TextView
+        android:id="@+id/txtMatched"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/your_tribe_matched"
+        android:textAppearance="@style/AppTheme.MediumFont"
+        android:textColor="@color/colorPagerDesc"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtDate" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/imageLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtMatched">
+
+        <com.ramijemli.percentagechartview.PercentageChartView
+            android:id="@+id/progressMatch"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:pcv_animDuration="800"
+            app:pcv_animInterpolator="accelerate_decelerate"
+            app:pcv_backgroundBarColor="@color/light_grey"
+            app:pcv_backgroundBarThickness="6dp"
+            app:pcv_gradientColors="#6C67EF,#5EA3FB"
+            app:pcv_gradientType="linear"
+            app:pcv_mode="ring"
+            app:pcv_orientation="clockwise"
+            app:pcv_progressBarThickness="6dp"
+            app:pcv_startAngle="270"
+            app:pcv_textColor="@android:color/transparent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgUser"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            app:layout_constraintBottom_toBottomOf="@id/progressMatch"
+            app:layout_constraintEnd_toEndOf="@id/progressMatch"
+            app:layout_constraintStart_toStartOf="@id/progressMatch"
+            app:layout_constraintTop_toTopOf="@id/progressMatch"
+            app:srcCompat="@drawable/user_girl_image" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16sp"
+        android:text="Nehrika, 28"
+        android:textAppearance="@style/AppTheme.MediumFont"
+        android:textColor="@color/colorPagerDesc"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageLayout" />
+
+    <TextView
+        android:id="@+id/txtExpire"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:padding="8dp"
+        android:text="(5 hours to message)"
+        android:textAppearance="@style/AppTheme.RegularFont"
+        android:textColor="@color/colorPagerDesc"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtName" />
+
+    <TextView
+        android:id="@+id/txtMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/chat_white_bubble"
+        android:elevation="3dp"
+        android:paddingStart="16dp"
+        android:paddingTop="16dp"
+        android:paddingEnd="48dp"
+        android:paddingBottom="16dp"
+        android:text="Hi, How are you?"
+        android:textAppearance="@style/AppTheme.RegularFont"
+        android:textColor="@color/colorPagerDesc"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@id/ivError"
+        app:layout_constraintEnd_toStartOf="@id/ivError" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivError"
+        android:layout_width="wrap_content"
+        android:layout_height="?android:actionBarSize"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="15dp"
+        android:padding="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtExpire"
+        app:srcCompat="@drawable/error" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/msgGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="txtMsg,ivError" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutExtendTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="16sp"
+        android:background="@drawable/border_bg"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintEnd_toStartOf="@id/btnAddTime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtExpire">
+
+        <TextView
+            android:id="@+id/txtExtendTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:text="@string/need_more_time"
+            android:textAppearance="@style/AppTheme.MediumFont"
+            android:textColor="@color/colorPagerDesc"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toStartOf="@id/imgHand"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtExtendDesc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:text="@string/continue_for_48_hrs"
+            android:textAppearance="@style/AppTheme.RegularFont"
+            android:textColor="@color/colorGrey"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toStartOf="@id/imgHand"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtExtendTitle" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgHand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/txtExtendDesc"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/txtExtendTitle"
+            app:srcCompat="@drawable/hand1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAddTime"
+        style="@style/materialIconButtonTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:enabled="true"
+        android:text="@string/add_time"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@id/layoutExtendTime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/layoutExtendTime"
+        app:layout_constraintTop_toTopOf="@id/layoutExtendTime" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/extendGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="layoutExtendTime,btnAddTime" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivCamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            app:layout_constraintBottom_toBottomOf="@id/edtMessage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/edtMessage"
+            app:srcCompat="@drawable/gallery" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtMessage"
+            style="@style/EditTextTheme"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/corner_grey_bg"
+            android:hint="@string/start_message"
+            android:inputType="textVisiblePassword|textNoSuggestions"
+            android:textAppearance="@style/AppTheme.RegularFont"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/ivRecord"
+            app:layout_constraintStart_toEndOf="@id/ivCamera"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivRecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            app:layout_constraintBottom_toBottomOf="@id/edtMessage"
+            app:layout_constraintEnd_toStartOf="@id/ivSend"
+            app:layout_constraintTop_toTopOf="@id/edtMessage"
+            app:srcCompat="@drawable/record" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/edtMessage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/edtMessage"
+            app:srcCompat="@drawable/send_arrow" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

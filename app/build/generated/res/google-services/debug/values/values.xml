@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">406001238441-luocj5cf8n3eviqv18nnu93r9c6r22km.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">406001238441</string>
+    <string name="google_api_key" translatable="false">AIzaSyB2qcW_3fKb1TuLKJcBSOITgDjhBnaecO8</string>
+    <string name="google_app_id" translatable="false">1:406001238441:android:bf464357b45ff596d084b8</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyB2qcW_3fKb1TuLKJcBSOITgDjhBnaecO8</string>
+    <string name="google_storage_bucket" translatable="false">swipefwd.appspot.com</string>
+    <string name="project_id" translatable="false">swipefwd</string>
+</resources>

@@ -1,0 +1,28 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/android/Nirali/FWD-AWS/FWD_Android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v27/values-v27.xml",
+            "map": [
+                {
+                    "source": "/home/android/Nirali/FWD-AWS/FWD_Android/app/src/main/res/values-v27/style.xml",
+                    "from": {
+                        "startLines": "32,64,10,39,17,47,25,56,2",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "1630,3377,486,1990,839,2434,1272,2936,55",
+                        "endLines": "37,69,15,45,23,54,30,62,8",
+                        "endColumns": "12,12,12,12,12,12,12,12,12",
+                        "endOffsets": "1984,3727,833,2428,1266,2930,1624,3371,480"
+                    },
+                    "to": {
+                        "startLines": "2,8,14,20,27,34,42,48,55",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,414,769,1121,1564,1996,2497,2854,3294",
+                        "endLines": "7,13,19,26,33,41,47,54,61",
+                        "endColumns": "12,12,12,12,12,12,12,12,12",
+                        "endOffsets": "409,764,1116,1559,1991,2492,2849,3289,3719"
+                    }
+                }
+            ]
+        }
+    ]
+}

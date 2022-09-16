@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutMain"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgMatches"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/user_girl_image" />
+
+        <!-- <androidx.constraintlayout.widget.ConstraintLayout
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content">
+
+         <com.ramijemli.percentagechartview.PercentageChartView
+             android:id="@+id/progressMatches"
+             android:layout_width="60dp"
+             android:layout_height="60dp"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toTopOf="parent"
+             app:pcv_animDuration="800"
+             app:pcv_animInterpolator="accelerate_decelerate"
+             app:pcv_backgroundBarColor="@color/light_grey"
+             app:pcv_backgroundBarThickness="2dp"
+             app:pcv_gradientColors="#00EDD2,#79FDD3"
+             app:pcv_gradientType="linear"
+             app:pcv_mode="ring"
+             app:pcv_orientation="clockwise"
+             app:pcv_progressBarThickness="2dp"
+             app:pcv_startAngle="270"
+             app:pcv_textColor="@android:color/transparent" />
+
+         <androidx.appcompat.widget.AppCompatImageView
+             android:id="@+id/imgMatches"
+             android:layout_width="56dp"
+             android:layout_height="56dp"
+             android:scaleType="centerCrop"
+             app:layout_constraintBottom_toBottomOf="@id/progressMatches"
+             app:layout_constraintEnd_toEndOf="@id/progressMatches"
+             app:layout_constraintStart_toStartOf="@id/progressMatches"
+             app:layout_constraintTop_toTopOf="@id/progressMatches"
+             app:srcCompat="@drawable/user_girl_image" />
+
+         </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        tools:text="Kashvi"
+        android:textAppearance="@style/AppTheme.RegularFont"
+        android:textColor="@color/colorPagerDesc"
+        android:textSize="14sp" />
+
+</LinearLayout>

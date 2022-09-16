@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/ivLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="?android:actionBarSize"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:letterSpacing="0.4"
+        android:text="@string/app_name"
+        android:textAppearance="@style/AppTheme.MediumFont"
+        android:textColor="@color/blue_gradient_2"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toStartOf="@id/imgFire"
+        app:layout_constraintStart_toEndOf="@id/imgHome"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgHome"
+        android:layout_width="wrap_content"
+        android:layout_height="?android:actionBarSize"
+        android:layout_marginStart="15dp"
+        android:padding="15dp"
+        app:layout_constraintBottom_toBottomOf="@id/ivLogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ivLogo"
+        app:srcCompat="@drawable/home"
+        app:tint="@color/colorPagerDesc" />
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgFire"
+        android:layout_width="wrap_content"
+        android:layout_height="?android:actionBarSize"
+        android:layout_marginEnd="15dp"
+        android:padding="15dp"
+        app:layout_constraintBottom_toBottomOf="@id/ivLogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ivLogo"
+        app:srcCompat="@drawable/super_like_orange"
+        app:tint="@color/colorPagerDesc"/>
+
+    <com.yuyakaido.android.cardstackview.CardStackView
+        android:id="@+id/cardStackView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivLogo" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgDislike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/cardStackView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/cardStackView"
+        app:srcCompat="@drawable/dislike_orange" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgLike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/cardStackView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/cardStackView"
+        app:srcCompat="@drawable/like_green" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

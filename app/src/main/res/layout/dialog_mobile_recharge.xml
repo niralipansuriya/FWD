@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgDialogGradient"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/rectangle" />
+
+    <View
+        android:layout_width="54dp"
+        android:layout_height="5dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/corner_white_bg"
+        app:layout_constraintBottom_toTopOf="@id/cardBottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardBottom"
+        style="@style/TopCornerCardViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:cardPreventCornerOverlap="false"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/reloadly_icon" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/mobile_number"
+                android:textAppearance="@style/AppTheme.MediumFont"
+                android:textColor="@color/colorPagerDesc"
+                android:textSize="14sp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/corner_blue_border_bg"
+                android:orientation="horizontal"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtMobileNumber"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:textAppearance="@style/AppTheme.RegularFont"
+                    android:textColor="@color/fontBlack"
+                    android:textSize="13sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/rgMobileType"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="6767688988" />
+
+                <RadioGroup
+                    android:id="@+id/rgMobileType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="20dp"
+                    android:elevation="30dp"
+                    android:gravity="end"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.appcompat.widget.AppCompatRadioButton
+                        android:id="@+id/btnPrePaid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:button="@drawable/selector_mobile_type"
+                        android:checked="true"
+                        android:paddingStart="10dp"
+                        android:text="@string/prepaid"
+                        android:textAppearance="@style/AppTheme.RegularFont"
+                        android:textColor="@color/fontBlack"
+                        android:textSize="13sp" />
+
+                    <androidx.appcompat.widget.AppCompatRadioButton
+                        android:id="@+id/btnPostPaid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/selector_mobile_type"
+                        android:paddingStart="10dp"
+                        android:text="@string/postpaid"
+                        android:textAppearance="@style/AppTheme.RegularFont"
+                        android:textColor="@color/fontBlack"
+                        android:textSize="13sp" />
+                </RadioGroup>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/mobile_operator"
+                android:textAppearance="@style/AppTheme.MediumFont"
+                android:textColor="@color/colorPagerDesc"
+                android:textSize="14sp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtOperator"
+                style="@style/EditTextTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/grey_border_bg"
+                android:drawableEnd="@drawable/dropdown"
+                android:ellipsize="end"
+                android:focusable="false"
+                android:focusableInTouchMode="true"
+                android:hint="@string/operator_hint"
+                android:imeOptions="actionDone"
+                android:inputType="text|textCapSentences"
+                android:singleLine="true"
+                app:layout_constraintTop_toBottomOf="@id/txtTitle" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:animateLayoutChanges="true"
+                android:visibility="gone"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="2dp"
+                app:layout_constraintEnd_toEndOf="@id/edtCast"
+                app:layout_constraintStart_toStartOf="@id/edtCast"
+                app:layout_constraintTop_toBottomOf="@id/edtCast">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <com.swipefwd.utils.wheelPicker.WheelPicker
+                        android:id="@+id/pickerOperator"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        app:wheel_atmospheric="true"
+                        app:wheel_curved="false"
+                        app:wheel_cyclic="false"
+                        app:wheel_indicator="true"
+                        app:wheel_indicator_color="@color/colorGrey"
+                        app:wheel_indicator_size="1dp"
+                        app:wheel_item_align="center"
+                        app:wheel_item_space="10dp"
+                        app:wheel_item_text_color="@color/colorGrey"
+                        app:wheel_item_text_size="16sp"
+                        app:wheel_same_width="true"
+                        app:wheel_selected_item_text_color="@color/colorPagerDesc" />
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/mobile_circle"
+                android:textAppearance="@style/AppTheme.MediumFont"
+                android:textColor="@color/colorPagerDesc"
+                android:textSize="14sp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtCircle"
+                style="@style/EditTextTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/grey_border_bg"
+                android:drawableEnd="@drawable/dropdown"
+                android:ellipsize="end"
+                android:focusable="false"
+                android:focusableInTouchMode="true"
+                android:hint="@string/circle_hint"
+                android:imeOptions="actionDone"
+                android:inputType="text|textCapSentences"
+                android:singleLine="true"
+                app:layout_constraintTop_toBottomOf="@id/txtTitle" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardCircleList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="20dp"
+                android:visibility="gone"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="2dp"
+                app:layout_constraintEnd_toEndOf="@id/edtCast"
+                app:layout_constraintStart_toStartOf="@id/edtCast"
+                app:layout_constraintTop_toBottomOf="@id/edtCast">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <com.swipefwd.utils.wheelPicker.WheelPicker
+                        android:id="@+id/pickerCircle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        app:wheel_atmospheric="true"
+                        app:wheel_curved="false"
+                        app:wheel_cyclic="false"
+                        app:wheel_indicator="true"
+                        app:wheel_indicator_color="@color/colorGrey"
+                        app:wheel_indicator_size="1dp"
+                        app:wheel_item_align="center"
+                        app:wheel_item_space="10dp"
+                        app:wheel_item_text_color="@color/colorGrey"
+                        app:wheel_item_text_size="16sp"
+                        app:wheel_same_width="true"
+                        app:wheel_selected_item_text_color="@color/colorPagerDesc" />
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSelectAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="20dp"
+                android:elevation="50dp"
+                android:enabled="true"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:text="@string/select_amount"
+                android:textAppearance="@style/AppTheme.MediumFont"
+                android:textColor="@color/colorPagerDesc"
+                android:textSize="15sp"
+                app:backgroundTint="@color/white"
+                app:cornerRadius="25dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/common_or"
+                android:textAlignment="center"
+                android:textAppearance="@style/AppTheme.MediumFont"
+                android:textColor="@color/colorPagerDesc"
+                android:textSize="15sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnBundlePlan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/corner_green_gradient_bg"
+                android:elevation="50dp"
+                android:enabled="true"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:text="@string/select_plan"
+                android:textAppearance="@style/AppTheme.MediumFont"
+                android:textColor="@color/colorPagerDesc"
+                android:textSize="15sp"
+                app:backgroundTint="@null"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btnMobileRecharge" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

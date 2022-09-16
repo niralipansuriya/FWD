@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.swipefwd.utils.RoundedImageView
+        android:id="@+id/imgReceiver"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:elevation="5dp"
+        android:scaleType="centerCrop"
+        app:cornerRadius="1000dp"
+        app:layout_constraintBottom_toBottomOf="@id/layoutReceive"
+        app:layout_constraintStart_toStartOf="parent"
+        app:roundedCorners="all"
+        app:srcCompat="@drawable/user_connector" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutReceive"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/chat_blue_bubble"
+        android:elevation="8dp"
+        android:padding="8dp"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imgReceiver"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_max="300dp"
+        app:layout_constraintWidth_min="wrap">
+
+        <TextView
+            android:id="@+id/txtMsgReceiver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/AppTheme.RegularFont"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/txtReceiverTextTime"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Decided to play hookie today! Just took a quick run and now hanging with some friends at park" />
+
+        <TextView
+            android:id="@+id/txtReceiverTextTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/txtMsgReceiver"
+            android:layout_alignParentEnd="true"
+            android:textAppearance="@style/AppTheme.RegularFont"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtMsgReceiver"
+            tools:ignore="SmallSp"
+            tools:text="10:28" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/textReceiverGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            app:constraint_referenced_ids="txtMsgReceiver,txtReceiverTextTime" />
+
+        <com.swipefwd.utils.RoundedImageView
+            android:id="@+id/imgReceiverMsg"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:scaleType="centerCrop"
+            app:cornerRadius="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:roundedCorners="all"
+            tools:srcCompat="@drawable/chat_image" />
+
+        <TextView
+            android:id="@+id/txtReceiverImageTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:textAppearance="@style/AppTheme.RegularFont"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="@id/imgReceiverMsg"
+            app:layout_constraintEnd_toEndOf="@id/imgReceiverMsg"
+            tools:text="10:20" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/imgSenderGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:constraint_referenced_ids="imgReceiverMsg,txtReceiverImageTime" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

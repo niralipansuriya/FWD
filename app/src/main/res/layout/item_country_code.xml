@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?selectableItemBackground"
+    android:clickable="true"
+    android:orientation="horizontal"
+    android:id="@id/layoutMain"
+    android:focusable="true"
+    android:paddingTop="6dp"
+    android:paddingBottom="6dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgFlag"
+        android:layout_width="28dp"
+        android:layout_height="16dp"
+        android:scaleType="centerCrop"
+         />
+
+    <TextView
+        android:id="@+id/txtCountry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="170dp"
+        android:singleLine="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="5dp"
+        android:lineSpacingExtra="3dp"
+        android:textAppearance="@style/AppTheme.RegularFont"
+        android:textColor="@color/colorPagerDesc"
+        android:textSize="14sp"
+        />
+
+    <TextView
+        android:id="@+id/txtCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/AppTheme.RegularFont"
+        android:textColor="@color/colorPagerDesc"
+        android:textSize="14sp"
+        />
+
+
+</LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:visibility="gone"
+        android:alpha="0.5"
+        android:id="@+id/viewDivider"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:background="#ABB2C7"/>
+</LinearLayout>

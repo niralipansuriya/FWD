@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true">
+
+    <RelativeLayout
+        android:id="@+id/rlTitle"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@drawable/blue_gradient_bg"
+        android:elevation="1dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtFwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_toStartOf="@id/layoutConnectors"
+            android:text="@string/fwd_by"
+            android:textAppearance="@style/AppTheme.MediumFont"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutConnectors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp">
+
+            <com.swipefwd.utils.RoundedImageView
+                android:id="@+id/img1"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:scaleType="centerCrop"
+                android:visibility="gone"
+                app:cornerRadius="1000dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:reverseMask="false"
+                app:srcCompat="@drawable/user_girl_image" />
+
+            <com.swipefwd.utils.RoundedImageView
+                android:id="@+id/img2"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="25dp"
+                android:scaleType="centerCrop"
+                android:visibility="gone"
+                app:cornerRadius="1000dp"
+                app:layout_constraintStart_toStartOf="@id/img1"
+                app:layout_constraintTop_toBottomOf="@id/img1"
+                app:layout_constraintTop_toTopOf="@id/img1"
+                app:reverseMask="false"
+                app:roundedCorners="all"
+                tools:srcCompat="@drawable/image_profile" />
+
+            <TextView
+                android:id="@+id/txtCount"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="25dp"
+                android:background="@drawable/blue_gradient_rounded_bg"
+                android:backgroundTint="@color/white"
+                android:gravity="center"
+                android:scaleType="centerCrop"
+                android:textAppearance="@style/AppTheme.MediumFont"
+                android:textColor="@color/colorAccent"
+                android:textSize="14sp"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="@id/img2"
+                app:layout_constraintTop_toBottomOf="@id/img1"
+                app:layout_constraintTop_toTopOf="@id/img1"
+                tools:text="+4" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/viewLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/bottomLayout"
+        app:layout_constraintEnd_toStartOf="@id/viewRight"
+        app:layout_constraintStart_toStartOf="@id/pagerImages"
+        app:layout_constraintTop_toBottomOf="@id/rlTitle" />
+
+    <View
+        android:id="@+id/viewRight"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/bottomLayout"
+        app:layout_constraintEnd_toEndOf="@id/pagerImages"
+        app:layout_constraintStart_toEndOf="@id/viewLeft"
+        app:layout_constraintTop_toBottomOf="@id/rlTitle" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/pagerImages"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <me.relex.circleindicator.CircleIndicator3
+        android:id="@+id/layoutIndicator"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="15dp"
+        app:ci_animator="@animator/indicator_no_animator"
+        app:ci_drawable="@drawable/light_ellipse1"
+        app:ci_drawable_unselected="@drawable/light_ellipse"
+        app:ci_height="8dp"
+        app:ci_margin="15dp"
+        app:ci_width="8dp"
+        app:layout_constraintBottom_toTopOf="@id/bottomLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgSuperLike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/superliked" />
+
+    <View
+        android:id="@+id/tipAnchor"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="80dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="@id/bottomLayout"
+        app:layout_constraintTop_toTopOf="@id/bottomLayout" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black_transparent_bg"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:id="@+id/txtDaterName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="15dp"
+            android:textAppearance="@style/AppTheme.MediumFont"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Naitee, 28" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            app:layout_constraintBottom_toBottomOf="@id/txtDaterName"
+            app:layout_constraintStart_toEndOf="@id/txtDaterName"
+            app:layout_constraintTop_toTopOf="@id/txtDaterName"
+            app:srcCompat="@drawable/profile_verified" />
+
+        <TextView
+            android:id="@+id/txtOccupation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="30dp"
+            android:textAppearance="@style/AppTheme.RegularFont"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/txtDaterName"
+            app:layout_constraintTop_toBottomOf="@id/txtDaterName"
+            tools:text="Art Director at Galeria Nara Ros…" />
+
+        <TextView
+            android:id="@+id/txtAddress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:drawablePadding="8dp"
+            android:textAppearance="@style/AppTheme.RegularFont"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:visibility="invisible"
+            app:drawableStartCompat="@drawable/white_locationmark"
+            app:layout_constraintBottom_toTopOf="@id/btnDislike"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/txtDaterName"
+            app:layout_constraintTop_toBottomOf="@id/txtOccupation"
+            tools:text="Bangalore, Karnataka" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btnDislike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:padding="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/dislike" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btnRevert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btnSuperlike"
+            app:layout_constraintStart_toEndOf="@id/btnDislike"
+            app:srcCompat="@drawable/revert" />
+
+        <TextView
+            android:id="@+id/txtSuperCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/transparent_round_bg"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textAppearance="@style/AppTheme.MediumFont"
+            android:textColor="@color/orange"
+            android:textSize="20sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/btnSuperlike"
+            app:layout_constraintEnd_toStartOf="@id/btnLike"
+            app:layout_constraintStart_toEndOf="@id/btnRevert"
+            app:layout_constraintTop_toTopOf="@id/btnSuperlike"
+            tools:text="2" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btnSuperlike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btnLike"
+            app:layout_constraintStart_toEndOf="@id/btnRevert"
+            app:srcCompat="@drawable/superlike" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btnLike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:padding="10dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/like" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btnFwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/transparent_round_bg"
+            android:padding="10dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/logo_null" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

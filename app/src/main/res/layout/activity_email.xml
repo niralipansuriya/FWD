@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue_gradient_bg"
+    android:fitsSystemWindows="true"
+    android:focusable="false"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:overScrollMode="never"
+        android:id="@+id/scrollview"
+        android:layout_weight="1">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgBack"
+        android:layout_width="wrap_content"
+        android:layout_height="?android:actionBarSize"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="26dp"
+        android:padding="15dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back_arrow"
+        app:tint="@color/whiteColor" />
+        <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="126dp"
+        android:layout_height="115dp"
+        android:layout_gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgBack"
+        app:srcCompat="@drawable/white_fwd_logo" />
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="47dp"
+        android:gravity="center"
+        android:text="@string/email"
+        android:textAppearance="@style/AppTheme.MediumFont"
+        android:textColor="@color/whiteColor"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgLogo" />
+
+    <TextView
+        android:id="@+id/txtMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="37dp"
+        android:gravity="center"
+        android:letterSpacing="0.04"
+        android:lineSpacingExtra="5dp"
+        android:text="@string/email_message"
+        android:textAppearance="@style/AppTheme.MediumFont"
+        android:textColor="@color/whiteColor"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtTitle" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edtEmail"
+        style="@style/EditTextTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:gravity="center_vertical"
+        android:hint="@string/recovery_email_hint"
+        android:importantForAutofill="no"
+        android:inputType="textVisiblePassword|textNoSuggestions"
+        android:singleLine="true"
+        android:textAppearance="@style/AppTheme.MediumFont"
+        android:textColor="@color/colorPagerDesc"
+        android:textColorHint="@color/colorGrey"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtEmail">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/txtSkip"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:text="@string/common_skip"
+            android:textAppearance="@style/AppTheme.MediumFont"
+            android:textColor="@color/whiteColor"
+            android:textSize="16sp"
+            app:rippleColor="@color/blue_gradient_2_ripple" />
+
+
+    </LinearLayout>
+
+<!--    <com.google.android.material.button.MaterialButton-->
+<!--        android:id="@+id/txtSkip"-->
+<!--        style="@style/Widget.MaterialComponents.Button.TextButton"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_marginTop="40dp"-->
+<!--        android:gravity="center"-->
+<!--        android:text="@string/common_skip"-->
+<!--        android:textAppearance="@style/AppTheme.MediumFont"-->
+<!--        android:textColor="@color/whiteColor"-->
+<!--        android:textSize="16sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/edtEmail"-->
+<!--        app:rippleColor="@color/blue_gradient_2_ripple" />-->
+
+<!--    <androidx.appcompat.widget.AppCompatImageView-->
+<!--        android:id="@+id/imgNext"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="end|bottom"-->
+<!--        android:layout_marginEnd="30dp"-->
+<!--        android:layout_marginBottom="30dp"-->
+<!--        android:background="@drawable/next_button_selector"-->
+<!--        android:elevation="4dp"-->
+<!--        android:padding="16dp" />-->
+</LinearLayout>
+
+    </ScrollView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--<com.google.android.material.button.MaterialButton
+            android:id="@+id/txtSkipBottom"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="-75dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/common_skip"
+            android:textAppearance="@style/AppTheme.MediumFont"
+            android:textColor="@color/whiteColor"
+            android:textSize="16sp"
+            android:visibility="invisible" />-->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/txtSkipBottom"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_centerInParent="true"
+            android:text="@string/common_skip"
+            android:textAppearance="@style/AppTheme.MediumFont"
+            android:textColor="@color/whiteColor"
+            android:textSize="16sp"
+            android:visibility="invisible"
+            app:rippleColor="@color/blue_gradient_2_ripple" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgNext"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="26dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/next_button_selector"
+            android:elevation="4dp" />
+    </RelativeLayout>
+
+</LinearLayout>

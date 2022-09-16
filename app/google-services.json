@@ -1,0 +1,102 @@
+{
+  "project_info": {
+    "project_number": "406001238441",
+    "project_id": "swipefwd",
+    "storage_bucket": "swipefwd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:406001238441:android:bf464357b45ff596d084b8",
+        "android_client_info": {
+          "package_name": "com.swipefwd"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "406001238441-0843o3c9cp7hf6vgie6v2sp3ihtb78dj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.swipefwd",
+            "certificate_hash": "ce7121a476d2fbd7fde0206f502f3cca5b480c25"
+          }
+        },
+        {
+          "client_id": "406001238441-0bhvf608alon0u1p238ntar2pgnuvtv4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.swipefwd",
+            "certificate_hash": "3a95d13104e49584b3e2e58e7905e94669fc0b61"
+          }
+        },
+        {
+          "client_id": "406001238441-0srut2s5n9cu95au89bb0bp1t078hf5s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.swipefwd",
+            "certificate_hash": "f4c7c71ba992f1b838395565de7f67cb18442fd7"
+          }
+        },
+        {
+          "client_id": "406001238441-lg836mbb2enej3sats1rqe79l6vbo7m8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.swipefwd",
+            "certificate_hash": "b49cd5374278bd51b9477ce409fccd5521ce8895"
+          }
+        },
+        {
+          "client_id": "406001238441-o83n3qelshedb5n9hsgge359g29btak5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.swipefwd",
+            "certificate_hash": "60421620f38472ab2519f19111c8e42c5a75b45e"
+          }
+        },
+        {
+          "client_id": "406001238441-pgi7pekr4h89v6itjgmmmmseg4di61u2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.swipefwd",
+            "certificate_hash": "951238d99d4674c92480222bbb0d557bd9a87c6e"
+          }
+        },
+        {
+          "client_id": "406001238441-pq2g9balpjnlkgadvgfdvok7csskthi3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.swipefwd",
+            "certificate_hash": "cc342d4fda0ed52aae1f753deb218b797d27f630"
+          }
+        },
+        {
+          "client_id": "406001238441-luocj5cf8n3eviqv18nnu93r9c6r22km.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2qcW_3fKb1TuLKJcBSOITgDjhBnaecO8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "406001238441-luocj5cf8n3eviqv18nnu93r9c6r22km.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "406001238441-bm9rn33djqbumfivvs8gm5tlhae62uuc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.swipefwd"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

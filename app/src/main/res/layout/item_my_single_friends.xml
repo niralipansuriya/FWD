@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipeSingleFriend"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/llDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnDelete"
+            style="@style/materialIconOrangeButtonTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="32dp"
+            android:paddingEnd="32dp"
+            android:text="@string/common_delete"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true">
+
+        <com.swipefwd.utils.RoundedImageView
+            android:id="@+id/imgMessages"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="10dp"
+            android:elevation="5dp"
+            android:scaleType="centerCrop"
+            app:cornerRadius="1000dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:roundedCorners="all"
+            tools:srcCompat="@drawable/image_profile" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgOnline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="12dp"
+            app:layout_constraintBottom_toBottomOf="@id/imgMessages"
+            app:layout_constraintEnd_toEndOf="@id/imgMessages"
+            app:srcCompat="@drawable/online" />
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:textAppearance="@style/AppTheme.RegularFont"
+            android:textColor="@color/colorPagerDesc"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@id/imgMessages"
+            app:layout_constraintStart_toEndOf="@id/imgMessages"
+            app:layout_constraintTop_toTopOf="@id/imgMessages"
+            tools:text="Navya" />
+
+        <com.swipefwd.utils.RoundedImageView
+            android:id="@+id/imgFwd"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="24dp"
+            android:elevation="8dp"
+            android:scaleType="centerCrop"
+            app:cornerRadius="1000dp"
+            app:layout_constraintBottom_toBottomOf="@id/imgMessages"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/imgMessages"
+            app:roundedCorners="all"
+            app:srcCompat="@drawable/fwd_whitebutton" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.daimajia.swipe.SwipeLayout>

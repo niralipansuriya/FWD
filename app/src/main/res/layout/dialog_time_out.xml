@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgDialogGradient"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0"
+        android:scaleType="centerCrop"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/rectangle" />
+
+
+<!--
+ <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bottomSheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:behavior_hideable="false"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+-->
+
+        <!--<androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgDialogGradient"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0"
+            android:visibility="gone"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:srcCompat="@drawable/rectangle" />-->
+
+        <LinearLayout
+            android:id="@+id/llTimeOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+
+            <RelativeLayout
+                android:id="@+id/pullDown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <View
+                    android:layout_width="54dp"
+                    android:layout_height="5dp"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/corner_white_bg" />
+            </RelativeLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                style="@style/TopCornerCardViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardPreventCornerOverlap="false">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/clTimeOut"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtTimeOut"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/top_orange_corner_gradient_bg"
+                        android:gravity="center"
+                        android:padding="@dimen/_22sdp"
+                        android:text="@string/time_out"
+                        android:textAppearance="@style/AppTheme.MediumFont"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_15ssp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/backgroundView"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:background="#F9FAFB"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/txtTimeOut" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtTimeOutDesc"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginEnd="40dp"
+                        android:gravity="center"
+                        android:lineSpacingExtra="9dp"
+                        android:paddingStart="40dp"
+                        android:paddingEnd="40dp"
+                        android:text="@string/message_time_out"
+                        android:textAppearance="@style/AppTheme.RegularFont"
+                        android:textColor="@color/colorPagerDesc"
+                        android:textSize="@dimen/_12ssp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/txtTimeOut" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtTimeOutDesc2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginEnd="40dp"
+                        android:gravity="center"
+                        android:paddingStart="35dp"
+                        android:paddingEnd="35dp"
+                        android:text="@string/message_time_out2"
+                        android:textAppearance="@style/AppTheme.RegularFont"
+                        android:textColor="@color/colorPagerDesc"
+                        android:textSize="@dimen/_12ssp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/txtTimeOutDesc" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/txtOk"
+                        style="@style/materialIconOrangeButtonTheme"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginBottom="@dimen/_52sdp"
+                        android:padding="@dimen/_11sdp"
+                        android:text="@string/common_ok"
+                        android:textSize="@dimen/_12ssp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/txtTimeOutDesc2" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

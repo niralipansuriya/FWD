@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/layoutToggle"
+        android:layout_width="@dimen/_135sdp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="15dp">
+
+        <com.swipefwd.utils.SlideToActView
+            android:id="@+id/toggleUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            app:animate_completion="false"
+            app:area_margin="@dimen/_4sdp"
+            app:border_radius="@dimen/_23sdp"
+            app:icon_margin="10dp"
+            app:inner_color="@color/colorPagerDesc"
+            app:outer_color="@color/whiteColor"
+            app:rotate_icon="true"
+            app:slider_height="@dimen/_33sdp"
+            app:slider_icon="@drawable/right_grayarrow"
+            app:slider_icon_color="@color/white"
+            app:slider_width="@dimen/_135sdp"
+            app:stroke_color="@color/gray_30"
+            app:text_appearance="@style/AppTheme.MediumFont"
+            app:text_size="@dimen/_14ssp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtTip"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/_14ssp"
+            app:fontFamily="@font/medium"
+            tools:text="@string/user_dater" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivNotification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="15dp"
+            android:visibility="gone"
+            app:srcCompat="@drawable/alert" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutToggle"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="@string/home"
+        android:textAppearance="@style/AppTheme.MediumFont"
+        android:textColor="@color/colorPagerDesc"
+        android:textSize="23sp" />
+
+    <TextView
+        android:id="@+id/txtGreetMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtHome"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="@string/home_your_tribe"
+        android:textAppearance="@style/AppTheme.RegularFont"
+        android:textColor="@color/colorPagerDesc"
+        android:textSize="15sp"
+        app:fontFamily="@font/gortida_regular" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/txtGreetMsg"
+        android:animateLayoutChanges="true"
+        android:background="@color/color_background">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:lineSpacingExtra="10dp"
+            android:text="FWD works best when you add\nfriends, who help vet and\nintroduce you to people!"
+            android:textAppearance="@style/AppTheme.MediumFont"
+            android:textColor="@color/colorPagerDesc"
+            android:textSize="15sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@id/txtAddFriend"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--
+  <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:lineSpacingExtra="10dp"
+            android:text="@string/home_dater_title"
+            android:textAppearance="@style/AppTheme.MediumFont"
+            android:textColor="@color/colorPagerDesc"
+            android:textSize="14sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@id/txtAddFriend"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+-->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/txtAddFriend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/rounded_blue_gradient_bg"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            android:paddingStart="@dimen/_26sdp"
+            android:paddingEnd="@dimen/_26sdp"
+            app:fontFamily="@font/medium"
+            android:text="@string/add_friends"
+            android:textAppearance="@style/AppTheme.MediumFont"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13ssp"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toTopOf="@id/cardProfile"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcvMatchMaker"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginEnd="10dp"
+            android:fadeScrollbars="true"
+            android:scrollbarSize="5dp"
+            android:scrollbars="vertical"
+            android:visibility="gone"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toTopOf="@id/txtAddFriend"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:listitem="@layout/item_match_maker_list" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardProfile"
+            android:layout_width="@dimen/_62sdp"
+            android:layout_height="@dimen/_62sdp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="30dp"
+            android:visibility="visible"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="@dimen/_36sdp"
+            app:cardElevation="12dp"
+            app:layout_constraintBottom_toBottomOf="@id/txtSwiping"
+            app:layout_constraintEnd_toEndOf="@id/txtSwiping">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgProfile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                tools:srcCompat="@drawable/image_profile" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtNameLetter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/me"
+                android:textAppearance="@style/AppTheme.MediumFont"
+                android:textColor="@color/colorPagerDesc"
+                android:textSize="23sp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@id/progressSettings"
+                app:layout_constraintEnd_toEndOf="@id/progressSettings"
+                app:layout_constraintStart_toStartOf="@id/progressSettings"
+                app:layout_constraintTop_toTopOf="@id/progressSettings" />
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:id="@+id/txtSwiping"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blue_gradient_bg"
+            android:elevation="8dp"
+            android:paddingStart="30dp"
+            android:paddingTop="28dp"
+            android:paddingBottom="28dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawablePadding="8dp"
+                android:gravity="center"
+                android:text="@string/start_swiping"
+                android:textAppearance="@style/AppTheme.MediumFont"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                app:drawableEndCompat="@drawable/arrowdarkgray_right_small"
+                app:drawableTint="@color/white"
+                app:fontFamily="@font/gortida_regular" />
+        </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

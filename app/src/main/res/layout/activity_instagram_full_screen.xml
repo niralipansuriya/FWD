@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/layoutUser"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/black_transparent_bg"
+        android:elevation="1dp"
+        android:paddingBottom="15dp">
+
+        <com.swipefwd.utils.RoundedImageView
+            android:id="@+id/ivUser"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="30dp"
+            android:scaleType="centerCrop"
+            app:cornerRadius="1000dp"
+            app:reverseMask="false"
+            app:roundedCorners="all"
+            tools:srcCompat="@drawable/image_swpie" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/ivUser"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_toStartOf="@id/ivCancel"
+            android:layout_toEndOf="@id/ivUser"
+            android:gravity="center|start"
+            android:singleLine="true"
+            android:textAppearance="@style/AppTheme.MediumFont"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            tools:text="@string/user_instagram" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="10dp"
+            android:padding="15dp"
+            app:srcCompat="@drawable/cancel_white" />
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        tools:srcCompat="@drawable/image_insta" />
+</RelativeLayout>

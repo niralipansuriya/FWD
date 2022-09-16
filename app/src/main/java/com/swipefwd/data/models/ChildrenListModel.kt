@@ -1,0 +1,31 @@
+package com.swipefwd.data.models
+
+
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+import com.google.gson.annotations.SerializedName
+
+data class ChildrenListModel(
+    @SerializedName("count")
+    var count: Int? = 0,
+    @SerializedName("items")
+    var items: ArrayList<ChildrenModel>? = arrayListOf(),
+    @SerializedName("limit")
+    var limit: Int? = 0,
+    @SerializedName("next")
+    var next: String? = "",
+    @SerializedName("previous")
+    var previous: String? = ""
+) {
+
+    @Entity
+    data class ChildrenModel(
+        @PrimaryKey
+        @SerializedName("id")
+        var id: Int? = 0,
+        @SerializedName("name")
+        var name: String? = "",
+        var isSelected: Boolean = false
+
+    )
+}

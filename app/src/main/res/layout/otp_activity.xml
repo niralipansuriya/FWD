@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue_gradient_bg"
+    android:fitsSystemWindows="true">
+
+<!--    <ScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+
+    <RelativeLayout
+        android:id="@+id/otpRelative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgBack"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="33dp"
+            app:srcCompat="@drawable/back_arrow"
+            app:tint="@color/whiteColor" />
+        <!--        <androidx.appcompat.widget.AppCompatImageView-->
+        <!--            android:id="@+id/imgBack"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="?android:actionBarSize"-->
+        <!--            android:layout_marginTop="10dp"-->
+        <!--            android:padding="20dp"-->
+        <!--            app:srcCompat="@drawable/back_arrow"-->
+        <!--            app:tint="@color/whiteColor" />-->
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgBack"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="45dp"
+            app:srcCompat="@drawable/white_fwd_logo_new" />
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgLogo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:text="@string/enter_code"
+            android:textAlignment="center"
+            android:textAppearance="@style/AppTheme.MediumFont"
+            android:textColor="@color/whiteColor"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/txtDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtTitle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:letterSpacing="0.04"
+            android:text="@string/otp_message"
+            android:textAlignment="center"
+            android:textAppearance="@style/AppTheme.MediumFont"
+            android:textColor="@color/whiteColor"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/txtMobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtDesc"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="13dp"
+            android:letterSpacing="0.1"
+            android:textAppearance="@style/AppTheme.MediumFont"
+            android:textColor="@color/colorPagerDesc"
+            android:textSize="18sp"
+            tools:text="@string/app_name" />
+
+        <com.swipefwd.utils.otpView.OtpTextView
+            android:id="@+id/otpView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtMobile"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="7dp"
+            app:bar_enabled="false"
+            app:box_margin="8dp"
+            app:length="4"
+            app:otp_box_background="@drawable/circle"
+            app:otp_box_background_error="@drawable/circle_orange_border"
+            app:otp_text_size="20sp" />
+
+        <RelativeLayout
+            android:id="@+id/rlResend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/otpView"
+            android:layout_marginTop="21dp">
+
+            <TextView
+                android:id="@+id/txtResend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:letterSpacing="0.03"
+                android:text="@string/resend_otp"
+                android:textAppearance="@style/AppTheme.MediumFont"
+                android:textColor="@color/whiteColor"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/txtTimer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/resend_timer"
+                android:textAppearance="@style/AppTheme.MediumFont"
+                android:textColor="@color/whiteColor"
+                android:textSize="12sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+<!--    </ScrollView>-->
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgNext"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:visibility="gone"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/next_button_selector"
+        android:elevation="4dp" />
+</RelativeLayout>

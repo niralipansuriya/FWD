@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?actionBarSize"
+    android:animateLayoutChanges="true"
+    android:scrollbarThumbVertical="@drawable/scroll_bar"
+    android:scrollbars="none">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivBack"
+        android:layout_width="wrap_content"
+        android:layout_height="?android:actionBarSize"
+        android:layout_marginTop="20dp"
+        android:paddingStart="30dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back_pref"
+        app:tint="@color/colorPagerDesc" />
+    <!--    <androidx.appcompat.widget.AppCompatImageView-->
+    <!--        android:id="@+id/ivBack"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="30dp"-->
+    <!--        android:paddingStart="30dp"-->
+    <!--        android:paddingEnd="10dp"-->
+    <!--        android:paddingBottom="10dp"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:srcCompat="@drawable/back_arrow"-->
+    <!--        app:tint="@color/colorPagerDesc" />-->
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/advanced_dating_filters"
+        android:textAppearance="@style/AppTheme.MediumFont"
+        android:textColor="@color/colorPagerTitle"
+        android:textSize="23sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivBack" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="8dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="-2dp"
+        android:text="†"
+        android:textAppearance="@style/AppTheme.RegularFont"
+        android:textColor="@color/orange_gradient_1"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@id/txtTitle"
+        app:layout_constraintTop_toTopOf="@id/txtTitle" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/nestedScrollView"
+        android:layout_marginTop="45dp"
+        android:fadeScrollbars="false"
+        android:paddingStart="10dp"
+        android:scrollbarThumbVertical="@drawable/recyclerview_scroll_bar_color"
+
+        android:paddingEnd="10dp"
+        android:scrollbarSize="5dp"
+        android:layout_marginBottom="26dp"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtTitle"
+        tools:layout_editor_absoluteX="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layoutVerifiedProfiles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/labelVerifiedProfiles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/verified_profiles_only"
+                    android:textAppearance="@style/AppTheme.MediumFont"
+                    android:textColor="@color/colorPagerDesc"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:layout_constraintBottom_toBottomOf="@id/labelVerifiedProfiles"
+                    app:layout_constraintEnd_toStartOf="@id/toggleProfiles"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintStart_toEndOf="@id/labelVerifiedProfiles"
+                    app:layout_constraintTop_toTopOf="@id/labelVerifiedProfiles"
+                    app:srcCompat="@drawable/info"
+                    tools:ignore="NotSibling" />
+
+                <RelativeLayout
+                    android:id="@+id/rlToggle"
+                    android:layout_width="51dp"
+                    android:layout_height="32dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.appcompat.widget.AppCompatToggleButton
+                        android:id="@+id/toggleProfiles"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/toggle_button_selector"
+                        android:checked="true"
+                        android:clickable="true"
+                        android:fitsSystemWindows="true"
+                        android:focusable="true"
+                        android:focusableInTouchMode="false"
+                        android:minWidth="0dp"
+                        android:minHeight="0dp"
+                        android:textOff=""
+                        android:textOn="" />
+                </RelativeLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/height"
+                android:textAppearance="@style/AppTheme.MediumFont"
+                android:textColor="@color/colorPagerDesc"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtHeight"
+                    style="@style/TextBorderTheme"
+                    android:layout_width="123dp"
+                    android:layout_height="45dp"
+                    android:layout_marginEnd="15dp"
+                    android:textSize="14sp"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:singleLine="true"
+                    app:drawableEndCompat="@drawable/right_arrow" />
+
+                <com.swipefwd.utils.segmentedButtonTemp.SegmentedButtonGroup2
+                    android:id="@+id/segmentedHeight"
+                    android:layout_width="176dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="1"
+                    app:selectionAnimationDuration="10"
+                    app:draggable="false"
+                    app:borderColor="@color/colorAccent"
+                    app:borderWidth="1dp"
+                    app:divider="@color/colorAccent"
+                    app:radius="30dp"
+                    app:ripple="false"
+                    app:rippleColor="@color/colorAccent"
+                    app:selectedBackground="@drawable/blue_gradient_bg">
+
+                    <com.swipefwd.utils.segmentedButtonTemp.SegmentedButton
+                        android:id="@+id/btnFt"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/bold"
+                        android:padding="12dp"
+                        app:selectedTextColor="@color/white"
+                        app:selectedTextStyle="bold"
+                        app:text="@string/ft_inch"
+                        app:textColor="@color/colorPagerTitle"
+                        app:textSize="13sp" />
+
+                    <com.swipefwd.utils.segmentedButtonTemp.SegmentedButton
+                        android:id="@+id/btnCM"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/bold"
+                        android:padding="12dp"
+                        app:selectedTextColor="@color/white"
+                        app:selectedTextStyle="bold"
+                        app:text="@string/cm"
+                        app:textColor="@color/colorPagerTitle"
+                        app:textSize="13sp" />
+                </com.swipefwd.utils.segmentedButtonTemp.SegmentedButtonGroup2>
+
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="@string/language"
+                android:textAppearance="@style/AppTheme.MediumFont"
+                android:textColor="@color/colorPagerDesc"
+                android:textSize="15sp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtLanguage"
+                style="@style/EditTextTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:lineSpacingExtra="0dp"
+                android:paddingEnd="12dp"
+                android:drawableEnd="@drawable/right_arrow"
+                android:focusable="false"
+                android:inputType="textNoSuggestions"
+                android:singleLine="true" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="@string/education"
+                android:textAppearance="@style/AppTheme.MediumFont"
+                android:textColor="@color/colorPagerDesc"
+                android:textSize="15sp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtEducation"
+                style="@style/EditTextTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:lineSpacingExtra="0dp"
+                android:paddingEnd="12dp"
+                android:drawableEnd="@drawable/right_arrow"
+                android:focusable="false"
+                android:inputType="textNoSuggestions"
+                android:singleLine="true" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="@string/astrological_sign"
+                android:textAppearance="@style/AppTheme.MediumFont"
+                android:textColor="@color/colorPagerDesc"
+                android:textSize="15sp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layoutAstroSign"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/corner_blue_border_bg"
+                android:padding="15dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgAstro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/aries" />
+
+                <TextView
+                    android:id="@+id/edtAstroSign"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:focusable="false"
+                    android:gravity="start"
+                    android:singleLine="true"
+                    android:textAppearance="@style/AppTheme.RegularFont"
+                    android:textColor="@color/colorPagerDesc"
+                    android:textColorHint="@color/colorGrey"
+                    android:textSize="16sp"
+                    app:drawableEndCompat="@drawable/right_arrow"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/imgAstro" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="@string/caste"
+                android:textAppearance="@style/AppTheme.MediumFont"
+                android:textColor="@color/colorPagerDesc"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtCaste"
+                style="@style/EditTextTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/right_arrow"
+                android:focusable="false"
+                android:inputType="textNoSuggestions"
+                android:singleLine="true"
+                android:visibility="gone" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="@string/children"
+                android:textAppearance="@style/AppTheme.MediumFont"
+                android:textColor="@color/colorPagerDesc"
+                android:textSize="15sp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtChildren"
+                style="@style/EditTextTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:lineSpacingExtra="0dp"
+                android:drawableEnd="@drawable/right_arrow"
+                android:paddingEnd="12dp"
+                android:focusable="false"
+                android:inputType="textNoSuggestions"
+                android:singleLine="true" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="@string/religion"
+                android:textAppearance="@style/AppTheme.MediumFont"
+                android:textColor="@color/colorPagerDesc"
+                android:textSize="15sp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtReligion"
+                style="@style/EditTextTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:drawableEnd="@drawable/right_arrow"
+                android:focusable="false"
+                android:lineSpacingExtra="0dp"
+                android:paddingEnd="12dp"
+                android:inputType="textNoSuggestions"
+                android:singleLine="true" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="@string/smoking"
+                android:textAppearance="@style/AppTheme.MediumFont"
+                android:textColor="@color/colorPagerDesc"
+                android:textSize="15sp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtSmoking"
+                style="@style/EditTextTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:paddingEnd="12dp"
+                android:drawableEnd="@drawable/right_arrow"
+                android:focusable="false"
+                android:lineSpacingExtra="0dp"
+                android:inputType="textNoSuggestions"
+                android:singleLine="true" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="@string/type_of_fwd_date"
+                android:textAppearance="@style/AppTheme.MediumFont"
+                android:textColor="@color/colorPagerDesc"
+                android:textSize="15sp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtLookingFor"
+                style="@style/EditTextTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:drawableEnd="@drawable/right_arrow"
+                android:focusable="false"
+                android:lineSpacingExtra="0dp"
+                android:paddingEnd="12dp"
+                android:inputType="textNoSuggestions"
+                android:singleLine="true" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/labelPrefLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="31dp"
+                android:gravity="center"
+                android:lineSpacingExtra="5dp"
+                android:textAppearance="@style/AppTheme.MediumFont"
+                android:textColor="@color/colorGrey"
+                android:textSize="12sp"
+                tools:text="@string/preference_match_location_text" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnContinue"
+                style="@style/materialIconButtonTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="25dp"
+                android:enabled="true"
+                android:text="@string/common_continue"
+                />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:id="@+id/relFadedView">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageFaded"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="20dp"
+            android:scaleType="centerCrop" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivInfo2"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            app:srcCompat="@drawable/info" />
+        <ImageView
+            android:layout_width="25sp"
+            android:layout_height="15sp"
+            android:id="@+id/toolTipArrow"
+            android:rotation="180"
+            android:background="@drawable/arrow_gradient"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:id="@+id/linLocAnim"
+            android:paddingHorizontal="30dp"
+            android:background="@drawable/blue_gradient_bg_without_center_color"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtTipHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="5dp"
+                    android:text="@string/location_message_1"
+                    android:textAppearance="@style/AppTheme.MediumFont"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+<!--
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgToolTip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+
+                    android:layout_marginStart="8dp"
+                    app:srcCompat="@drawable/verify_profile" />
+-->
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgToolTip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:background="@drawable/verified_icon"
+                     />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtTipDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:lineSpacingExtra="8sp"
+                app:fontFamily="@font/regular"
+
+                android:text="@string/location_message_2"
+                android:textAppearance="@style/AppTheme.RegularFont"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnTipGotIt"
+                style="@style/Widget.MaterialComponents.Button.TextButton.Dialog.Flush"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="12dp"
+                android:insetTop="-6dp"
+                android:insetBottom="0dp"
+                android:text="@string/got_it"
+                android:textAllCaps="true"
+                android:textAppearance="@style/AppTheme.BoldFont"
+                android:textColor="@color/white"
+                android:textSize="16sp"/>
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    <!--    <androidx.appcompat.widget.AppCompatTextView-->
+    <!--        android:id="@+id/labelPrefLocation"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="30dp"-->
+    <!--        android:layout_marginEnd="30dp"-->
+    <!--        android:layout_marginBottom="25dp"-->
+    <!--        android:gravity="center"-->
+    <!--        android:lineSpacingExtra="5dp"-->
+    <!--        android:textAppearance="@style/AppTheme.MediumFont"-->
+    <!--        android:textColor="@color/colorGrey"-->
+    <!--        android:textSize="11sp"-->
+    <!--        app:layout_constraintBottom_toTopOf="@id/btnContinue"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.5"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        tools:text="@string/preference_match_location_text" />-->
+
+    <!--    <com.google.android.material.button.MaterialButton-->
+    <!--        android:id="@+id/btnContinue"-->
+    <!--        style="@style/materialIconButtonTheme"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_alignParentBottom="true"-->
+    <!--        android:layout_marginStart="30dp"-->
+    <!--        android:layout_marginEnd="30dp"-->
+    <!--        android:layout_marginBottom="26dp"-->
+    <!--        android:enabled="true"-->
+    <!--        android:text="@string/common_continue"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent" />-->
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.swipefwd.utils.customprogressbar.SquareProgressView
+        android:id="@+id/squareProgressBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/imageView1"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageView1"
+        android:layout_width="217dp"
+        android:layout_height="281dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/image1"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:padding="10dp" />
+
+
+</RelativeLayout>
