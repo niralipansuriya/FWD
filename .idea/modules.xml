@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FWD.iml" filepath="$PROJECT_DIR$/.idea/modules/FWD.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/FWD.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/FWD.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/FWD.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/FWD.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/FWD.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/FWD.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/FWD.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/FWD.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/cardstackview/FWD.cardstackview.iml" filepath="$PROJECT_DIR$/.idea/modules/cardstackview/FWD.cardstackview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/cardstackview/FWD.cardstackview.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/cardstackview/FWD.cardstackview.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/cardstackview/FWD.cardstackview.main.iml" filepath="$PROJECT_DIR$/.idea/modules/cardstackview/FWD.cardstackview.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/cardstackview/FWD.cardstackview.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/cardstackview/FWD.cardstackview.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/countrypicker/FWD.countrypicker.iml" filepath="$PROJECT_DIR$/.idea/modules/countrypicker/FWD.countrypicker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/countrypicker/FWD.countrypicker.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/countrypicker/FWD.countrypicker.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/countrypicker/FWD.countrypicker.main.iml" filepath="$PROJECT_DIR$/.idea/modules/countrypicker/FWD.countrypicker.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/countrypicker/FWD.countrypicker.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/countrypicker/FWD.countrypicker.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/percentagechartview/FWD.percentagechartview.iml" filepath="$PROJECT_DIR$/.idea/modules/percentagechartview/FWD.percentagechartview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/percentagechartview/FWD.percentagechartview.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/percentagechartview/FWD.percentagechartview.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/percentagechartview/FWD.percentagechartview.main.iml" filepath="$PROJECT_DIR$/.idea/modules/percentagechartview/FWD.percentagechartview.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/percentagechartview/FWD.percentagechartview.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/percentagechartview/FWD.percentagechartview.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/prdownloader/FWD.prdownloader.iml" filepath="$PROJECT_DIR$/.idea/modules/prdownloader/FWD.prdownloader.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/prdownloader/FWD.prdownloader.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/prdownloader/FWD.prdownloader.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/prdownloader/FWD.prdownloader.main.iml" filepath="$PROJECT_DIR$/.idea/modules/prdownloader/FWD.prdownloader.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/prdownloader/FWD.prdownloader.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/prdownloader/FWD.prdownloader.unitTest.iml" />
+    </modules>
+  </component>
+</project>
